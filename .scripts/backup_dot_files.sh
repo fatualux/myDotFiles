@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 cd ~  || return;
-git init
+#git init
 echo "*" > .gitignore
 git add -f .gitignore
 
@@ -44,6 +44,7 @@ git add -f .scripts/
 git add -f .themes/
 git add -f .vim/
 
-git commit -m "First commit"
+COMM=$(date)
+git commit -m "$COMM"
 git remote add origin https://github.com/fatualux/myDotFiles
 git push -u origin master
