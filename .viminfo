@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/netw
+~MSle0~/MOVE
 
 # Last Substitute Search Pattern:
 ~MSle0&20,70,90
@@ -21,7 +21,9 @@ $00,055,055
 
 # Command Line History (newest to oldest):
 :w
-|2,0,1567785060,,"w"
+|2,0,1567786458,,"w"
+:e backup_dot_files.sh
+|2,0,1567776127,,"e backup_dot_files.sh"
 :s
 |2,0,1567779545,,"s"
 :e .config/vbar/config.c
@@ -279,16 +281,12 @@ $00,055,055
 
 # Registers:
 "0	CHAR	0
-	gadget_text(g, " %s %3d ⮟%6.2f%s ⮝%6.2f%s ", gadget_network_essid_get(g), gadget_network_dbm_get(g), r, unitr, t, unitt);
-	
-	                        gadget_redraw(g);
-	                }
-	
-|3,0,0,0,5,0,1567779600,"gadget_text(g, \" %s %3d ⮟%6.2f%s ⮝%6.2f%s \", gadget_network_essid_get(g), gadget_network_dbm_get(g), r, unitr, t, unitt);","","                        gadget_redraw(g);","                }",""
-""1	LINE	0
+	git@github.com:fatualux
+|3,0,0,0,1,0,1567783452,"git@github.com:fatualux"
+"1	LINE	0
 	747
 <ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7kUWAxlOj44teEeYlEJdg5xwTMdYAoh3sqg1q5UXdXo4I2iVANsc5yZyvm/fQnMNJZe9hqcGJOG6zLYNvENr8rRqkV778inVAq5i7iRmuQONstE1eStdDcC5fd+B4D2RFzDpI7UWT1kJUse0bdS22P8gNgK1g4UEG7xildjs79PYvHWXrM2vH+fHSqKgwlDiMLMSq87g6oOC1zVB3zD0E8qQPQw4DF6aOEDVzIoWsCYKQX2xzVfn/SAaVXG22XlT+1WcmaFDOp/OZi7vjU4x13LCXOKeUzidjMAUCjp5uJvZH4s7GP3SItQCMeOlDNgbg6B0IzeKFC/hTRNMNNU5U+/4ic3Daj7DzpUh890xDzdmyx5e5mn3kNEFjmCG22fpSgzQgazUAyFocYwB70tYqyaUVab/F/pSRacH6FrYyiS8EhO86b6a84SIkvGvjlngEpWZi91Lfuc+uSAf9tWy5fvA+k9lGHUKQyOx5nbHF1/zbjzVW1v+ipvBeTnYlX/wLCPQHw1OkbSKbPnmqt/Qq8VTTCkOeHYkJOIfXMxGjzK/mfCBuf+VfV4Y9WykpgBy/C3cYdl1QWBZE/tLOZxqWWQ5Np83MM4GuOfse9pDd97BNR2DzhCZtjg3BP9dWJVUa6muM2OYEEzsjN2LO7gDMH2dQIlGtGRPgHIXynDk26Q== emodendro@gnail.com
-|3,1,1,1,1,0,1567785055,>746
+|3,0,1,1,1,0,1567785055,>746
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7kUWAxlOj44teEeYlEJdg5xwTMdYAoh3sqg1q5UXdXo4I2iVANsc5yZyvm/fQnMNJZe9hqcGJOG6zLYNvENr8rRqkV778inVAq5i7iRmuQONstE1eStdDcC5fd+B4D2RFzDpI7UWT1kJUse0bdS22P8gNgK1g4UEG7xildjs79PYvHWXrM2vH+fHSqKgwlDiMLMSq87g6oOC1zVB3zD0E8qQPQw4DF6aOEDVzIoWsCYKQX2xzVfn/SAaVXG22XlT+1WcmaFDOp/OZi7vjU4x13LCXOKeUzidjMAUCjp5uJvZH4s7GP3SItQCMeOlDNgbg6B0IzeKFC/hTRNMNNU5U+/4ic3Daj7DzpUh890xDzdmyx5e5mn3kNEFjmCG22fpSgzQgazUAyFocYwB70tYqyaUVab/F/pSRacH6FrYyiS8EhO86b6a84SIkvGvjlngEpW
 |<Zi91Lfuc+uSAf9tWy5fvA+k9lGHUKQyOx5nbHF1/zbjzVW1v+ipvBeTnYlX/wLCPQHw1OkbSKbPnmqt/Qq8VTTCkOeHYkJOIfXMxGjzK/mfCBuf+VfV4Y9WykpgBy/C3cYdl1QWBZE/tLOZxqWWQ5Np83MM4GuOfse9pDd97BNR2DzhCZtjg3BP9dWJVUa6muM2OYEEzsjN2LO7gDMH2dQIlGtGRPgHIXynDk26Q== emodendro@gnail.com"
 "2	LINE	0
@@ -296,52 +294,61 @@ $00,055,055
 |3,0,2,1,1,0,1567779584,"                        //gadget_text(g, \" v%6.2lf%s\", r, unitr);"
 "3	LINE	0
 	
-|3,0,3,1,1,0,1567767445,""
+|3,0,3,1,1,0,1567777850,""
 "4	LINE	0
 	
-|3,0,4,1,1,0,1567767444,""
-"5	LINE	0
-	echo "$result";
-|3,0,5,1,1,0,1567767393,"echo \"$result\";"
+|3,0,4,1,1,0,1567777847,""
+"5	CHAR	0
+	git add -f .fonts/
+	git add -f .gconf/
+	git add -f .git/
+	git add -f .gkrellm2/
+	git add -f .icons/
+	git add -f .java/
+	git add -f .scripts/
+	git add -f .themes/
+|3,0,5,0,8,0,1567777837,"git add -f .fonts/","git add -f .gconf/","git add -f .git/","git add -f .gkrellm2/","git add -f .icons/","git add -f .java/","git add -f .scripts/","git add -f .themes/"
 "6	LINE	0
-	sleep 30;
-|3,0,6,1,1,0,1567767387,"sleep 30;"
+	git add -f .config/
+|3,0,6,1,1,0,1567777824,"git add -f .config/"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1567767383,""
+|3,0,7,1,1,0,1567777818,""
 "8	LINE	0
-	cd .. && rm -r tmp;
-|3,0,8,1,1,0,1567767376,"cd .. && rm -r tmp;"
+	
+|3,0,8,1,1,0,1567777817,""
 "9	LINE	0
-	echo "$result";
-|3,0,9,1,1,0,1567767323,"echo \"$result\";"
-"-	CHAR	0
-	8
-|3,0,36,0,1,0,1567779861,"8"
+	
+|3,0,9,1,1,0,1567777816,""
+""-	CHAR	0
+	:
+|3,1,36,0,1,0,1567786394,":"
 
 # File marks:
-'0  6  3  ~/.git/info/exclude
-|4,48,6,3,1567785487,"~/.git/info/exclude"
-'1  1  21  ~/.git/HEAD
-|4,49,1,21,1567785464,"~/.git/HEAD"
-'2  1  11  ~/.git/COMMIT_EDITMSG
-|4,50,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
-'3  353  0  ~/.bash_history
-|4,51,353,0,1567785064,"~/.bash_history"
-'4  1  0  ~/.gitignore
-|4,52,1,0,1567783491,"~/.gitignore"
-'5  98  45  ~/.config/vbar/config.c
-|4,53,98,45,1567779903,"~/.config/vbar/config.c"
-'6  22  5  ~/list.txt
-|4,54,22,5,1567778798,"~/list.txt"
-'7  3  87  ~/diffURL.sh
-|4,55,3,87,1567775826,"~/diffURL.sh"
-'8  2  38  ~/.scripts/scratches/CK-20190906.log
-|4,56,2,38,1567775044,"~/.scripts/scratches/CK-20190906.log"
-'9  4  13  ~/webFind.sh
-|4,57,4,13,1567771382,"~/webFind.sh"
+'0  48  40  ~/backup_dot_files.sh
+|4,48,48,40,1567787318,"~/backup_dot_files.sh"
+'1  6  3  ~/.git/info/exclude
+|4,49,6,3,1567785487,"~/.git/info/exclude"
+'2  1  21  ~/.git/HEAD
+|4,50,1,21,1567785464,"~/.git/HEAD"
+'3  1  11  ~/.git/COMMIT_EDITMSG
+|4,51,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+'4  353  0  ~/.bash_history
+|4,52,353,0,1567785064,"~/.bash_history"
+'5  1  0  ~/.gitignore
+|4,53,1,0,1567783491,"~/.gitignore"
+'6  98  45  ~/.config/vbar/config.c
+|4,54,98,45,1567779903,"~/.config/vbar/config.c"
+'7  22  5  ~/list.txt
+|4,55,22,5,1567778798,"~/list.txt"
+'8  3  87  ~/diffURL.sh
+|4,56,3,87,1567775826,"~/diffURL.sh"
+'9  2  38  ~/.scripts/scratches/CK-20190906.log
+|4,57,2,38,1567775044,"~/.scripts/scratches/CK-20190906.log"
 
 # Jumplist (newest first):
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787318,"~/backup_dot_files.sh"
 -'  6  3  ~/.git/info/exclude
 |4,39,6,3,1567785487,"~/.git/info/exclude"
 -'  1  0  ~/.git/info/exclude
@@ -422,6 +429,8 @@ $00,055,055
 |4,39,1,0,1567783491,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1567783491,"~/.gitignore"
+-'  47  27  ~/backup_dot_files.sh
+|4,39,47,27,1567782785,"~/backup_dot_files.sh"
 -'  98  45  ~/.config/vbar/config.c
 |4,39,98,45,1567779903,"~/.config/vbar/config.c"
 -'  98  45  ~/.config/vbar/config.c
@@ -486,10 +495,6 @@ $00,055,055
 |4,39,98,45,1567779903,"~/.config/vbar/config.c"
 -'  98  45  ~/.config/vbar/config.c
 |4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
 -'  217  10  ~/.config/vbar/config.c
 |4,39,217,10,1567779564,"~/.config/vbar/config.c"
 -'  217  10  ~/.config/vbar/config.c
@@ -544,6 +549,28 @@ $00,055,055
 |4,39,217,10,1567779564,"~/.config/vbar/config.c"
 
 # History of marks within files (newest to oldest):
+
+> ~/backup_dot_files.sh
+	*	1567787315	0
+	"	48	40
+	^	48	22
+	.	48	22
+	+	50	0
+	+	23	0
+	+	46	0
+	+	50	0
+	+	37	0
+	+	50	0
+	+	50	11
+	+	50	0
+	+	46	0
+	+	50	0
+	+	38	0
+	+	46	0
+	+	50	0
+	+	3	15
+	+	48	0
+	+	48	22
 
 > ~/.git/info/exclude
 	*	1567785486	0
@@ -2795,7 +2822,3 @@ $00,055,055
 > ~/results
 	*	1555776203	0
 	"	2	0
-
-> ~/Documents/pythonExercises/polygon.py
-	*	1555753032	0
-	"	14	0
