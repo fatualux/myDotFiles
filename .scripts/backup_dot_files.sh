@@ -46,5 +46,4 @@ git add -f .vim/
 
 COMM=$(date)
 git commit -m "$COMM"
-git remote set-url https://github.com/fatualux/myDotFiles
 git push -u origin master
