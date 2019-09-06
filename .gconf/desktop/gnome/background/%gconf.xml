@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="picture_options" mtime="1480962279" type="string">
+		<stringvalue></stringvalue>
+	</entry>
+	<entry name="picture_filename" mtime="1480962278" type="string">
+		<stringvalue>/home/fz/.local/share/nautilus/scripts/Apps/Powertop</stringvalue>
+	</entry>
+</gconf>

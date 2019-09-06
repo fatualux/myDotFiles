@@ -1,0 +1,10 @@
+[user]
+	name = fatualux
+	email = emodendro@gmail.com
+[core]
+	editor = vim
+[github]
+	user = fatualux
+	token = 7a1fa81752bc26df1f912b0c4427ca4e76d4e8c0
+[credential]
+	helper = wincred

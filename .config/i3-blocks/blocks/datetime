@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+FORMAT="${BLOCK_INSTANCE:-%a %e %b - %H:%M:%S}"
+DATETIME=$(date "+${FORMAT}")
+
+echo "${DATETIME}"
+echo ""
+
+case $BLOCK_BUTTON in
+    1)termite -e "bash .config/i3-blocks/blocks/alarm" ;; # left click
+    3) termite ;; # # right click
+esac

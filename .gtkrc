@@ -1,0 +1,9 @@
+include "~/.themes/tron-gtk-theme//gtk-2.0/gtkrc"
+
+style "user-font"
+{
+  font_name="Conthrax Semi-Bold 10"
+}
+widget_class "*" style "user-font"
+
+include "~/.gtkrc-2.0.mine"

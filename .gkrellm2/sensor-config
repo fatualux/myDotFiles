@@ -1,0 +1,30 @@
+sensor sensor_config_version 1
+sensor sensor_sysdep_private 2
+sensor sensor_float_factor 10000
+sensor gkrellm_float_factor 1000
+sensor sysdep_option use_nvclock 0
+sensor "temp1" "BAT0@0/temp1" 0 0 0 0
+sensor "TB0T" "applesmc@300/temp1" 0 0 0 0
+sensor "TN1F" "applesmc@300/temp10" 0 0 0 0
+sensor "TN1G" "applesmc@300/temp11" 0 0 0 0
+sensor "TN1S" "applesmc@300/temp12" 0 0 0 0
+sensor "Th1H" "applesmc@300/temp13" 0 0 0 0
+sensor "Ts0P" "applesmc@300/temp14" 0 0 0 0
+sensor "Ts0S" "applesmc@300/temp15" 0 0 0 0
+sensor "TB1T" "applesmc@300/temp2" 0 0 0 0
+sensor "TB2T" "applesmc@300/temp3" 0 0 0 0
+sensor "TC0D" "applesmc@300/temp4" 0 0 0 0
+sensor "TC0P" "applesmc@300/temp5" 0 0 0 0
+sensor "TN0D" "applesmc@300/temp6" 0 0 0 0
+sensor "TN0P" "applesmc@300/temp7" 0 0 0 0
+sensor "TN0S" "applesmc@300/temp8" 0 0 0 0
+sensor "TN1D" "applesmc@300/temp9" 0 0 0 0
+sensor "Core 0" "coretemp@0/temp2" 0 0 0 0
+sensor "Core 1" "coretemp@0/temp3" 0 0 0 0
+sensor "temp1" "nouveau@400/temp1" 0 0 0 0
+sensor "temp" "thermal_zone0" 10000 0 0 0
+sensor "Exhaust  " "applesmc@300/fan1" 0 0 0 0
+sensor "GPU core" "nouveau@400/in0" 0 0 0 0
+sensor units_fahrenheit 0
+sensor show_units 1
+sensor volt_display_mode 0

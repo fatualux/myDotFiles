@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+URGENT_VALUE=25
+PACKAGE_COUNT=$(checkupdates | wc -l)
+
+if [[ "${PACKAGE_COUNT}" -gt 0 ]]; then
+  echo "${PACKAGE_COUNT}" # full-text
+  echo "${PACKAGE_COUNT}" # short-text
+  echo ""
+  if [[ "${PACKAGE_COUNT}" -gt "${URGENT_VALUE}" ]]; then
+    exit 33
+  fi
+fi
+
+# Left click
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+      dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Pacman Update";
+      termite -e "sudo pacman -Syyu"
+# Right click
+elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
+      dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Trizen Update";
+      termite -e "trizen -Syyu"
+fi

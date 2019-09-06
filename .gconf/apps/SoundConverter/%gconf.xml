@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="output-mime-type" mtime="1511092828" type="string">
+		<stringvalue>audio/x-vorbis</stringvalue>
+	</entry>
+</gconf>

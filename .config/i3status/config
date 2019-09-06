@@ -1,0 +1,93 @@
+# see "man i3status" for documentation.
+
+###############################################################################
+
+general {
+    output_format = "i3bar"
+    separator = "|"
+    interval=5
+    colors = true
+    interval = 5
+    color_good = "#50FF50"
+    color_bad = "#FF5050"
+    color_degraded = "#5599CC"
+    output_format = "i3bar"
+}
+
+                            ###Order
+
+order += "volume master"
+
+order += "wireless wls1"
+
+order += "disk /"
+
+order += "cpu_usage 0"
+order += "cpu_temperature 0"
+order += "load"
+
+order += "battery 0"
+
+order += "tztime local"
+
+                            ###Values to show
+
+volume master {
+        format = "♪ %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+
+wireless wls1 {
+    format_up = "%quality @ %essid, %bitrate"
+    format_down = ""
+}
+
+disk "/" {
+    format = "%avail/ %total"
+    prefix_type	= custom
+    low_threshold = 20
+    threshold_type = percentage_avail
+}
+
+load {
+    format = "LOAD %1min"
+}
+
+cpu_usage {
+    format = "CPU %usage"
+    max_threshold= "75"
+}
+
+cpu_temperature 0 {
+    format = "T: %degrees °C"
+    max_threshold = "80"
+}
+
+battery 0 {
+        format = "%status %percentage %remaining"
+        
+        format_down = "Ø"
+        status_chr = "⚡ CHR"
+        status_bat = "BAT"
+        status_unk = "? UNK"
+        status_full = "FULL"
+
+        threshold_type = percentage_avail
+        low_threshold = 15
+        
+        last_full_capacity = true
+        
+        hide_seconds = true
+        
+        path = "/sys/class/power_supply/BAT%d/uevent"
+}
+
+tztime local {
+    format = "%A %e %B - %H:%M:%S"
+    timezone= "Europe/Rome"
+    locale= en_US.UTF-8
+}

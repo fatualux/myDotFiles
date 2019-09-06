@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="recents" mtime="1484688110" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>/desktop/gnome/lockdown/disable_lock_screen</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>/desktop/gnome/interface/can_change_accels</stringvalue>
+		</li>
+	</entry>
+</gconf>

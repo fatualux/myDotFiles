@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="gtk_color_scheme" mtime="1547479913" type="string">
+		<stringvalue>selected_bg_color:#00e059;selected_fg_color:#eeeeee;</stringvalue>
+	</entry>
+	<entry name="can_change_accels" mtime="1483039720" type="bool" value="false"/>
+</gconf>

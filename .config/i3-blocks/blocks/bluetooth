@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Left click
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+      dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#11119F " BTManager"
+
+      blueberry
+# Right click
+elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
+        termite -e "/home/fz/.scripts/bluetooth.sh"
+fi
+
+STATUS=$(bluetooth | grep -wo 'on')
+
+if [[ "${STATUS}" = "on" ]]; then
+        echo "ON"
+        echo "ON"
+        echo ""
+else
+        echo "OFF"
+fi
