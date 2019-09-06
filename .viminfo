@@ -21,7 +21,7 @@ $00,055,055
 
 # Command Line History (newest to oldest):
 :w
-|2,0,1567787963,,"w"
+|2,0,1567788156,,"w"
 :e backup_dot_files.sh
 |2,0,1567776127,,"e backup_dot_files.sh"
 :s
@@ -315,33 +315,37 @@ $00,055,055
 |3,0,36,0,1,0,1567786394,":"
 
 # File marks:
-'0  313  0  ~/.bash_history
-|4,48,313,0,1567787964,"~/.bash_history"
-'1  48  40  ~/backup_dot_files.sh
-|4,49,48,40,1567787318,"~/backup_dot_files.sh"
-'2  6  3  ~/.git/info/exclude
-|4,50,6,3,1567785487,"~/.git/info/exclude"
-'3  1  21  ~/.git/HEAD
-|4,51,1,21,1567785464,"~/.git/HEAD"
-'4  1  11  ~/.git/COMMIT_EDITMSG
-|4,52,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
-'5  322  0  ~/.bash_history
-|4,53,322,0,1567785064,"~/.bash_history"
-'6  353  0  ~/.bash_history
-|4,54,353,0,1567785064,"~/.bash_history"
-'7  1  0  ~/.gitignore
-|4,55,1,0,1567783491,"~/.gitignore"
-'8  98  45  ~/.config/vbar/config.c
-|4,56,98,45,1567779903,"~/.config/vbar/config.c"
-'9  22  5  ~/list.txt
-|4,57,22,5,1567778798,"~/list.txt"
+'0  38  17  ~/backup_dot_files.sh
+|4,48,38,17,1567788330,"~/backup_dot_files.sh"
+'1  313  0  ~/.bash_history
+|4,49,313,0,1567787964,"~/.bash_history"
+'2  48  40  ~/backup_dot_files.sh
+|4,50,48,40,1567787318,"~/backup_dot_files.sh"
+'3  48  40  ~/backup_dot_files.sh
+|4,51,48,40,1567787318,"~/backup_dot_files.sh"
+'4  6  3  ~/.git/info/exclude
+|4,52,6,3,1567785487,"~/.git/info/exclude"
+'5  1  21  ~/.git/HEAD
+|4,53,1,21,1567785464,"~/.git/HEAD"
+'6  1  11  ~/.git/COMMIT_EDITMSG
+|4,54,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+'7  353  0  ~/.bash_history
+|4,55,353,0,1567785064,"~/.bash_history"
+'8  322  0  ~/.bash_history
+|4,56,322,0,1567785064,"~/.bash_history"
+'9  353  0  ~/.bash_history
+|4,57,353,0,1567785064,"~/.bash_history"
 
 # Jumplist (newest first):
+-'  38  17  ~/backup_dot_files.sh
+|4,39,38,17,1567788330,"~/backup_dot_files.sh"
 -'  313  0  ~/.bash_history
 |4,39,313,0,1567787964,"~/.bash_history"
 -'  322  0  ~/.bash_history
 |4,39,322,0,1567787882,"~/.bash_history"
 -'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787484,"~/backup_dot_files.sh"
+-'  48  40  ~/backup_dot_files.sh
 |4,39,48,40,1567787318,"~/backup_dot_files.sh"
 -'  48  40  ~/backup_dot_files.sh
 |4,39,48,40,1567787318,"~/backup_dot_files.sh"
@@ -349,10 +353,14 @@ $00,055,055
 |4,39,6,3,1567785487,"~/.git/info/exclude"
 -'  6  3  ~/.git/info/exclude
 |4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
 -'  1  0  ~/.git/info/exclude
 |4,39,1,0,1567785480,"~/.git/info/exclude"
 -'  1  0  ~/.git/info/exclude
 |4,39,1,0,1567785480,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
 -'  1  21  ~/.git/HEAD
 |4,39,1,21,1567785464,"~/.git/HEAD"
 -'  1  21  ~/.git/HEAD
@@ -361,6 +369,10 @@ $00,055,055
 |4,39,1,21,1567785464,"~/.git/HEAD"
 -'  1  21  ~/.git/HEAD
 |4,39,1,21,1567785464,"~/.git/HEAD"
+-'  1  21  ~/.git/HEAD
+|4,39,1,21,1567785464,"~/.git/HEAD"
+-'  1  21  ~/.git/HEAD
+|4,39,1,21,1567785464,"~/.git/HEAD"
 -'  1  11  ~/.git/COMMIT_EDITMSG
 |4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
 -'  1  11  ~/.git/COMMIT_EDITMSG
@@ -377,6 +389,30 @@ $00,055,055
 |4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
 -'  1  11  ~/.git/COMMIT_EDITMSG
 |4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
+-'  353  0  ~/.bash_history
+|4,39,353,0,1567785064,"~/.bash_history"
 -'  353  0  ~/.bash_history
 |4,39,353,0,1567785064,"~/.bash_history"
 -'  353  0  ~/.bash_history
@@ -411,6 +447,22 @@ $00,055,055
 |4,39,289,0,1567785048,"~/.bash_history"
 -'  289  0  ~/.bash_history
 |4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1567783491,"~/.gitignore"
 -'  1  0  ~/.gitignore
@@ -475,70 +527,43 @@ $00,055,055
 |4,39,1,0,1567783491,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1567783491,"~/.gitignore"
--'  47  27  ~/backup_dot_files.sh
-|4,39,47,27,1567782785,"~/backup_dot_files.sh"
--'  47  27  ~/backup_dot_files.sh
-|4,39,47,27,1567782785,"~/backup_dot_files.sh"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
 
 # History of marks within files (newest to oldest):
+
+> ~/backup_dot_files.sh
+	*	1567788329	0
+	"	38	17
+	^	45	16
+	.	45	15
+	+	50	0
+	+	23	0
+	+	45	0
+	+	50	0
+	+	37	0
+	+	50	0
+	+	50	11
+	+	50	0
+	+	45	0
+	+	50	0
+	+	38	0
+	+	45	0
+	+	50	0
+	+	3	15
+	+	48	0
+	+	48	22
+	+	43	0
+	+	44	18
+	+	45	15
 
 > ~/.bash_history
 	*	1567787963	0
@@ -643,28 +668,6 @@ $00,055,055
 	+	315	0
 	+	314	0
 	+	313	0
-
-> ~/backup_dot_files.sh
-	*	1567787315	0
-	"	48	40
-	^	48	22
-	.	48	22
-	+	50	0
-	+	23	0
-	+	46	0
-	+	50	0
-	+	37	0
-	+	50	0
-	+	50	11
-	+	50	0
-	+	46	0
-	+	50	0
-	+	38	0
-	+	46	0
-	+	50	0
-	+	3	15
-	+	48	0
-	+	48	22
 
 > ~/.git/info/exclude
 	*	1567785486	0
