@@ -21,9 +21,11 @@ $00,055,055
 
 # Command Line History (newest to oldest):
 :w
-|2,0,1567800144,,"w"
+|2,0,1567801448,,"w"
 :e .scripts/backup_dot_files.sh
-|2,0,1567789671,,"e .scripts/backup_dot_files.sh"
+|2,0,1567799838,,"e .scripts/backup_dot_files.sh"
+:e .scripts/diffURL.sh
+|2,0,1567799813,,"e .scripts/diffURL.sh"
 :e backup_dot_files.sh
 |2,0,1567776127,,"e backup_dot_files.sh"
 :s
@@ -286,8 +288,8 @@ $00,055,055
 	git@github.com:fatualux
 |3,0,0,0,1,0,1567783452,"git@github.com:fatualux"
 ""1	LINE	0
-	git rm -r .java/fonts/
-|3,1,1,1,1,0,1567800128,"git rm -r .java/fonts/"
+	git remote add origin https://github.com/fatualux/myDotFiles
+|3,1,1,1,1,0,1567801298,"git remote add origin https://github.com/fatualux/myDotFiles"
 "2	LINE	0
 	git rm .java/fonts/
 |3,0,2,1,1,0,1567800127,"git rm .java/fonts/"
@@ -318,34 +320,46 @@ $00,055,055
 |3,0,36,0,1,0,1567800121," "
 
 # File marks:
-'0  355  4  ~/.bash_history
-|4,48,355,4,1567800150,"~/.bash_history"
-'1  1  0  ~/.scripts/backup_dot_files.sh
-|4,49,1,0,1567789729,"~/.scripts/backup_dot_files.sh"
-'2  38  17  ~/backup_dot_files.sh
-|4,50,38,17,1567788330,"~/backup_dot_files.sh"
-'3  313  0  ~/.bash_history
-|4,51,313,0,1567787964,"~/.bash_history"
-'4  313  0  ~/.bash_history
-|4,52,313,0,1567787964,"~/.bash_history"
-'5  48  40  ~/backup_dot_files.sh
-|4,53,48,40,1567787318,"~/backup_dot_files.sh"
-'6  48  40  ~/backup_dot_files.sh
-|4,54,48,40,1567787318,"~/backup_dot_files.sh"
-'7  6  3  ~/.git/info/exclude
-|4,55,6,3,1567785487,"~/.git/info/exclude"
-'8  1  21  ~/.git/HEAD
-|4,56,1,21,1567785464,"~/.git/HEAD"
-'9  1  11  ~/.git/COMMIT_EDITMSG
-|4,57,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+'0  36  0  ~/.scripts/backup_dot_files.sh
+|4,48,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
+'1  355  4  ~/.bash_history
+|4,49,355,4,1567800150,"~/.bash_history"
+'2  1  0  ~/.scripts/backup_dot_files.sh
+|4,50,1,0,1567789729,"~/.scripts/backup_dot_files.sh"
+'3  1  0  ~/.scripts/backup_dot_files.sh
+|4,51,1,0,1567789729,"~/.scripts/backup_dot_files.sh"
+'4  38  17  ~/backup_dot_files.sh
+|4,52,38,17,1567788330,"~/backup_dot_files.sh"
+'5  313  0  ~/.bash_history
+|4,53,313,0,1567787964,"~/.bash_history"
+'6  313  0  ~/.bash_history
+|4,54,313,0,1567787964,"~/.bash_history"
+'7  48  40  ~/backup_dot_files.sh
+|4,55,48,40,1567787318,"~/backup_dot_files.sh"
+'8  48  40  ~/backup_dot_files.sh
+|4,56,48,40,1567787318,"~/backup_dot_files.sh"
+'9  6  3  ~/.git/info/exclude
+|4,57,6,3,1567785487,"~/.git/info/exclude"
 
 # Jumplist (newest first):
+-'  36  0  ~/.scripts/backup_dot_files.sh
+|4,39,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
+-'  50  0  ~/.scripts/backup_dot_files.sh
+|4,39,50,0,1567801440,"~/.scripts/backup_dot_files.sh"
+-'  47  0  ~/.scripts/backup_dot_files.sh
+|4,39,47,0,1567800875,"~/.scripts/backup_dot_files.sh"
+-'  48  15  ~/.scripts/backup_dot_files.sh
+|4,39,48,15,1567800872,"~/.scripts/backup_dot_files.sh"
 -'  355  4  ~/.bash_history
 |4,39,355,4,1567800150,"~/.bash_history"
 -'  356  0  ~/.bash_history
 |4,39,356,0,1567800118,"~/.bash_history"
 -'  313  0  ~/.bash_history
 |4,39,313,0,1567800097,"~/.bash_history"
+-'  2  0  ~/.scripts/diffURL.sh
+|4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
+-'  1  0  ~/.scripts/backup_dot_files.sh
+|4,39,1,0,1567799441,"~/.scripts/backup_dot_files.sh"
 -'  1  0  ~/.scripts/backup_dot_files.sh
 |4,39,1,0,1567789729,"~/.scripts/backup_dot_files.sh"
 -'  1  0  ~/.scripts/backup_dot_files.sh
@@ -358,6 +372,14 @@ $00,055,055
 |4,39,38,17,1567788330,"~/backup_dot_files.sh"
 -'  38  17  ~/backup_dot_files.sh
 |4,39,38,17,1567788330,"~/backup_dot_files.sh"
+-'  38  17  ~/backup_dot_files.sh
+|4,39,38,17,1567788330,"~/backup_dot_files.sh"
+-'  38  17  ~/backup_dot_files.sh
+|4,39,38,17,1567788330,"~/backup_dot_files.sh"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567787964,"~/.bash_history"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567787964,"~/.bash_history"
 -'  313  0  ~/.bash_history
 |4,39,313,0,1567787964,"~/.bash_history"
 -'  313  0  ~/.bash_history
@@ -368,6 +390,10 @@ $00,055,055
 |4,39,322,0,1567787882,"~/.bash_history"
 -'  322  0  ~/.bash_history
 |4,39,322,0,1567787882,"~/.bash_history"
+-'  322  0  ~/.bash_history
+|4,39,322,0,1567787882,"~/.bash_history"
+-'  322  0  ~/.bash_history
+|4,39,322,0,1567787882,"~/.bash_history"
 -'  48  40  ~/backup_dot_files.sh
 |4,39,48,40,1567787484,"~/backup_dot_files.sh"
 -'  48  40  ~/backup_dot_files.sh
@@ -377,7 +403,9 @@ $00,055,055
 -'  48  40  ~/backup_dot_files.sh
 |4,39,48,40,1567787484,"~/backup_dot_files.sh"
 -'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
+|4,39,48,40,1567787484,"~/backup_dot_files.sh"
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787484,"~/backup_dot_files.sh"
 -'  48  40  ~/backup_dot_files.sh
 |4,39,48,40,1567787318,"~/backup_dot_files.sh"
 -'  48  40  ~/backup_dot_files.sh
@@ -392,6 +420,28 @@ $00,055,055
 |4,39,48,40,1567787318,"~/backup_dot_files.sh"
 -'  48  40  ~/backup_dot_files.sh
 |4,39,48,40,1567787318,"~/backup_dot_files.sh"
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787318,"~/backup_dot_files.sh"
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787318,"~/backup_dot_files.sh"
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787318,"~/backup_dot_files.sh"
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787318,"~/backup_dot_files.sh"
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787318,"~/backup_dot_files.sh"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
 -'  6  3  ~/.git/info/exclude
 |4,39,6,3,1567785487,"~/.git/info/exclude"
 -'  6  3  ~/.git/info/exclude
@@ -440,6 +490,18 @@ $00,055,055
 |4,39,1,0,1567785480,"~/.git/info/exclude"
 -'  1  0  ~/.git/info/exclude
 |4,39,1,0,1567785480,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
 -'  1  21  ~/.git/HEAD
 |4,39,1,21,1567785464,"~/.git/HEAD"
 -'  1  21  ~/.git/HEAD
@@ -480,68 +542,23 @@ $00,055,055
 |4,39,1,21,1567785464,"~/.git/HEAD"
 -'  1  21  ~/.git/HEAD
 |4,39,1,21,1567785464,"~/.git/HEAD"
--'  1  21  ~/.git/HEAD
-|4,39,1,21,1567785464,"~/.git/HEAD"
--'  1  21  ~/.git/HEAD
-|4,39,1,21,1567785464,"~/.git/HEAD"
--'  1  21  ~/.git/HEAD
-|4,39,1,21,1567785464,"~/.git/HEAD"
--'  1  21  ~/.git/HEAD
-|4,39,1,21,1567785464,"~/.git/HEAD"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
--'  1  11  ~/.git/COMMIT_EDITMSG
-|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
 
 # History of marks within files (newest to oldest):
+
+> ~/.scripts/backup_dot_files.sh
+	*	1567801789	0
+	"	36	0
+	.	49	0
+	+	4	0
+	+	48	15
+	+	46	0
+	+	47	11
+	+	47	8
+	+	47	0
+	+	48	19
+	+	50	0
+	+	48	0
+	+	49	0
 
 > ~/.bash_history
 	*	1567800147	0
@@ -647,9 +664,9 @@ $00,055,055
 	+	313	0
 	+	356	0
 
-> ~/.scripts/backup_dot_files.sh
-	*	1567789729	0
-	"	1	0
+> ~/.scripts/diffURL.sh
+	*	1567799815	0
+	"	2	0
 
 > ~/backup_dot_files.sh
 	*	1567788329	0
@@ -2813,7 +2830,3 @@ $00,055,055
 > /tmp/trizen-fz/touchegg/PKGBUILD
 	*	1556051051	0
 	"	19	21
-
-> ~/results.txt
-	*	1555962666	0
-	"	1	0

@@ -53,3 +53,8 @@ if [ "$battery_level" -le 18 ]
 then
     dunstify -t 1775 -h string:fgcolor:#000000 -h string:bgcolor:#FF0013 "LOW BATTERY! Please charge now!"
 fi
+
+if [ "$battery_level" -gt 99 ]
+then
+    dunstify -t 1775 -h string:fgcolor:#000000 -h string:bgcolor:#66FF13 "FULLY CHARGED! Please disconnect from power source."
+fi

@@ -1,23 +1,27 @@
-#!/usr/bin/bash
+#!/bin/sh
 
-URGENT_VALUE=25
-PACKAGE_COUNT=$(checkupdates | wc -l)
+if ! updates_arch=$(checkupdates 2> /dev/null | wc -l ); then
+    updates_arch=0
+fi
 
-if [[ "${PACKAGE_COUNT}" -gt 0 ]]; then
-  echo "${PACKAGE_COUNT}" # full-text
-  echo "${PACKAGE_COUNT}" # short-text
-  echo ""
-  if [[ "${PACKAGE_COUNT}" -gt "${URGENT_VALUE}" ]]; then
-    exit 33
-  fi
+if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then
+    updates_aur=0
+fi
+
+updates=$(("$updates_arch" + "$updates_aur"))
+
+if [ "$updates" -gt 0 ]; then
+    echo "PMN ""$updates_arch" " | " "AUR ""$updates_aur"
+else
+    echo ""
 fi
 
 # Left click
-if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+if [ "${BLOCK_BUTTON}" -eq 1 ]; then
       dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Pacman Update";
       termite -e "sudo pacman -Syyu"
 # Right click
-elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
+elif [ "${BLOCK_BUTTON}" -eq 3 ]; then
       dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Trizen Update";
       termite -e "trizen -Syyu"
 fi
