@@ -21,7 +21,7 @@ $00,055,055
 
 # Command Line History (newest to oldest):
 :w
-|2,0,1567786458,,"w"
+|2,0,1567787963,,"w"
 :e backup_dot_files.sh
 |2,0,1567776127,,"e backup_dot_files.sh"
 :s
@@ -283,80 +283,92 @@ $00,055,055
 "0	CHAR	0
 	git@github.com:fatualux
 |3,0,0,0,1,0,1567783452,"git@github.com:fatualux"
-"1	LINE	0
-	747
-<ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7kUWAxlOj44teEeYlEJdg5xwTMdYAoh3sqg1q5UXdXo4I2iVANsc5yZyvm/fQnMNJZe9hqcGJOG6zLYNvENr8rRqkV778inVAq5i7iRmuQONstE1eStdDcC5fd+B4D2RFzDpI7UWT1kJUse0bdS22P8gNgK1g4UEG7xildjs79PYvHWXrM2vH+fHSqKgwlDiMLMSq87g6oOC1zVB3zD0E8qQPQw4DF6aOEDVzIoWsCYKQX2xzVfn/SAaVXG22XlT+1WcmaFDOp/OZi7vjU4x13LCXOKeUzidjMAUCjp5uJvZH4s7GP3SItQCMeOlDNgbg6B0IzeKFC/hTRNMNNU5U+/4ic3Daj7DzpUh890xDzdmyx5e5mn3kNEFjmCG22fpSgzQgazUAyFocYwB70tYqyaUVab/F/pSRacH6FrYyiS8EhO86b6a84SIkvGvjlngEpWZi91Lfuc+uSAf9tWy5fvA+k9lGHUKQyOx5nbHF1/zbjzVW1v+ipvBeTnYlX/wLCPQHw1OkbSKbPnmqt/Qq8VTTCkOeHYkJOIfXMxGjzK/mfCBuf+VfV4Y9WykpgBy/C3cYdl1QWBZE/tLOZxqWWQ5Np83MM4GuOfse9pDd97BNR2DzhCZtjg3BP9dWJVUa6muM2OYEEzsjN2LO7gDMH2dQIlGtGRPgHIXynDk26Q== emodendro@gnail.com
-|3,0,1,1,1,0,1567785055,>746
-|<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7kUWAxlOj44teEeYlEJdg5xwTMdYAoh3sqg1q5UXdXo4I2iVANsc5yZyvm/fQnMNJZe9hqcGJOG6zLYNvENr8rRqkV778inVAq5i7iRmuQONstE1eStdDcC5fd+B4D2RFzDpI7UWT1kJUse0bdS22P8gNgK1g4UEG7xildjs79PYvHWXrM2vH+fHSqKgwlDiMLMSq87g6oOC1zVB3zD0E8qQPQw4DF6aOEDVzIoWsCYKQX2xzVfn/SAaVXG22XlT+1WcmaFDOp/OZi7vjU4x13LCXOKeUzidjMAUCjp5uJvZH4s7GP3SItQCMeOlDNgbg6B0IzeKFC/hTRNMNNU5U+/4ic3Daj7DzpUh890xDzdmyx5e5mn3kNEFjmCG22fpSgzQgazUAyFocYwB70tYqyaUVab/F/pSRacH6FrYyiS8EhO86b6a84SIkvGvjlngEpW
-|<Zi91Lfuc+uSAf9tWy5fvA+k9lGHUKQyOx5nbHF1/zbjzVW1v+ipvBeTnYlX/wLCPQHw1OkbSKbPnmqt/Qq8VTTCkOeHYkJOIfXMxGjzK/mfCBuf+VfV4Y9WykpgBy/C3cYdl1QWBZE/tLOZxqWWQ5Np83MM4GuOfse9pDd97BNR2DzhCZtjg3BP9dWJVUa6muM2OYEEzsjN2LO7gDMH2dQIlGtGRPgHIXynDk26Q== emodendro@gnail.com"
+""1	LINE	0
+	ssh -T fatualux@github.com
+|3,1,1,1,1,0,1567787959,"ssh -T fatualux@github.com"
 "2	LINE	0
-	                        //gadget_text(g, " v%6.2lf%s", r, unitr);
-|3,0,2,1,1,0,1567779584,"                        //gadget_text(g, \" v%6.2lf%s\", r, unitr);"
+	ssh -T fatualuxE@github.com
+|3,0,2,1,1,0,1567787958,"ssh -T fatualuxE@github.com"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1567777850,""
+	git config --global github.user fatualux
+|3,0,3,1,1,0,1567787956,"git config --global github.user fatualux"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1567777847,""
-"5	CHAR	0
-	git add -f .fonts/
-	git add -f .gconf/
-	git add -f .git/
-	git add -f .gkrellm2/
-	git add -f .icons/
-	git add -f .java/
-	git add -f .scripts/
-	git add -f .themes/
-|3,0,5,0,8,0,1567777837,"git add -f .fonts/","git add -f .gconf/","git add -f .git/","git add -f .gkrellm2/","git add -f .icons/","git add -f .java/","git add -f .scripts/","git add -f .themes/"
+	git config --global user.name fatualux
+|3,0,4,1,1,0,1567787955,"git config --global user.name fatualux"
+"5	LINE	0
+	git config --global github.token 6dc3209c705bc165b4f5c3f584160c30ed65f8fe
+|3,0,5,1,1,0,1567787955,"git config --global github.token 6dc3209c705bc165b4f5c3f584160c30ed65f8fe"
 "6	LINE	0
-	git add -f .config/
-|3,0,6,1,1,0,1567777824,"git add -f .config/"
+	git config --global user.email emodendro@gmail.com
+|3,0,6,1,1,0,1567787954,"git config --global user.email emodendro@gmail.com"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1567777818,""
+	ls .* >> list
+|3,0,7,1,1,0,1567787953,"ls .* >> list"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1567777817,""
+	bash diffURL.sh
+|3,0,8,1,1,0,1567787950,"bash diffURL.sh"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1567777816,""
-""-	CHAR	0
+	ssh -T -p 22 https://github.com/fatualux
+|3,0,9,1,1,0,1567787940,"ssh -T -p 22 https://github.com/fatualux"
+"-	CHAR	0
 	:
-|3,1,36,0,1,0,1567786394,":"
+|3,0,36,0,1,0,1567786394,":"
 
 # File marks:
-'0  48  40  ~/backup_dot_files.sh
-|4,48,48,40,1567787318,"~/backup_dot_files.sh"
-'1  6  3  ~/.git/info/exclude
-|4,49,6,3,1567785487,"~/.git/info/exclude"
-'2  1  21  ~/.git/HEAD
-|4,50,1,21,1567785464,"~/.git/HEAD"
-'3  1  11  ~/.git/COMMIT_EDITMSG
-|4,51,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
-'4  353  0  ~/.bash_history
-|4,52,353,0,1567785064,"~/.bash_history"
-'5  1  0  ~/.gitignore
-|4,53,1,0,1567783491,"~/.gitignore"
-'6  98  45  ~/.config/vbar/config.c
-|4,54,98,45,1567779903,"~/.config/vbar/config.c"
-'7  22  5  ~/list.txt
-|4,55,22,5,1567778798,"~/list.txt"
-'8  3  87  ~/diffURL.sh
-|4,56,3,87,1567775826,"~/diffURL.sh"
-'9  2  38  ~/.scripts/scratches/CK-20190906.log
-|4,57,2,38,1567775044,"~/.scripts/scratches/CK-20190906.log"
+'0  313  0  ~/.bash_history
+|4,48,313,0,1567787964,"~/.bash_history"
+'1  48  40  ~/backup_dot_files.sh
+|4,49,48,40,1567787318,"~/backup_dot_files.sh"
+'2  6  3  ~/.git/info/exclude
+|4,50,6,3,1567785487,"~/.git/info/exclude"
+'3  1  21  ~/.git/HEAD
+|4,51,1,21,1567785464,"~/.git/HEAD"
+'4  1  11  ~/.git/COMMIT_EDITMSG
+|4,52,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+'5  322  0  ~/.bash_history
+|4,53,322,0,1567785064,"~/.bash_history"
+'6  353  0  ~/.bash_history
+|4,54,353,0,1567785064,"~/.bash_history"
+'7  1  0  ~/.gitignore
+|4,55,1,0,1567783491,"~/.gitignore"
+'8  98  45  ~/.config/vbar/config.c
+|4,56,98,45,1567779903,"~/.config/vbar/config.c"
+'9  22  5  ~/list.txt
+|4,57,22,5,1567778798,"~/list.txt"
 
 # Jumplist (newest first):
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567787964,"~/.bash_history"
+-'  322  0  ~/.bash_history
+|4,39,322,0,1567787882,"~/.bash_history"
+-'  48  40  ~/backup_dot_files.sh
+|4,39,48,40,1567787318,"~/backup_dot_files.sh"
 -'  48  40  ~/backup_dot_files.sh
 |4,39,48,40,1567787318,"~/backup_dot_files.sh"
 -'  6  3  ~/.git/info/exclude
 |4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  6  3  ~/.git/info/exclude
+|4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  1  0  ~/.git/info/exclude
+|4,39,1,0,1567785480,"~/.git/info/exclude"
 -'  1  0  ~/.git/info/exclude
 |4,39,1,0,1567785480,"~/.git/info/exclude"
 -'  1  21  ~/.git/HEAD
 |4,39,1,21,1567785464,"~/.git/HEAD"
 -'  1  21  ~/.git/HEAD
 |4,39,1,21,1567785464,"~/.git/HEAD"
+-'  1  21  ~/.git/HEAD
+|4,39,1,21,1567785464,"~/.git/HEAD"
+-'  1  21  ~/.git/HEAD
+|4,39,1,21,1567785464,"~/.git/HEAD"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
+-'  1  11  ~/.git/COMMIT_EDITMSG
+|4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
 -'  1  11  ~/.git/COMMIT_EDITMSG
 |4,39,1,11,1567785457,"~/.git/COMMIT_EDITMSG"
 -'  1  11  ~/.git/COMMIT_EDITMSG
@@ -397,6 +409,8 @@ $00,055,055
 |4,39,289,0,1567785048,"~/.bash_history"
 -'  289  0  ~/.bash_history
 |4,39,289,0,1567785048,"~/.bash_history"
+-'  289  0  ~/.bash_history
+|4,39,289,0,1567785048,"~/.bash_history"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1567783491,"~/.gitignore"
 -'  1  0  ~/.gitignore
@@ -429,6 +443,40 @@ $00,055,055
 |4,39,1,0,1567783491,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567783491,"~/.gitignore"
+-'  47  27  ~/backup_dot_files.sh
+|4,39,47,27,1567782785,"~/backup_dot_files.sh"
 -'  47  27  ~/backup_dot_files.sh
 |4,39,47,27,1567782785,"~/backup_dot_files.sh"
 -'  98  45  ~/.config/vbar/config.c
@@ -489,112 +537,15 @@ $00,055,055
 |4,39,98,45,1567779903,"~/.config/vbar/config.c"
 -'  98  45  ~/.config/vbar/config.c
 |4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  98  45  ~/.config/vbar/config.c
-|4,39,98,45,1567779903,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
--'  217  10  ~/.config/vbar/config.c
-|4,39,217,10,1567779564,"~/.config/vbar/config.c"
 
 # History of marks within files (newest to oldest):
 
-> ~/backup_dot_files.sh
-	*	1567787315	0
-	"	48	40
-	^	48	22
-	.	48	22
-	+	50	0
-	+	23	0
-	+	46	0
-	+	50	0
-	+	37	0
-	+	50	0
-	+	50	11
-	+	50	0
-	+	46	0
-	+	50	0
-	+	38	0
-	+	46	0
-	+	50	0
-	+	3	15
-	+	48	0
-	+	48	22
-
-> ~/.git/info/exclude
-	*	1567785486	0
-	"	6	3
-
-> ~/.git/HEAD
-	*	1567785462	0
-	"	1	21
-
-> ~/.git/COMMIT_EDITMSG
-	*	1567785456	0
-	"	1	11
-
 > ~/.bash_history
-	*	1567785060	0
-	"	353	0
-	.	354	0
-	+	5	0
-	+	14	0
-	+	114	0
-	+	235	0
-	+	260	0
+	*	1567787963	0
+	"	313	0
+	.	313	0
 	+	290	0
-	+	341	0
+	+	314	0
 	+	6	0
 	+	5	0
 	+	1	0
@@ -687,7 +638,45 @@ $00,055,055
 	+	211	0
 	+	256	0
 	+	293	0
-	+	354	0
+	+	323	0
+	+	316	0
+	+	315	0
+	+	314	0
+	+	313	0
+
+> ~/backup_dot_files.sh
+	*	1567787315	0
+	"	48	40
+	^	48	22
+	.	48	22
+	+	50	0
+	+	23	0
+	+	46	0
+	+	50	0
+	+	37	0
+	+	50	0
+	+	50	11
+	+	50	0
+	+	46	0
+	+	50	0
+	+	38	0
+	+	46	0
+	+	50	0
+	+	3	15
+	+	48	0
+	+	48	22
+
+> ~/.git/info/exclude
+	*	1567785486	0
+	"	6	3
+
+> ~/.git/HEAD
+	*	1567785462	0
+	"	1	21
+
+> ~/.git/COMMIT_EDITMSG
+	*	1567785456	0
+	"	1	11
 
 > ~/.gitignore
 	*	1567783490	0
