@@ -21,13 +21,13 @@ $00,055,055
 
 # Command Line History (newest to oldest):
 :w
-|2,0,1567803197,,"w"
+|2,0,1567886605,,"w"
+:e .scripts/backup_dot_files.sh
+|2,0,1567886559,,"e .scripts/backup_dot_files.sh"
 :e! .config/i3-blocks/blocks/packages
-|2,0,1567803183,,"e! .config/i3-blocks/blocks/packages"
+|2,0,1567808281,,"e! .config/i3-blocks/blocks/packages"
 :e! .config/i3-blocks/blocks/battery
 |2,0,1567802909,,"e! .config/i3-blocks/blocks/battery"
-:e .scripts/backup_dot_files.sh
-|2,0,1567799838,,"e .scripts/backup_dot_files.sh"
 :e .scripts/diffURL.sh
 |2,0,1567799813,,"e .scripts/diffURL.sh"
 :e backup_dot_files.sh
@@ -292,72 +292,130 @@ $00,055,055
 	    dunstify -t 1775 -h string:fgcolor:#000000 -h string:bgcolor:#FF0013 "LOW BATTERY! Please charge now!"
 	fi
 |3,0,0,0,4,0,1567802921,"if [ \"$battery_level\" -le 18 ]","then","    dunstify -t 1775 -h string:fgcolor:#000000 -h string:bgcolor:#FF0013 \"LOW BATTERY! Please charge now!\"","fi"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1567802559,""
+""1	LINE	0
+	git remote add origin https://github.com/fatualux/myDotFiles
+|3,1,1,1,1,0,1567886592,"git remote add origin https://github.com/fatualux/myDotFiles"
 "2	LINE	0
-	updates=$(("$updates_arch" \/ "$updates_aur"))
-|3,0,2,1,1,0,1567802557,"updates=$((\"$updates_arch\" \\/ \"$updates_aur\"))"
-"3	LINE	0
-	# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then
-|3,0,3,1,1,0,1567802315,"# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then"
-"4	LINE	0
-	# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
-|3,0,4,1,1,0,1567802308,"# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then"
-"5	LINE	0
-	if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then
-|3,0,5,1,1,0,1567802304,"if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then"
-"6	LINE	0
 	
-|3,0,6,1,1,0,1567802212,""
+|3,0,2,1,1,0,1567886584,""
+"3	LINE	0
+	git add -f .gitignore
+|3,0,3,1,1,0,1567886583,"git add -f .gitignore"
+"4	LINE	0
+	echo "*" > .gitignore
+|3,0,4,1,1,0,1567886583,"echo \"*\" > .gitignore"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1567802559,""
+"6	LINE	0
+	updates=$(("$updates_arch" \/ "$updates_aur"))
+|3,0,6,1,1,0,1567802557,"updates=$((\"$updates_arch\" \\/ \"$updates_aur\"))"
 "7	LINE	0
-	fi
-|3,0,7,1,1,0,1567802195,"fi"
+	# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then
+|3,0,7,1,1,0,1567802315,"# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then"
 "8	LINE	0
-	  fi
-|3,0,8,1,1,0,1567802194,"  fi"
+	# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
+|3,0,8,1,1,0,1567802308,"# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then"
 "9	LINE	0
-	    exit 33
-|3,0,9,1,1,0,1567802193,"    exit 33"
-""-	CHAR	0
-	LOW BATTERY! Please charge now!
-|3,1,36,0,1,0,1567802997,"LOW BATTERY! Please charge now!"
+	if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then
+|3,0,9,1,1,0,1567802304,"if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then"
+"-	CHAR	0
+	1
+|3,0,36,0,1,0,1567808284,"1"
 
 # File marks:
-'0  1  10  ~/.config/i3-blocks/blocks/packages
-|4,48,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
-'1  36  0  ~/.scripts/backup_dot_files.sh
-|4,49,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
-'2  355  4  ~/.bash_history
-|4,50,355,4,1567800150,"~/.bash_history"
-'3  1  0  ~/.scripts/backup_dot_files.sh
-|4,51,1,0,1567789729,"~/.scripts/backup_dot_files.sh"
-'4  1  0  ~/.scripts/backup_dot_files.sh
-|4,52,1,0,1567789729,"~/.scripts/backup_dot_files.sh"
-'5  38  17  ~/backup_dot_files.sh
-|4,53,38,17,1567788330,"~/backup_dot_files.sh"
-'6  313  0  ~/.bash_history
-|4,54,313,0,1567787964,"~/.bash_history"
-'7  313  0  ~/.bash_history
-|4,55,313,0,1567787964,"~/.bash_history"
-'8  48  40  ~/backup_dot_files.sh
-|4,56,48,40,1567787318,"~/backup_dot_files.sh"
-'9  48  40  ~/backup_dot_files.sh
-|4,57,48,40,1567787318,"~/backup_dot_files.sh"
+'0  47  0  ~/.scripts/backup_dot_files.sh
+|4,48,47,0,1567886607,"~/.scripts/backup_dot_files.sh"
+'1  7  13  ~/.config/i3-blocks/blocks/packages
+|4,49,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
+'2  1  10  ~/.config/i3-blocks/blocks/packages
+|4,50,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
+'3  1  10  ~/.config/i3-blocks/blocks/packages
+|4,51,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
+'4  34  0  ~/.scripts/backup_dot_files.sh
+|4,52,34,0,1567801829,"~/.scripts/backup_dot_files.sh"
+'5  34  0  ~/.scripts/backup_dot_files.sh
+|4,53,34,0,1567801829,"~/.scripts/backup_dot_files.sh"
+'6  36  0  ~/.scripts/backup_dot_files.sh
+|4,54,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
+'7  36  0  ~/.scripts/backup_dot_files.sh
+|4,55,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
+'8  355  4  ~/.bash_history
+|4,56,355,4,1567800150,"~/.bash_history"
+'9  1  0  ~/.scripts/backup_dot_files.sh
+|4,57,1,0,1567789729,"~/.scripts/backup_dot_files.sh"
 
 # Jumplist (newest first):
+-'  47  0  ~/.scripts/backup_dot_files.sh
+|4,39,47,0,1567886607,"~/.scripts/backup_dot_files.sh"
+-'  6  0  ~/.scripts/backup_dot_files.sh
+|4,39,6,0,1567886586,"~/.scripts/backup_dot_files.sh"
+-'  1  0  ~/.scripts/backup_dot_files.sh
+|4,39,1,0,1567886559,"~/.scripts/backup_dot_files.sh"
+-'  7  13  ~/.config/i3-blocks/blocks/packages
+|4,39,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
+-'  7  13  ~/.config/i3-blocks/blocks/packages
+|4,39,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
+-'  50  24  ~/.scripts/backup_dot_files.sh
+|4,39,50,24,1567808281,"~/.scripts/backup_dot_files.sh"
+-'  16  10  ~/.config/i3-blocks/blocks/packages
+|4,39,16,10,1567808245,"~/.config/i3-blocks/blocks/packages"
+-'  16  10  ~/.config/i3-blocks/blocks/packages
+|4,39,16,10,1567808245,"~/.config/i3-blocks/blocks/packages"
+-'  1  0  ~/.scripts/backup_dot_files.sh
+|4,39,1,0,1567808155,"~/.scripts/backup_dot_files.sh"
+-'  1  10  ~/.config/i3-blocks/blocks/packages
+|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
+-'  1  10  ~/.config/i3-blocks/blocks/packages
+|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
+-'  1  10  ~/.config/i3-blocks/blocks/packages
+|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
 -'  1  10  ~/.config/i3-blocks/blocks/packages
 |4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
 -'  57  24  ~/.config/i3-blocks/blocks/battery
 |4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
+-'  57  24  ~/.config/i3-blocks/blocks/battery
+|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
+-'  57  24  ~/.config/i3-blocks/blocks/battery
+|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
+-'  57  24  ~/.config/i3-blocks/blocks/battery
+|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
+-'  14  41  ~/.config/i3-blocks/blocks/packages
+|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
+-'  14  41  ~/.config/i3-blocks/blocks/packages
+|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
+-'  14  41  ~/.config/i3-blocks/blocks/packages
+|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
 -'  14  41  ~/.config/i3-blocks/blocks/packages
 |4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
 -'  11  0  ~/.config/i3-blocks/blocks/packages
 |4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
+-'  11  0  ~/.config/i3-blocks/blocks/packages
+|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
+-'  11  0  ~/.config/i3-blocks/blocks/packages
+|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
+-'  11  0  ~/.config/i3-blocks/blocks/packages
+|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
+-'  12  0  ~/.config/i3-blocks/blocks/packages
+|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
+-'  12  0  ~/.config/i3-blocks/blocks/packages
+|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
+-'  12  0  ~/.config/i3-blocks/blocks/packages
+|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
 -'  12  0  ~/.config/i3-blocks/blocks/packages
 |4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
 -'  18  31  ~/.config/i3-blocks/blocks/packages
 |4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
+-'  18  31  ~/.config/i3-blocks/blocks/packages
+|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
+-'  18  31  ~/.config/i3-blocks/blocks/packages
+|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
+-'  18  31  ~/.config/i3-blocks/blocks/packages
+|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
+-'  34  0  ~/.scripts/backup_dot_files.sh
+|4,39,34,0,1567801829,"~/.scripts/backup_dot_files.sh"
+-'  36  0  ~/.scripts/backup_dot_files.sh
+|4,39,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
 -'  36  0  ~/.scripts/backup_dot_files.sh
 |4,39,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
 -'  36  0  ~/.scripts/backup_dot_files.sh
@@ -366,10 +424,18 @@ $00,055,055
 |4,39,50,0,1567801440,"~/.scripts/backup_dot_files.sh"
 -'  50  0  ~/.scripts/backup_dot_files.sh
 |4,39,50,0,1567801440,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1567800875,"~/.scripts/backup_dot_files.sh"
 -'  47  0  ~/.scripts/backup_dot_files.sh
 |4,39,47,0,1567800875,"~/.scripts/backup_dot_files.sh"
 -'  47  0  ~/.scripts/backup_dot_files.sh
 |4,39,47,0,1567800875,"~/.scripts/backup_dot_files.sh"
+-'  47  0  ~/.scripts/backup_dot_files.sh
+|4,39,47,0,1567800875,"~/.scripts/backup_dot_files.sh"
+-'  46  15  ~/.scripts/backup_dot_files.sh
+|4,39,46,15,1567800872,"~/.scripts/backup_dot_files.sh"
+-'  48  15  ~/.scripts/backup_dot_files.sh
+|4,39,48,15,1567800872,"~/.scripts/backup_dot_files.sh"
 -'  48  15  ~/.scripts/backup_dot_files.sh
 |4,39,48,15,1567800872,"~/.scripts/backup_dot_files.sh"
 -'  48  15  ~/.scripts/backup_dot_files.sh
@@ -378,6 +444,30 @@ $00,055,055
 |4,39,355,4,1567800150,"~/.bash_history"
 -'  355  4  ~/.bash_history
 |4,39,355,4,1567800150,"~/.bash_history"
+-'  355  4  ~/.bash_history
+|4,39,355,4,1567800150,"~/.bash_history"
+-'  355  4  ~/.bash_history
+|4,39,355,4,1567800150,"~/.bash_history"
+-'  355  4  ~/.bash_history
+|4,39,355,4,1567800150,"~/.bash_history"
+-'  355  4  ~/.bash_history
+|4,39,355,4,1567800150,"~/.bash_history"
+-'  355  4  ~/.bash_history
+|4,39,355,4,1567800150,"~/.bash_history"
+-'  355  4  ~/.bash_history
+|4,39,355,4,1567800150,"~/.bash_history"
+-'  356  0  ~/.bash_history
+|4,39,356,0,1567800118,"~/.bash_history"
+-'  356  0  ~/.bash_history
+|4,39,356,0,1567800118,"~/.bash_history"
+-'  356  0  ~/.bash_history
+|4,39,356,0,1567800118,"~/.bash_history"
+-'  356  0  ~/.bash_history
+|4,39,356,0,1567800118,"~/.bash_history"
+-'  356  0  ~/.bash_history
+|4,39,356,0,1567800118,"~/.bash_history"
+-'  356  0  ~/.bash_history
+|4,39,356,0,1567800118,"~/.bash_history"
 -'  356  0  ~/.bash_history
 |4,39,356,0,1567800118,"~/.bash_history"
 -'  356  0  ~/.bash_history
@@ -386,6 +476,30 @@ $00,055,055
 |4,39,313,0,1567800097,"~/.bash_history"
 -'  313  0  ~/.bash_history
 |4,39,313,0,1567800097,"~/.bash_history"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567800097,"~/.bash_history"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567800097,"~/.bash_history"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567800097,"~/.bash_history"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567800097,"~/.bash_history"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567800097,"~/.bash_history"
+-'  313  0  ~/.bash_history
+|4,39,313,0,1567800097,"~/.bash_history"
+-'  2  0  ~/.scripts/diffURL.sh
+|4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
+-'  2  0  ~/.scripts/diffURL.sh
+|4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
+-'  2  0  ~/.scripts/diffURL.sh
+|4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
+-'  2  0  ~/.scripts/diffURL.sh
+|4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
+-'  2  0  ~/.scripts/diffURL.sh
+|4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
+-'  2  0  ~/.scripts/diffURL.sh
+|4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
 -'  2  0  ~/.scripts/diffURL.sh
 |4,39,2,0,1567799838,"~/.scripts/diffURL.sh"
 -'  2  0  ~/.scripts/diffURL.sh
@@ -426,134 +540,38 @@ $00,055,055
 |4,39,38,17,1567788330,"~/backup_dot_files.sh"
 -'  38  17  ~/backup_dot_files.sh
 |4,39,38,17,1567788330,"~/backup_dot_files.sh"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  313  0  ~/.bash_history
-|4,39,313,0,1567787964,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  322  0  ~/.bash_history
-|4,39,322,0,1567787882,"~/.bash_history"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787484,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  48  40  ~/backup_dot_files.sh
-|4,39,48,40,1567787318,"~/backup_dot_files.sh"
--'  6  3  ~/.git/info/exclude
-|4,39,6,3,1567785487,"~/.git/info/exclude"
--'  6  3  ~/.git/info/exclude
-|4,39,6,3,1567785487,"~/.git/info/exclude"
--'  6  3  ~/.git/info/exclude
-|4,39,6,3,1567785487,"~/.git/info/exclude"
--'  6  3  ~/.git/info/exclude
-|4,39,6,3,1567785487,"~/.git/info/exclude"
--'  6  3  ~/.git/info/exclude
-|4,39,6,3,1567785487,"~/.git/info/exclude"
--'  6  3  ~/.git/info/exclude
-|4,39,6,3,1567785487,"~/.git/info/exclude"
+-'  38  17  ~/backup_dot_files.sh
+|4,39,38,17,1567788330,"~/backup_dot_files.sh"
+-'  38  17  ~/backup_dot_files.sh
+|4,39,38,17,1567788330,"~/backup_dot_files.sh"
+-'  38  17  ~/backup_dot_files.sh
+|4,39,38,17,1567788330,"~/backup_dot_files.sh"
 
 # History of marks within files (newest to oldest):
 
+> ~/.scripts/backup_dot_files.sh
+	*	1567886606	0
+	"	47	0
+	.	47	0
+	+	4	0
+	+	46	15
+	+	44	0
+	+	45	11
+	+	45	8
+	+	45	0
+	+	46	19
+	+	47	0
+	+	46	0
+	+	47	0
+	+	6	0
+	+	5	0
+	+	47	0
+
 > ~/.config/i3-blocks/blocks/packages
-	*	1567807205	0
-	"	1	10
-	^	1	11
-	.	1	10
+	*	1567809215	0
+	"	7	13
+	^	16	11
+	.	16	10
 	+	18	12
 	+	18	13
 	+	18	8
@@ -599,6 +617,7 @@ $00,055,055
 	+	14	30
 	+	14	41
 	+	1	10
+	+	16	10
 
 > ~/.config/i3-blocks/blocks/battery
 	*	1567803178	0
@@ -703,21 +722,6 @@ $00,055,055
 	+	57	25
 	+	59	69
 	+	57	24
-
-> ~/.scripts/backup_dot_files.sh
-	*	1567801789	0
-	"	36	0
-	.	49	0
-	+	4	0
-	+	48	15
-	+	46	0
-	+	47	11
-	+	47	8
-	+	47	0
-	+	48	19
-	+	50	0
-	+	48	0
-	+	49	0
 
 > ~/.bash_history
 	*	1567800147	0

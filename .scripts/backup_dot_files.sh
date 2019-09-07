@@ -2,8 +2,6 @@
 
 cd ~  || return;
 #git init
-echo "*" > .gitignore
-git add -f .gitignore
 
 git add -f .Xauthority
 git add -f .Xdefaults
@@ -46,5 +44,4 @@ git add -f .vim/
 
 COMM=$(date)
 git commit -m "$COMM"
-git remote add origin https://github.com/fatualux/myDotFiles
 git push -u origin master
