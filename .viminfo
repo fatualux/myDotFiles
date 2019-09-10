@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/MOVE
+~MSle0~/sh
 
 # Last Substitute Search Pattern:
 ~MSle0&20,70,90
@@ -20,22 +20,38 @@
 $00,055,055
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1568110939,,"q"
+:w
+|2,0,1568107531,,"w"
+:e! .config/i3-blocks/blocks/packages
+|2,0,1568106988,,"e! .config/i3-blocks/blocks/packages"
+:e! .config/i3-blocks/blocks/network
+|2,0,1568036506,,"e! .config/i3-blocks/blocks/network"
+:e! .config/i3-blocks/blocks/datetime
+|2,0,1568036198,,"e! .config/i3-blocks/blocks/datetime"
+:e! .config/i3-blocks/blocks/bluetooth
+|2,0,1568035967,,"e! .config/i3-blocks/blocks/bluetooth"
+:e! .config/i3-blocks/config
+|2,0,1568035068,,"e! .config/i3-blocks/config"
+:e! .config/i3-blocks/blocks/battery
+|2,0,1568034627,,"e! .config/i3-blocks/blocks/battery"
+:W
+|2,0,1568033560,,"W"
+:e .config/vbar/config.c
+|2,0,1567954027,,"e .config/vbar/config.c"
+:PlugInstall
+|2,0,1567907736,,"PlugInstall"
+:e .vimrc
+|2,0,1567907730,,"e .vimrc"
 :e .scripts/backup_dot_files.sh
 |2,0,1567887337,,"e .scripts/backup_dot_files.sh"
-:w
-|2,0,1567886605,,"w"
-:e! .config/i3-blocks/blocks/packages
-|2,0,1567808281,,"e! .config/i3-blocks/blocks/packages"
-:e! .config/i3-blocks/blocks/battery
-|2,0,1567802909,,"e! .config/i3-blocks/blocks/battery"
 :e .scripts/diffURL.sh
 |2,0,1567799813,,"e .scripts/diffURL.sh"
 :e backup_dot_files.sh
 |2,0,1567776127,,"e backup_dot_files.sh"
 :s
 |2,0,1567779545,,"s"
-:e .config/vbar/config.c
-|2,0,1567779538,,"e .config/vbar/config.c"
 :e diffURL.sh
 |2,0,1567771437,,"e diffURL.sh"
 :e webFind.sh
@@ -44,28 +60,18 @@ $00,055,055
 |2,0,1567762010,,"e! .config/i3-blocks/blocks/alarm"
 :e! .config/i3-blocks/blocks/alarm:
 |2,0,1567758519,,"e! .config/i3-blocks/blocks/alarm:"
-:q
-|2,0,1567711677,,"q"
-:e! .config/i3-blocks/blocks/datetime
-|2,0,1567622040,,"e! .config/i3-blocks/blocks/datetime"
 :e! .config/i3-blocks/blocks/cpu
 |2,0,1567547624,,"e! .config/i3-blocks/blocks/cpu"
 :e! .config/i3-blocks/blocks/poweroff
 |2,0,1567547609,,"e! .config/i3-blocks/blocks/poweroff"
 :e .config/i3-blocks/blocks/battery
 |2,0,1567547602,,"e .config/i3-blocks/blocks/battery"
-:e! .config/i3-blocks/config
-|2,0,1567547203,,"e! .config/i3-blocks/config"
 :e alarm.sh
 |2,0,1567546798,,"e alarm.sh"
 :e .config/i3/config
 |2,0,1567541708,,"e .config/i3/config"
 :e .config/i3-blocks/blocks/cpu
 |2,0,1567522762,,"e .config/i3-blocks/blocks/cpu"
-:e! .config/i3-blocks/blocks/network
-|2,0,1567522745,,"e! .config/i3-blocks/blocks/network"
-:e! .config/i3-blocks/blocks/bluetooth
-|2,0,1567522071,,"e! .config/i3-blocks/blocks/bluetooth"
 :e .config/i3-blocks/blocks/network
 |2,0,1567521743,,"e .config/i3-blocks/blocks/network"
 :wq
@@ -76,8 +82,6 @@ $00,055,055
 |2,0,1567520980,,"e .config/i3-blocks/blocks/poweroff!"
 :e .config/i3-blocks/blocks/poweroff
 |2,0,1567520969,,"e .config/i3-blocks/blocks/poweroff"
-:W
-|2,0,1567516838,,"W"
 :e .config/i3-blocks/blocks/bluetooth
 |2,0,1567460526,,"e .config/i3-blocks/blocks/bluetooth"
 :e .config/vbar/script/bluetooth.sh
@@ -96,8 +100,6 @@ $00,055,055
 |2,0,1567089027,,"e .config/i3/i3blocks.conf"
 :e .config/i3/i3blocks
 |2,0,1567017962,,"e .config/i3/i3blocks"
-:e .vimrc
-|2,0,1567017261,,"e .vimrc"
 :e builds/vbar/config.c
 |2,0,1567010762,,"e builds/vbar/config.c"
 :wù
@@ -160,6 +162,18 @@ $00,055,055
 |2,0,1556816864,,"\\"
 
 # Search String History (newest to oldest):
+?/sh
+|2,1,1568110933,47,"sh"
+?/block
+|2,1,1568034642,47,"block"
+?/pulsea
+|2,1,1567954407,47,"pulsea"
+?/HEIGHT
+|2,1,1567954170,47,"HEIGHT"
+?/bluetoo
+|2,1,1567951037,47,"bluetoo"
+?/install
+|2,1,1567907623,47,"install"
 ?/netw
 |2,1,1567779564,47,"netw"
 ?/net
@@ -267,7 +281,7 @@ $00,055,055
 
 # Expression History (newest to oldest):
 =acp#onPopupPost()
-|2,2,1567541565,,"acp#onPopupPost()"
+|2,2,1568035279,,"acp#onPopupPost()"
 
 # Input Line History (newest to oldest):
 @/home/fz/.config/pulse/client.conf
@@ -286,373 +300,578 @@ $00,055,055
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	if [ "$battery_level" -le 18 ]
-	then
-	    dunstify -t 1775 -h string:fgcolor:#000000 -h string:bgcolor:#FF0013 "LOW BATTERY! Please charge now!"
-	fi
-|3,0,0,0,4,0,1567802921,"if [ \"$battery_level\" -le 18 ]","then","    dunstify -t 1775 -h string:fgcolor:#000000 -h string:bgcolor:#FF0013 \"LOW BATTERY! Please charge now!\"","fi"
-""1	LINE	0
-	git remote add origin https://github.com/fatualux/myDotFiles
-|3,1,1,1,1,0,1567886592,"git remote add origin https://github.com/fatualux/myDotFiles"
+""0	CHAR	0
+	 
+|3,1,0,0,1,0,1568110935," "
+"1	CHAR	0
+	 if [[ "${updates_arch}" -gt "${URGENT_VALUE}" ]]; then
+	    exit 33
+	  fi
+	
+	
+|3,0,1,0,5,0,1568107496," if [[ \"${updates_arch}\" -gt \"${URGENT_VALUE}\" ]]; then","    exit 33","  fi","",""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1567886584,""
+|3,0,2,1,1,0,1568107361,""
 "3	LINE	0
-	git add -f .gitignore
-|3,0,3,1,1,0,1567886583,"git add -f .gitignore"
-"4	LINE	0
-	echo "*" > .gitignore
-|3,0,4,1,1,0,1567886583,"echo \"*\" > .gitignore"
-"5	LINE	0
 	
-|3,0,5,1,1,0,1567802559,""
+|3,0,3,1,1,0,1568107330,""
+"4	LINE	0
+	
+|3,0,4,1,1,0,1568107321,""
+"5	LINE	0
+	[ ${updates_arch%?} -gt 20 ] && echo "#FF0022"
+|3,0,5,1,1,0,1568107301,"[ ${updates_arch%?} -gt 20 ] && echo \"#FF0022\""
 "6	LINE	0
-	updates=$(("$updates_arch" \/ "$updates_aur"))
-|3,0,6,1,1,0,1567802557,"updates=$((\"$updates_arch\" \\/ \"$updates_aur\"))"
+	
+|3,0,6,1,1,0,1568107082,""
 "7	LINE	0
-	# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then
-|3,0,7,1,1,0,1567802315,"# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then"
+	URGENT_VALUE=20
+|3,0,7,1,1,0,1568107081,"URGENT_VALUE=20"
 "8	LINE	0
-	# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
-|3,0,8,1,1,0,1567802308,"# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then"
+	  fi
+|3,0,8,1,1,0,1568107078,"  fi"
 "9	LINE	0
-	if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then
-|3,0,9,1,1,0,1567802304,"if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then"
+	    echo "#FF0033"
+|3,0,9,1,1,0,1568107078,"    echo \"#FF0033\""
 "-	CHAR	0
-	1
-|3,0,36,0,1,0,1567808284,"1"
+	 
+|3,0,36,0,1,0,1568107528," "
 
 # File marks:
-'0  46  20  ~/.scripts/backup_dot_files.sh
-|4,48,46,20,1567887488,"~/.scripts/backup_dot_files.sh"
-'1  47  0  ~/.scripts/backup_dot_files.sh
-|4,49,47,0,1567886607,"~/.scripts/backup_dot_files.sh"
-'2  47  0  ~/.scripts/backup_dot_files.sh
-|4,50,47,0,1567886607,"~/.scripts/backup_dot_files.sh"
-'3  7  13  ~/.config/i3-blocks/blocks/packages
-|4,51,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
-'4  1  10  ~/.config/i3-blocks/blocks/packages
-|4,52,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
-'5  1  10  ~/.config/i3-blocks/blocks/packages
-|4,53,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
-'6  34  0  ~/.scripts/backup_dot_files.sh
-|4,54,34,0,1567801829,"~/.scripts/backup_dot_files.sh"
-'7  34  0  ~/.scripts/backup_dot_files.sh
-|4,55,34,0,1567801829,"~/.scripts/backup_dot_files.sh"
-'8  36  0  ~/.scripts/backup_dot_files.sh
-|4,56,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
-'9  36  0  ~/.scripts/backup_dot_files.sh
-|4,57,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
+'0  1  0  ~/20]
+|4,48,1,0,1568127412,"~/20]"
+'1  82  16  ~/builds/oomox-git/PKGBUILD
+|4,49,82,16,1568110939,"~/builds/oomox-git/PKGBUILD"
+'2  36  0  ~/.config/i3-blocks/blocks/packages
+|4,50,36,0,1568110723,"~/.config/i3-blocks/blocks/packages"
+'3  5  0  ~/.config/i3-blocks/blocks/packages
+|4,51,5,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+'4  3  0  ~/.config/i3-blocks/blocks/packages
+|4,52,3,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+'5  10  1  ~/13DOT/i3-blocks/blocks/packages
+|4,53,10,1,1568035827,"~/13DOT/i3-blocks/blocks/packages"
+'6  144  3  ~/.config/vbar/config.c
+|4,54,144,3,1567954860,"~/.config/vbar/config.c"
+'7  1  0  ~/builds/vbar/build/build.ninja
+|4,55,1,0,1567953611,"~/builds/vbar/build/build.ninja"
+'8  270  88  ~/.config/vbar/config.c
+|4,56,270,88,1567951095,"~/.config/vbar/config.c"
+'9  270  88  ~/.config/vbar/config.c
+|4,57,270,88,1567951095,"~/.config/vbar/config.c"
 
 # Jumplist (newest first):
--'  46  20  ~/.scripts/backup_dot_files.sh
-|4,39,46,20,1567887488,"~/.scripts/backup_dot_files.sh"
--'  1  0  ~/.scripts/backup_dot_files.sh
-|4,39,1,0,1567887337,"~/.scripts/backup_dot_files.sh"
--'  47  0  ~/.scripts/backup_dot_files.sh
-|4,39,47,0,1567886607,"~/.scripts/backup_dot_files.sh"
--'  47  0  ~/.scripts/backup_dot_files.sh
-|4,39,47,0,1567886607,"~/.scripts/backup_dot_files.sh"
--'  6  0  ~/.scripts/backup_dot_files.sh
-|4,39,6,0,1567886586,"~/.scripts/backup_dot_files.sh"
--'  6  0  ~/.scripts/backup_dot_files.sh
-|4,39,6,0,1567886586,"~/.scripts/backup_dot_files.sh"
--'  1  0  ~/.scripts/backup_dot_files.sh
-|4,39,1,0,1567886559,"~/.scripts/backup_dot_files.sh"
--'  7  13  ~/.config/i3-blocks/blocks/packages
-|4,39,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
--'  7  13  ~/.config/i3-blocks/blocks/packages
-|4,39,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
--'  7  13  ~/.config/i3-blocks/blocks/packages
-|4,39,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
--'  7  13  ~/.config/i3-blocks/blocks/packages
-|4,39,7,13,1567809224,"~/.config/i3-blocks/blocks/packages"
--'  50  24  ~/.scripts/backup_dot_files.sh
-|4,39,50,24,1567808281,"~/.scripts/backup_dot_files.sh"
--'  50  24  ~/.scripts/backup_dot_files.sh
-|4,39,50,24,1567808281,"~/.scripts/backup_dot_files.sh"
--'  16  10  ~/.config/i3-blocks/blocks/packages
-|4,39,16,10,1567808245,"~/.config/i3-blocks/blocks/packages"
--'  16  10  ~/.config/i3-blocks/blocks/packages
-|4,39,16,10,1567808245,"~/.config/i3-blocks/blocks/packages"
--'  16  10  ~/.config/i3-blocks/blocks/packages
-|4,39,16,10,1567808245,"~/.config/i3-blocks/blocks/packages"
--'  16  10  ~/.config/i3-blocks/blocks/packages
-|4,39,16,10,1567808245,"~/.config/i3-blocks/blocks/packages"
--'  1  0  ~/.scripts/backup_dot_files.sh
-|4,39,1,0,1567808155,"~/.scripts/backup_dot_files.sh"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1567807207,"~/.config/i3-blocks/blocks/packages"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  57  24  ~/.config/i3-blocks/blocks/battery
-|4,39,57,24,1567803183,"~/.config/i3-blocks/blocks/battery"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  14  41  ~/.config/i3-blocks/blocks/packages
-|4,39,14,41,1567802909,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  11  0  ~/.config/i3-blocks/blocks/packages
-|4,39,11,0,1567802683,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  12  0  ~/.config/i3-blocks/blocks/packages
-|4,39,12,0,1567802682,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  18  31  ~/.config/i3-blocks/blocks/packages
-|4,39,18,31,1567802177,"~/.config/i3-blocks/blocks/packages"
--'  34  0  ~/.scripts/backup_dot_files.sh
-|4,39,34,0,1567801829,"~/.scripts/backup_dot_files.sh"
--'  36  0  ~/.scripts/backup_dot_files.sh
-|4,39,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
--'  34  0  ~/.scripts/backup_dot_files.sh
-|4,39,34,0,1567801829,"~/.scripts/backup_dot_files.sh"
--'  36  0  ~/.scripts/backup_dot_files.sh
-|4,39,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
--'  36  0  ~/.scripts/backup_dot_files.sh
-|4,39,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
--'  36  0  ~/.scripts/backup_dot_files.sh
-|4,39,36,0,1567801829,"~/.scripts/backup_dot_files.sh"
--'  50  0  ~/.scripts/backup_dot_files.sh
-|4,39,50,0,1567801440,"~/.scripts/backup_dot_files.sh"
--'  50  0  ~/.scripts/backup_dot_files.sh
-|4,39,50,0,1567801440,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1567800875,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1567800875,"~/.scripts/backup_dot_files.sh"
--'  47  0  ~/.scripts/backup_dot_files.sh
-|4,39,47,0,1567800875,"~/.scripts/backup_dot_files.sh"
--'  47  0  ~/.scripts/backup_dot_files.sh
-|4,39,47,0,1567800875,"~/.scripts/backup_dot_files.sh"
--'  47  0  ~/.scripts/backup_dot_files.sh
-|4,39,47,0,1567800875,"~/.scripts/backup_dot_files.sh"
--'  48  15  ~/.scripts/backup_dot_files.sh
-|4,39,48,15,1567800872,"~/.scripts/backup_dot_files.sh"
--'  46  15  ~/.scripts/backup_dot_files.sh
-|4,39,46,15,1567800872,"~/.scripts/backup_dot_files.sh"
--'  48  15  ~/.scripts/backup_dot_files.sh
-|4,39,48,15,1567800872,"~/.scripts/backup_dot_files.sh"
--'  48  15  ~/.scripts/backup_dot_files.sh
-|4,39,48,15,1567800872,"~/.scripts/backup_dot_files.sh"
--'  48  15  ~/.scripts/backup_dot_files.sh
-|4,39,48,15,1567800872,"~/.scripts/backup_dot_files.sh"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
--'  355  4  ~/.bash_history
-|4,39,355,4,1567800150,"~/.bash_history"
+-'  1  0  ~/20]
+|4,39,1,0,1568127412,"~/20]"
+-'  82  16  ~/builds/oomox-git/PKGBUILD
+|4,39,82,16,1568110939,"~/builds/oomox-git/PKGBUILD"
+-'  82  16  ~/builds/oomox-git/PKGBUILD
+|4,39,82,16,1568110939,"~/builds/oomox-git/PKGBUILD"
+-'  121  0  ~/builds/oomox-git/PKGBUILD
+|4,39,121,0,1568110933,"~/builds/oomox-git/PKGBUILD"
+-'  121  0  ~/builds/oomox-git/PKGBUILD
+|4,39,121,0,1568110933,"~/builds/oomox-git/PKGBUILD"
+-'  1  0  ~/builds/oomox-git/PKGBUILD
+|4,39,1,0,1568110870,"~/builds/oomox-git/PKGBUILD"
+-'  1  0  ~/builds/oomox-git/PKGBUILD
+|4,39,1,0,1568110870,"~/builds/oomox-git/PKGBUILD"
+-'  36  0  ~/.config/i3-blocks/blocks/packages
+|4,39,36,0,1568110723,"~/.config/i3-blocks/blocks/packages"
+-'  36  0  ~/.config/i3-blocks/blocks/packages
+|4,39,36,0,1568110723,"~/.config/i3-blocks/blocks/packages"
+-'  36  0  ~/.config/i3-blocks/blocks/packages
+|4,39,36,0,1568110723,"~/.config/i3-blocks/blocks/packages"
+-'  36  0  ~/.config/i3-blocks/blocks/packages
+|4,39,36,0,1568110723,"~/.config/i3-blocks/blocks/packages"
+-'  22  1  ~/.config/i3-blocks/blocks/packages
+|4,39,22,1,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  22  1  ~/.config/i3-blocks/blocks/packages
+|4,39,22,1,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  22  1  ~/.config/i3-blocks/blocks/packages
+|4,39,22,1,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  22  1  ~/.config/i3-blocks/blocks/packages
+|4,39,22,1,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568107464,"~/.config/i3-blocks/blocks/packages"
+-'  14  0  ~/.config/i3-blocks/blocks/packages
+|4,39,14,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  28  0  ~/.config/i3-blocks/blocks/packages
+|4,39,28,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  14  0  ~/.config/i3-blocks/blocks/packages
+|4,39,14,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  28  0  ~/.config/i3-blocks/blocks/packages
+|4,39,28,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  14  0  ~/.config/i3-blocks/blocks/packages
+|4,39,14,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  28  0  ~/.config/i3-blocks/blocks/packages
+|4,39,28,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  14  0  ~/.config/i3-blocks/blocks/packages
+|4,39,14,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  28  0  ~/.config/i3-blocks/blocks/packages
+|4,39,28,0,1568107463,"~/.config/i3-blocks/blocks/packages"
+-'  1  0  ~/.config/i3-blocks/blocks/packages
+|4,39,1,0,1568106988,"~/.config/i3-blocks/blocks/packages"
+-'  1  0  ~/.config/i3-blocks/blocks/packages
+|4,39,1,0,1568106988,"~/.config/i3-blocks/blocks/packages"
+-'  1  0  ~/.config/i3-blocks/blocks/packages
+|4,39,1,0,1568106988,"~/.config/i3-blocks/blocks/packages"
+-'  1  0  ~/.config/i3-blocks/blocks/packages
+|4,39,1,0,1568106988,"~/.config/i3-blocks/blocks/packages"
+-'  5  0  ~/.config/i3-blocks/blocks/packages
+|4,39,5,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  5  0  ~/.config/i3-blocks/blocks/packages
+|4,39,5,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  5  0  ~/.config/i3-blocks/blocks/packages
+|4,39,5,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  5  0  ~/.config/i3-blocks/blocks/packages
+|4,39,5,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  3  0  ~/.config/i3-blocks/blocks/packages
+|4,39,3,0,1568038316,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  22  29  ~/.config/i3-blocks/blocks/packages
+|4,39,22,29,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  22  29  ~/.config/i3-blocks/blocks/packages
+|4,39,22,29,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  22  29  ~/.config/i3-blocks/blocks/packages
+|4,39,22,29,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  4  0  ~/.config/i3-blocks/blocks/packages
+|4,39,4,0,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  22  29  ~/.config/i3-blocks/blocks/packages
+|4,39,22,29,1568036929,"~/.config/i3-blocks/blocks/packages"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  24  0  ~/.config/i3-blocks/blocks/network
+|4,39,24,0,1568036551,"~/.config/i3-blocks/blocks/network"
+-'  5  14  ~/.config/i3-blocks/blocks/packages
+|4,39,5,14,1568036506,"~/.config/i3-blocks/blocks/packages"
+-'  5  14  ~/.config/i3-blocks/blocks/packages
+|4,39,5,14,1568036506,"~/.config/i3-blocks/blocks/packages"
+-'  5  14  ~/.config/i3-blocks/blocks/packages
+|4,39,5,14,1568036506,"~/.config/i3-blocks/blocks/packages"
+-'  5  14  ~/.config/i3-blocks/blocks/packages
+|4,39,5,14,1568036506,"~/.config/i3-blocks/blocks/packages"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  11  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,11,0,1568036238,"~/.config/i3-blocks/blocks/datetime"
+-'  26  18  ~/.config/i3-blocks/blocks/packages
+|4,39,26,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  30  18  ~/.config/i3-blocks/blocks/packages
+|4,39,30,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  26  18  ~/.config/i3-blocks/blocks/packages
+|4,39,26,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  30  18  ~/.config/i3-blocks/blocks/packages
+|4,39,30,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  26  18  ~/.config/i3-blocks/blocks/packages
+|4,39,26,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  30  18  ~/.config/i3-blocks/blocks/packages
+|4,39,30,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  26  18  ~/.config/i3-blocks/blocks/packages
+|4,39,26,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  30  18  ~/.config/i3-blocks/blocks/packages
+|4,39,30,18,1568036198,"~/.config/i3-blocks/blocks/packages"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  9  0  ~/.config/i3-blocks/blocks/datetime
+|4,39,9,0,1568036008,"~/.config/i3-blocks/blocks/datetime"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  4  0  ~/.config/i3-blocks/blocks/bluetooth
+|4,39,4,0,1568035988,"~/.config/i3-blocks/blocks/bluetooth"
+-'  2  0  ~/.config/i3-blocks/blocks/packages
+|4,39,2,0,1568035874,"~/.config/i3-blocks/blocks/packages"
+-'  2  0  ~/.config/i3-blocks/blocks/packages
+|4,39,2,0,1568035874,"~/.config/i3-blocks/blocks/packages"
+-'  2  0  ~/.config/i3-blocks/blocks/packages
+|4,39,2,0,1568035874,"~/.config/i3-blocks/blocks/packages"
+-'  2  0  ~/.config/i3-blocks/blocks/packages
+|4,39,2,0,1568035874,"~/.config/i3-blocks/blocks/packages"
+-'  2  0  ~/.config/i3-blocks/blocks/packages
+|4,39,2,0,1568035874,"~/.config/i3-blocks/blocks/packages"
 
 # History of marks within files (newest to oldest):
 
-> ~/.scripts/backup_dot_files.sh
-	*	1567887486	0
-	"	46	20
-	^	46	24
-	.	46	0
-	+	4	0
-	+	46	15
-	+	44	0
-	+	45	11
-	+	45	8
-	+	45	0
-	+	46	19
-	+	47	0
-	+	46	0
-	+	47	0
-	+	6	0
-	+	5	0
-	+	47	0
-	+	46	0
+> ~/20]
+	*	1568127412	0
+	"	1	0
+
+> ~/builds/oomox-git/PKGBUILD
+	*	1568110936	0
+	"	82	16
 
 > ~/.config/i3-blocks/blocks/packages
-	*	1567809215	0
-	"	7	13
-	^	16	11
-	.	16	10
-	+	18	12
-	+	18	13
-	+	18	8
-	+	18	11
-	+	18	8
-	+	18	36
-	+	18	5
-	+	18	2
-	+	18	0
-	+	18	68
-	+	18	64
-	+	18	12
-	+	18	0
-	+	18	13
-	+	18	0
-	+	18	70
-	+	18	90
-	+	18	0
-	+	18	6
-	+	18	5
-	+	18	0
-	+	18	1
-	+	18	76
-	+	18	79
-	+	18	30
-	+	18	0
-	+	1	0
-	+	18	0
-	+	1	0
-	+	20	29
-	+	24	32
-	+	7	0
-	+	8	0
-	+	14	10
-	+	13	0
-	+	14	24
-	+	14	14
+	*	1568110721	0
+	"	36	0
+	^	31	0
+	.	33	1
+	+	22	28
+	+	22	7
+	+	22	0
+	+	22	29
+	+	22	34
+	+	22	0
+	+	22	15
+	+	22	3
+	+	22	13
+	+	22	0
+	+	22	2
+	+	22	0
+	+	36	0
+	+	36	2
+	+	22	16
+	+	36	0
 	+	14	0
-	+	11	27
-	+	14	24
-	+	14	38
-	+	14	40
-	+	14	30
-	+	14	41
-	+	1	10
-	+	16	10
-
-> ~/.config/i3-blocks/blocks/battery
-	*	1567803178	0
-	"	57	24
-	^	57	25
-	.	57	24
-	+	50	0
-	+	1	0
-	+	50	4
-	+	50	3
-	+	50	18
-	+	50	4
-	+	50	0
-	+	1	0
-	+	50	0
-	+	1	0
-	+	50	0
-	+	1	0
-	+	50	0
-	+	1	0
-	+	50	0
-	+	8	0
-	+	48	42
-	+	50	0
-	+	13	0
-	+	15	0
-	+	18	0
-	+	13	0
+	+	22	0
+	+	22	8
+	+	22	0
+	+	22	8
+	+	22	14
+	+	2	0
+	+	5	0
+	+	14	0
+	+	22	0
+	+	5	0
+	+	14	0
+	+	22	0
+	+	22	15
+	+	22	0
+	+	22	7
+	+	22	20
+	+	22	16
+	+	22	24
+	+	22	26
+	+	22	0
+	+	22	22
+	+	22	24
+	+	22	26
+	+	22	0
 	+	14	0
 	+	15	0
-	+	16	0
+	+	22	0
+	+	22	16
+	+	22	0
+	+	36	0
+	+	22	0
+	+	16	53
 	+	17	0
 	+	18	0
+	+	22	0
+	+	22	21
+	+	2	1
+	+	5	0
+	+	2	0
+	+	5	14
+	+	22	0
+	+	23	6
+	+	26	7
+	+	22	0
+	+	26	6
+	+	24	37
+	+	27	32
+	+	22	0
+	+	22	14
+	+	5	15
+	+	5	7
+	+	22	9
+	+	5	0
+	+	22	16
+	+	5	0
+	+	22	0
+	+	5	0
+	+	22	0
+	+	5	0
+	+	22	0
+	+	14	0
+	+	22	0
+	+	14	0
+	+	29	0
+	+	36	0
+	+	36	5
+	+	14	0
+	+	21	0
+	+	22	10
+	+	23	0
+	+	29	8
+	+	30	0
+	+	31	0
+	+	29	0
+	+	33	1
+
+> ~/.config/i3-blocks/blocks/network
+	*	1568036506	0
+	"	24	0
+	^	35	0
+	.	35	0
+	+	35	0
+
+> ~/.config/i3-blocks/blocks/datetime
+	*	1568036234	0
+	"	11	0
+	^	9	0
+	.	11	0
+	+	2	0
+	+	5	0
+	+	8	0
+	+	9	0
+	+	9	27
+	+	9	22
+	+	9	152
+	+	9	8
+	+	9	150
+	+	7	0
+	+	6	6
+	+	9	38
+	+	9	20
+	+	9	34
+	+	9	35
+	+	9	163
+	+	9	0
+	+	9	65
+	+	9	14
+	+	9	36
+	+	9	0
+	+	9	7
+	+	9	62
+	+	9	77
+	+	9	207
+	+	9	59
+	+	9	170
+	+	9	0
+	+	9	34
+	+	9	163
+	+	9	35
+	+	9	2
+	+	9	0
+	+	10	41
+	+	11	13
+	+	11	0
+	+	11	32
+	+	10	53
+	+	9	0
+	+	11	0
+
+> ~/.config/i3-blocks/blocks/bluetooth
+	*	1568035968	0
+	"	4	0
+	^	5	20
+	.	5	20
+	+	15	33
+	+	16	7
+	+	16	15
+	+	10	7
+	+	20	7
+	+	12	0
+	+	15	33
+	+	15	0
+	+	12	0
+	+	15	33
+	+	15	32
+	+	16	13
+	+	16	8
+	+	16	0
+	+	16	13
+	+	16	8
+	+	16	0
+	+	16	8
+	+	16	0
+	+	12	0
+	+	15	33
+	+	15	0
+	+	13	8
+	+	20	0
+	+	13	9
+	+	13	38
+	+	13	28
+	+	13	29
+	+	15	33
+	+	15	23
+	+	13	9
+	+	13	29
+	+	13	0
+	+	4	38
+	+	5	0
+	+	6	0
+	+	5	20
+
+> ~/13DOT/i3-blocks/blocks/packages
+	*	1568035825	0
+	"	10	1
+
+> ~/.config/i3-blocks/config
+	*	1568035098	0
+	"	38	0
+	.	69	0
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	9
+	+	1	11
+	+	1	39
+	+	1	14
+	+	1	42
+	+	1	37
+	+	1	40
+	+	1	37
+	+	1	11
+	+	1	38
+	+	1	36
+	+	1	35
+	+	1	0
+	+	1	43
+	+	1	39
+	+	1	40
+	+	1	12
+	+	1	41
+	+	1	0
+	+	74	0
+	+	69	0
+	+	69	9
+	+	44	0
+	+	69	0
+	+	66	0
+	+	69	0
+	+	25	0
+	+	32	12
+	+	32	10
+	+	34	7
+	+	27	9
+	+	37	6
+	+	66	0
+	+	71	6
+	+	68	6
+	+	46	0
+	+	47	0
+	+	46	0
+	+	47	0
+	+	46	6
+	+	42	0
+	+	43	0
+	+	42	6
+	+	69	41
+	+	69	0
+	+	66	7
+	+	66	9
+	+	62	0
+	+	38	11
+	+	7	9
+	+	9	6
+	+	12	41
+	+	7	10
+	+	7	0
+	+	69	13
+	+	69	0
+	+	69	13
+	+	69	36
+	+	69	38
+	+	71	0
+	+	69	0
+	+	72	11
+	+	77	0
+	+	77	81
+	+	77	0
+	+	77	81
+	+	77	0
+	+	77	81
+	+	79	0
+	+	77	8
+	+	77	0
+	+	77	53
+	+	77	55
+	+	77	8
+	+	77	116
+	+	77	51
+	+	77	55
+	+	79	0
+	+	77	14
+	+	75	12
+	+	77	83
+	+	77	8
+	+	79	0
+	+	78	0
+	+	77	19
+	+	69	14
+	+	69	0
+
+> ~/.config/i3-blocks/blocks/battery
+	*	1568035028	0
+	"	37	0
+	^	42	0
+	.	42	0
 	+	19	0
 	+	21	40
 	+	22	0
@@ -724,164 +943,41 @@ $00,055,055
 	+	57	25
 	+	59	69
 	+	57	24
-
-> ~/.bash_history
-	*	1567800147	0
-	"	355	4
-	.	356	0
-	+	314	0
-	+	6	0
-	+	5	0
-	+	1	0
-	+	4	0
-	+	5	0
-	+	8	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	2	0
-	+	1	0
-	+	14	0
-	+	7	0
-	+	14	0
-	+	15	0
-	+	14	0
+	+	13	1
+	+	14	1
+	+	15	1
+	+	16	1
+	+	17	1
+	+	18	1
+	+	19	1
+	+	21	1
+	+	22	1
+	+	23	1
+	+	24	1
+	+	25	1
+	+	26	1
+	+	27	1
+	+	28	1
+	+	29	1
+	+	30	1
+	+	31	1
+	+	32	1
+	+	33	1
+	+	34	1
+	+	35	1
+	+	36	1
+	+	37	1
+	+	38	1
+	+	39	1
+	+	40	1
+	+	41	1
 	+	42	0
-	+	38	74
-	+	35	0
-	+	11	13
-	+	14	15
-	+	14	17
-	+	14	115
-	+	14	0
-	+	32	0
-	+	33	0
-	+	42	0
-	+	35	43
-	+	36	60
-	+	38	14
-	+	38	60
-	+	38	118
-	+	38	0
-	+	36	42
-	+	38	16
-	+	39	13
-	+	40	43
-	+	39	42
-	+	42	0
-	+	39	0
-	+	14	0
-	+	12	0
-	+	13	16
-	+	12	14
-	+	11	12
-	+	44	0
-	+	43	0
-	+	42	0
-	+	39	13
-	+	46	16
-	+	41	43
-	+	40	42
-	+	37	42
-	+	14	0
-	+	13	16
-	+	12	14
-	+	11	12
-	+	44	29
-	+	46	36
-	+	43	29
-	+	46	36
-	+	43	29
-	+	45	0
-	+	46	0
-	+	52	0
-	+	47	0
-	+	42	0
-	+	54	0
-	+	46	16
-	+	40	29
-	+	54	0
-	+	57	0
-	+	54	0
-	+	84	0
-	+	92	0
-	+	90	0
-	+	89	0
-	+	95	16
-	+	91	14
-	+	89	32
-	+	95	24
-	+	108	0
-	+	107	0
-	+	113	0
-	+	114	0
-	+	117	0
-	+	135	0
-	+	141	0
-	+	215	0
-	+	211	0
-	+	256	0
-	+	293	0
-	+	323	0
-	+	316	0
-	+	315	0
-	+	314	0
-	+	313	0
-	+	356	0
-
-> ~/.scripts/diffURL.sh
-	*	1567799815	0
-	"	2	0
-
-> ~/backup_dot_files.sh
-	*	1567788329	0
-	"	38	17
-	^	45	16
-	.	45	15
-	+	50	0
-	+	23	0
-	+	45	0
-	+	50	0
-	+	37	0
-	+	50	0
-	+	50	11
-	+	50	0
-	+	45	0
-	+	50	0
-	+	38	0
-	+	45	0
-	+	50	0
-	+	3	15
-	+	48	0
-	+	48	22
-	+	43	0
-	+	44	18
-	+	45	15
-
-> ~/.git/info/exclude
-	*	1567785486	0
-	"	6	3
-
-> ~/.git/HEAD
-	*	1567785462	0
-	"	1	21
-
-> ~/.git/COMMIT_EDITMSG
-	*	1567785456	0
-	"	1	11
-
-> ~/.gitignore
-	*	1567783490	0
-	"	1	0
 
 > ~/.config/vbar/config.c
-	*	1567779900	0
-	"	98	45
-	^	98	46
-	.	98	45
-	+	291	0
-	+	294	46
-	+	295	0
+	*	1567954859	0
+	"	144	3
+	^	13	16
+	.	13	15
 	+	300	0
 	+	289	0
 	+	298	0
@@ -979,6 +1075,296 @@ $00,055,055
 	+	270	87
 	+	99	0
 	+	98	45
+	+	270	89
+	+	519	77
+	+	13	15
+
+> ~/builds/vbar/build/build.ninja
+	*	1567953611	0
+	"	1	0
+
+> ~/.bash_history
+	*	1567949795	0
+	"	363	0
+	.	364	0
+	+	4	0
+	+	5	0
+	+	8	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	2	0
+	+	1	0
+	+	14	0
+	+	7	0
+	+	14	0
+	+	15	0
+	+	14	0
+	+	42	0
+	+	38	74
+	+	35	0
+	+	11	13
+	+	14	15
+	+	14	17
+	+	14	115
+	+	14	0
+	+	32	0
+	+	33	0
+	+	42	0
+	+	35	43
+	+	36	60
+	+	38	14
+	+	38	60
+	+	38	118
+	+	38	0
+	+	36	42
+	+	38	16
+	+	39	13
+	+	40	43
+	+	39	42
+	+	42	0
+	+	39	0
+	+	14	0
+	+	12	0
+	+	13	16
+	+	12	14
+	+	11	12
+	+	44	0
+	+	43	0
+	+	42	0
+	+	39	13
+	+	46	16
+	+	41	43
+	+	40	42
+	+	37	42
+	+	14	0
+	+	13	16
+	+	12	14
+	+	11	12
+	+	44	29
+	+	46	36
+	+	43	29
+	+	46	36
+	+	43	29
+	+	45	0
+	+	46	0
+	+	52	0
+	+	47	0
+	+	42	0
+	+	54	0
+	+	46	16
+	+	40	29
+	+	54	0
+	+	57	0
+	+	54	0
+	+	84	0
+	+	92	0
+	+	90	0
+	+	89	0
+	+	95	16
+	+	91	14
+	+	89	32
+	+	95	24
+	+	108	0
+	+	107	0
+	+	113	0
+	+	114	0
+	+	117	0
+	+	135	0
+	+	141	0
+	+	215	0
+	+	211	0
+	+	256	0
+	+	293	0
+	+	323	0
+	+	316	0
+	+	315	0
+	+	314	0
+	+	313	0
+	+	356	0
+	+	363	0
+	+	362	0
+	+	361	0
+	+	359	0
+	+	364	0
+
+> ~/.vimrc
+	*	1567907731	0
+	"	78	0
+	^	67	6
+	.	67	6
+	+	271	0
+	+	285	0
+	+	271	0
+	+	285	0
+	+	284	0
+	+	282	0
+	+	284	0
+	+	271	4
+	+	271	0
+	+	282	0
+	+	284	0
+	+	280	23
+	+	281	0
+	+	280	1
+	+	271	0
+	+	280	0
+	+	172	0
+	+	271	0
+	+	82	0
+	+	137	0
+	+	280	0
+	+	177	21
+	+	177	0
+	+	180	0
+	+	301	0
+	+	299	0
+	+	301	0
+	+	301	60
+	+	302	0
+	+	301	0
+	+	271	0
+	+	302	32
+	+	302	0
+	+	302	2
+	+	302	32
+	+	302	0
+	+	289	0
+	+	304	0
+	+	305	0
+	+	304	24
+	+	303	0
+	+	23	5
+	+	24	0
+	+	25	0
+	+	27	0
+	+	31	0
+	+	34	0
+	+	35	0
+	+	40	0
+	+	42	0
+	+	43	0
+	+	45	0
+	+	61	6
+	+	119	4
+	+	136	0
+	+	119	0
+	+	303	30
+	+	304	0
+	+	305	0
+	+	61	30
+	+	62	25
+	+	63	0
+	+	308	48
+	+	308	55
+	+	308	47
+	+	63	28
+	+	64	22
+	+	65	0
+	+	149	0
+	+	150	0
+	+	305	15
+	+	308	48
+	+	309	0
+	+	310	37
+	+	85	0
+	+	310	39
+	+	313	0
+	+	310	39
+	+	312	38
+	+	133	51
+	+	134	29
+	+	313	1
+	+	314	1
+	+	313	0
+	+	314	77
+	+	315	0
+	+	63	0
+	+	278	25
+	+	279	0
+	+	278	25
+	+	280	0
+	+	315	0
+	+	45	0
+	+	303	0
+	+	278	0
+	+	265	0
+	+	262	0
+	+	253	0
+	+	67	6
+
+> ~/.vim/autoload/plug.vim
+	*	1567907662	0
+	"	968	12
+
+> ~/99
+	*	1567889929	0
+	"	1	0
+
+> ~/.scripts/backup_dot_files.sh
+	*	1567887486	0
+	"	46	20
+	^	46	24
+	.	46	0
+	+	4	0
+	+	46	15
+	+	44	0
+	+	45	11
+	+	45	8
+	+	45	0
+	+	46	19
+	+	47	0
+	+	46	0
+	+	47	0
+	+	6	0
+	+	5	0
+	+	47	0
+	+	46	0
+
+> ~/.scripts/diffURL.sh
+	*	1567799815	0
+	"	2	0
+
+> ~/backup_dot_files.sh
+	*	1567788329	0
+	"	38	17
+	^	45	16
+	.	45	15
+	+	50	0
+	+	23	0
+	+	45	0
+	+	50	0
+	+	37	0
+	+	50	0
+	+	50	11
+	+	50	0
+	+	45	0
+	+	50	0
+	+	38	0
+	+	45	0
+	+	50	0
+	+	3	15
+	+	48	0
+	+	48	22
+	+	43	0
+	+	44	18
+	+	45	15
+
+> ~/.git/info/exclude
+	*	1567785486	0
+	"	6	3
+
+> ~/.git/HEAD
+	*	1567785462	0
+	"	1	21
+
+> ~/.git/COMMIT_EDITMSG
+	*	1567785456	0
+	"	1	11
+
+> ~/.gitignore
+	*	1567783490	0
+	"	1	0
 
 > ~/list.txt
 	*	1567778798	0
@@ -1217,151 +1603,9 @@ $00,055,055
 	+	20	0
 	+	14	0
 
-> ~/.config/i3-blocks/blocks/datetime
-	*	1567641824	0
-	"	9	0
-	^	10	54
-	.	9	0
-	+	2	0
-	+	5	0
-	+	8	0
-	+	9	0
-	+	9	27
-	+	9	22
-	+	9	152
-	+	9	8
-	+	9	150
-	+	7	0
-	+	6	6
-	+	9	38
-	+	9	20
-	+	9	34
-	+	9	35
-	+	9	163
-	+	9	0
-	+	9	65
-	+	9	14
-	+	9	36
-	+	9	0
-	+	9	7
-	+	9	62
-	+	9	77
-	+	9	207
-	+	9	59
-	+	9	170
-	+	9	0
-	+	9	34
-	+	9	163
-	+	9	35
-	+	9	2
-	+	9	0
-	+	10	41
-	+	11	13
-	+	12	0
-	+	11	32
-	+	10	53
-	+	9	0
-
 > /tmp/trizen-fz/perl-checkupdates-aur/PKGBUILD
 	*	1567621271	0
 	"	26	13
-
-> ~/.config/i3-blocks/config
-	*	1567548024	0
-	"	65	0
-	.	69	0
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	5
-	+	1	0
-	+	1	9
-	+	1	11
-	+	1	39
-	+	1	14
-	+	1	42
-	+	1	37
-	+	1	40
-	+	1	37
-	+	1	11
-	+	1	38
-	+	1	36
-	+	1	35
-	+	1	0
-	+	1	43
-	+	1	39
-	+	1	40
-	+	1	12
-	+	1	41
-	+	1	0
-	+	74	0
-	+	69	0
-	+	69	9
-	+	44	0
-	+	69	0
-	+	66	0
-	+	69	0
-	+	25	0
-	+	32	12
-	+	32	10
-	+	34	7
-	+	27	9
-	+	37	6
-	+	66	0
-	+	71	6
-	+	68	6
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	6
-	+	42	0
-	+	43	0
-	+	42	6
-	+	69	41
-	+	69	0
-	+	66	7
-	+	66	9
-	+	62	0
-	+	38	11
-	+	7	9
-	+	9	6
-	+	12	41
-	+	7	10
-	+	7	0
-	+	69	13
-	+	69	0
-	+	69	13
-	+	69	36
-	+	69	38
-	+	71	0
-	+	69	0
-	+	72	11
-	+	77	0
-	+	77	81
-	+	77	0
-	+	77	81
-	+	77	0
-	+	77	81
-	+	79	0
-	+	77	8
-	+	77	0
-	+	77	53
-	+	77	55
-	+	77	8
-	+	77	116
-	+	77	51
-	+	77	55
-	+	79	0
-	+	77	14
-	+	75	12
-	+	77	83
-	+	77	8
-	+	79	0
-	+	78	0
-	+	77	19
-	+	69	14
-	+	69	0
 
 > ~/.config/i3-blocks/blocks/cpu
 	*	1567547636	0
@@ -1607,56 +1851,6 @@ $00,055,055
 	+	223	1
 	+	267	28
 
-> ~/.config/i3-blocks/blocks/network
-	*	1567522745	0
-	"	34	0
-	^	35	0
-	.	35	0
-	+	35	0
-
-> ~/.config/i3-blocks/blocks/bluetooth
-	*	1567522333	0
-	"	4	0
-	^	5	20
-	.	5	20
-	+	15	33
-	+	16	7
-	+	16	15
-	+	10	7
-	+	20	7
-	+	12	0
-	+	15	33
-	+	15	0
-	+	12	0
-	+	15	33
-	+	15	32
-	+	16	13
-	+	16	8
-	+	16	0
-	+	16	13
-	+	16	8
-	+	16	0
-	+	16	8
-	+	16	0
-	+	12	0
-	+	15	33
-	+	15	0
-	+	13	8
-	+	20	0
-	+	13	9
-	+	13	38
-	+	13	28
-	+	13	29
-	+	15	33
-	+	15	23
-	+	13	9
-	+	13	29
-	+	13	0
-	+	4	38
-	+	5	0
-	+	6	0
-	+	5	20
-
 > ~/.config/vbar/script/bluetooth.sh
 	*	1567458713	0
 	"	10	7
@@ -1825,110 +2019,6 @@ $00,055,055
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.vimrc
-	*	1567017261	0
-	"	302	11
-	^	278	0
-	.	252	0
-	+	270	0
-	+	284	0
-	+	270	0
-	+	284	0
-	+	283	0
-	+	281	0
-	+	283	0
-	+	270	4
-	+	270	0
-	+	281	0
-	+	283	0
-	+	279	23
-	+	280	0
-	+	279	1
-	+	270	0
-	+	279	0
-	+	171	0
-	+	270	0
-	+	81	0
-	+	136	0
-	+	279	0
-	+	176	21
-	+	176	0
-	+	179	0
-	+	300	0
-	+	298	0
-	+	300	0
-	+	300	60
-	+	301	0
-	+	300	0
-	+	270	0
-	+	301	32
-	+	301	0
-	+	301	2
-	+	301	32
-	+	301	0
-	+	288	0
-	+	303	0
-	+	304	0
-	+	303	24
-	+	302	0
-	+	23	5
-	+	24	0
-	+	25	0
-	+	27	0
-	+	31	0
-	+	34	0
-	+	35	0
-	+	40	0
-	+	42	0
-	+	43	0
-	+	45	0
-	+	61	6
-	+	118	4
-	+	135	0
-	+	118	0
-	+	302	30
-	+	303	0
-	+	304	0
-	+	61	30
-	+	62	25
-	+	63	0
-	+	307	48
-	+	307	55
-	+	307	47
-	+	63	28
-	+	64	22
-	+	65	0
-	+	148	0
-	+	149	0
-	+	304	15
-	+	307	48
-	+	308	0
-	+	309	37
-	+	84	0
-	+	309	39
-	+	312	0
-	+	309	39
-	+	311	38
-	+	132	51
-	+	133	29
-	+	312	1
-	+	313	1
-	+	312	0
-	+	313	77
-	+	314	0
-	+	63	0
-	+	277	25
-	+	278	0
-	+	277	25
-	+	279	0
-	+	314	0
-	+	45	0
-	+	302	0
-	+	277	0
-	+	264	0
-	+	261	0
-	+	252	0
 
 > ~/builds/vbar/config.c
 	*	1567017220	0
@@ -2732,131 +2822,3 @@ $00,055,055
 	+	7	0
 	+	63	29
 	+	84	29
-
-> ~/Highlight test
-	*	1556052687	0
-	"	10	11
-	^	233	27
-	.	49	0
-	+	132	46
-	+	133	46
-	+	134	46
-	+	135	46
-	+	136	46
-	+	137	32
-	+	138	38
-	+	139	42
-	+	140	40
-	+	141	44
-	+	142	48
-	+	143	60
-	+	144	60
-	+	145	72
-	+	146	76
-	+	147	50
-	+	148	60
-	+	149	54
-	+	150	50
-	+	151	22
-	+	152	40
-	+	153	86
-	+	154	42
-	+	155	40
-	+	156	38
-	+	157	50
-	+	158	50
-	+	159	62
-	+	160	66
-	+	161	40
-	+	162	50
-	+	163	44
-	+	164	40
-	+	165	26
-	+	166	38
-	+	167	42
-	+	168	54
-	+	169	54
-	+	170	66
-	+	171	70
-	+	172	44
-	+	173	54
-	+	174	48
-	+	175	44
-	+	176	30
-	+	177	30
-	+	178	28
-	+	179	26
-	+	180	30
-	+	181	40
-	+	182	40
-	+	183	44
-	+	184	36
-	+	185	36
-	+	186	42
-	+	187	40
-	+	188	28
-	+	189	38
-	+	190	28
-	+	191	32
-	+	192	34
-	+	193	32
-	+	194	28
-	+	195	40
-	+	196	40
-	+	197	52
-	+	198	56
-	+	199	30
-	+	200	40
-	+	201	34
-	+	202	30
-	+	203	20
-	+	204	28
-	+	205	71
-	+	206	44
-	+	207	38
-	+	208	48
-	+	209	34
-	+	210	22
-	+	211	24
-	+	212	28
-	+	213	30
-	+	214	42
-	+	215	20
-	+	216	26
-	+	217	30
-	+	218	20
-	+	219	32
-	+	220	28
-	+	221	30
-	+	222	30
-	+	223	26
-	+	224	32
-	+	225	30
-	+	226	38
-	+	227	32
-	+	228	60
-	+	229	66
-	+	231	20
-	+	49	0
-
-> ~/.config/touchegg/touchegg.conf.html
-	*	1556052634	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.xprofile
-	*	1556052597	0
-	"	1	0
-
-> ~/xprofile
-	*	1556052591	0
-	"	1	0
-
-> ~/.config/touchegg/touchegg.conf,
-	*	1556052346	0
-	"	1	0
-
-> /tmp/trizen-fz/touchegg/PKGBUILD
-	*	1556051051	0
-	"	19	21

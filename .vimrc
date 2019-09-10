@@ -64,6 +64,7 @@ Plug 'lilydjwg/colorizer'
 Plug 'RRethy/vim-illuminate'
 Plug 'numirias/semshi'
 Plug 'luochen1990/rainbow'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 

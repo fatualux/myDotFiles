@@ -1,5 +1,7 @@
 #!/bin/bash
 
+URGENT_VALUE=20
+
 if ! updates_arch=$(checkupdates 2> /dev/null | wc -l ); then
     updates_arch=0
 fi
@@ -11,17 +13,24 @@ fi
 updates=$(("$updates_arch" + "$updates_aur"))
 
 if [ "$updates" -gt 0 ]; then
-    echo "PMN ""$updates_arch" " | " "AUR ""$updates_aur"
+  echo "PMN " $updates_arch " | " "AUR " $updates_aur
+
 else
     echo ""
 fi
 
-# Left click
-if [ "${BLOCK_BUTTON}" -eq 1 ]; then
-      dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Pacman Update";
-      termite -e "sudo pacman -Syyu"
-# Right click
-elif [ "${BLOCK_BUTTON}" -eq 3 ]; then
-      dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Trizen Update";
-      termite -e "trizen -Syyu"
-fi
+case $BLOCK_BUTTON in
+    1)dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Pacman Update";
+      termite -e "sudo pacman -Syyu";;
+
+    3)dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#115F66 " Trizen Update";
+      termite -e "trizen -Syyu";;
+
+esac
+
+ if [[ "${updates_arch}" -gt "${URGENT_VALUE}" ]]; then
+    exit 33
+ fi
+
+
+

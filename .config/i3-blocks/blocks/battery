@@ -10,35 +10,35 @@ ICON=""
 COLOR=""
 
 if [[ "${BATTERY_STATE}" = "Charging" ]]; then
-if [[ "${BATTERY_POWER}" -le 94 ]]; then
-ICON=""
-COLOR="#FFFFFF"
-else
-ICON=""
-COLOR="#00FF00"
-fi
+  if [[ "${BATTERY_POWER}" -le 94 ]]; then
+  ICON=""
+  COLOR="#FFFFFF"
+  else
+  ICON=""
+  COLOR="#00FF00"
+  fi
 elif [[ "${BATTERY_STATE}" = "Discharging" ]]; then
-if [[ "${BATTERY_POWER}" -le 10 ]]; then
-# BATTERY < 10
-ICON=""
-COLOR="#FF2222"
-elif [[ "${BATTERY_POWER}" -le 25 ]]; then
-# 10 < BATTERY < 25
-ICON=""
-COLOR="#AA9922"
-elif [[ "${BATTERY_POWER}" -le 50 ]]; then
-# 25 < BATTERY < 50
-ICON=""
-COLOR="#99FF33"
-elif [[ "${BATTERY_POWER}" -le 75 ]]; then
-# 50 < BATTERY < 75
-ICON=""
-COLOR="#11FF99"
-else
-# 75 < BATTERY
-ICON=""
-COLOR="#11FF66"
-fi
+  if [[ "${BATTERY_POWER}" -le 10 ]]; then
+  # BATTERY < 10
+  ICON=""
+  COLOR="#FF2222"
+  elif [[ "${BATTERY_POWER}" -le 25 ]]; then
+  # 10 < BATTERY < 25
+  ICON=""
+  COLOR="#AA9922"
+  elif [[ "${BATTERY_POWER}" -le 50 ]]; then
+  # 25 < BATTERY < 50
+  ICON=""
+  COLOR="#99FF33"
+  elif [[ "${BATTERY_POWER}" -le 75 ]]; then
+  # 50 < BATTERY < 75
+  ICON=""
+  COLOR="#11FF99"
+  else
+  # 75 < BATTERY
+  ICON=""
+  COLOR="#11FF66"
+  fi
 else
 ICON=""
 COLOR="#11EE22"
