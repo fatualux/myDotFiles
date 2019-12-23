@@ -62,9 +62,20 @@ Plug 'junegunn/vim-easy-align'
 Plug 'vim-syntastic/syntastic'
 Plug 'lilydjwg/colorizer'
 Plug 'RRethy/vim-illuminate'
-Plug 'numirias/semshi'
 Plug 'luochen1990/rainbow'
 Plug 'jiangmiao/auto-pairs'
+
+let g:multi_cursor_use_default_mapping=0
+
+" Default mapping
+let g:multi_cursor_start_word_key      = '<C-n>'
+let g:multi_cursor_select_all_word_key = '<A-n>'
+let g:multi_cursor_start_key           = 'g<C-n>'
+let g:multi_cursor_select_all_key      = 'g<A-n>'
+let g:multi_cursor_next_key            = '<C-n>'
+let g:multi_cursor_prev_key            = '<C-p>'
+let g:multi_cursor_skip_key            = '<C-x>'
+let g:multi_cursor_quit_key            = '<Esc>'
 
 call plug#end()
 
@@ -108,7 +119,7 @@ let g:NERDTreeDirArrowCollapsible = '-'
     "               \ 'ncm2#on_complete#omni', 'csscomplete#CompleteCSS'],
     au User Ncm2Plugin call ncm2#register_source({
             \ 'name' : 'css',
-            \ 'priority': 9, 
+            \ 'priority': 9,
             \ 'subscope_enable': 1,
             \ 'scope': ['css','scss'],
             \ 'mark': 'css',
@@ -188,13 +199,13 @@ silent! endwhile
 " Allow backspacing over everything in insert mode.
 set backspace=indent,eol,start
 
-set history=200		" keep 200 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
+set history=200         " keep 200 lines of command line history
+set ruler               " show the cursor position all the time
+set showcmd             " display incomplete commands
 
 
-set ttimeout		" time out for key codes
-set ttimeoutlen=100	" wait up to 100ms after Esc for special key
+set ttimeout            " time out for key codes
+set ttimeoutlen=100     " wait up to 100ms after Esc for special key
 
 " Show @@@ in the last line if it is truncated.
 set display=truncate
@@ -250,9 +261,9 @@ endif
       \ |   exe "normal! g`\""
       \ | endif
 
-  	augroup END
+      augroup END
 
-	endif " has("autocmd")
+      endif " has("autocmd")
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
@@ -260,7 +271,7 @@ endif
 " Revert with: ":delcommand DiffOrig".
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+                \ | wincmd p | diffthis
 endif
 
 if has('langmap') && exists('+langremap')
@@ -300,7 +311,7 @@ inoremap <expr> <S-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Es
 
 "settings for WildMenu
 
-set wildmenu		" display completion matches in a status lines
+set wildmenu               " display completion matches in a status lines
 set wildmode=longest:list,full
 
 :set guioptions+=m  "remove menu bar
