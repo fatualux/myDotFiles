@@ -2,7 +2,11 @@
 
 title=""
 prompt=""
+<<<<<<< HEAD
 options=("Poweroff" "Reboot" "Hibernate")
+=======
+options=("Poweroff" "Reboot" "Hibernate" "Suspend")
+>>>>>>> a86ccb5be4b91383a6660aac3f45df179bdfddbc
 
 echo "$title"
 PS3="$prompt "
