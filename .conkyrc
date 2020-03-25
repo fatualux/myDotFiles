@@ -30,8 +30,8 @@ double_buffer yes
 
 
 # size ################################################################
-minimum_size 1800 1000
-maximum_width 1365
+minimum_size 750 1000
+maximum_width 1280
 
 # position ############################################################
 alignment top_left
@@ -121,14 +121,13 @@ ${offset 100}$color2 Load: $color9 ${cpubar cpu2 6,220} $color4${cpu cpu2}$color
 ${offset 100}$color4 ${cpugraph cpu2 15,255 262729 87CEFA}
 
 ${voffset --20}${offset 900}$color8 NETWORK${hr 2}$color
-${offset 1020}$color2 essid : $color4${wireless_essid wls1}$color2 | MAC : $color4${wireless_ap wls1}
-${offset 1030}$color2 Wifi Level : $color4${wireless_link_qual wls1}$color2 /$color4 ${wireless_link_qual_max wls1}$color2 - Quality: $color4 ${wireless_link_qual_perc wls1}
-${offset 1040}$color2 IPv4 : $color4${addr wls1}
-${offset 1040}$color2
-${offset 1070}$color2 Down : $color4 ${downspeed wls1}$color2
-${offset 1070}$color4 ${downspeedgraph wls1 15,250 262729 87CEFA}
-${offset 1070}$color2 Up : ${offset 6} $color4 ${upspeed wls1}$color2
-${offset 1070}$color4 ${upspeedgraph wls1 15,250 262729 87CEFA}
+${offset 980}$color2 essid : $color4${wireless_essid wlan1}$color2
+${offset 1000}$color2 IPv4 : $color4${addr wlan1}
+${offset 1020}$color2 MAC : $color4${wireless_ap wlan1}
+${offset 1050}$color2 Down : $color4 ${downspeed wlan1} $color2
+${offset 1030}$color4 ${downspeedgraph wlan1 15,250 262729 87CEFA}
+${offset 1075}$color2 Up : $color4 ${upspeed wlan1} $color2
+${offset 1030}$color4 ${upspeedgraph wlan1 15,250 262729 87CEFA}
 
 ${voffset -20}${offset 500}$color8 ..: $color3 Power$color8 :..
 ${offset 500}$color2 BATTERY $color4  $battery
@@ -145,12 +144,12 @@ ${offset 40}$color9 ${fs_bar 6,320 /home}
 ${voffset -150}${offset 385}$color2 RAM: ${offset 0} $color9 ${membar 9,200}$color4 $mem ($memperc%)
 ${offset 410}$color2 Swap: $color9 ${swapbar 9,200}$color4 $swap ($swapperc%)
 
-${voffset -30}${offset 1250}$color8 ..: $color3 Activity$color8 :..
-${offset 1090}$color2 Read/Write: $color4 $diskio
-${offset 1090}$color2 Process :$color4 $running_processes$color2 /$color4 $processes
-${offset 1090}$color6 ${top name 1}$alignr $color4 ${top cpu 1}%
-${offset 1090}$color5 ${top name 2}$alignr $color4 ${top cpu 2}%
-${offset 1090}$color5 ${top name 3}$alignr $color4 ${top cpu 3}%
-${offset 1090}$color5 ${top name 4}$alignr $color4 ${top cpu 4}%
-${offset 1090}$color5 ${top name 5}$alignr $color4 ${top cpu 5}%
-${offset 1090} ${diskiograph 15,180 262729 87CEFA}
+${voffset -30}${offset 1050}$color8 ..: $color3 Activity$color8 :..
+${offset 1050}$color2 Read/Write: $color4 $diskio
+${offset 1050}$color2 Process :$color4 $running_processes$color2 /$color4 $processes
+${offset 1050}$color6 ${top name 1}$alignr $color4 ${top cpu 1}%
+${offset 1050}$color5 ${top name 2}$alignr $color4 ${top cpu 2}%
+${offset 1050}$color5 ${top name 3}$alignr $color4 ${top cpu 3}%
+${offset 1050}$color5 ${top name 4}$alignr $color4 ${top cpu 4}%
+${offset 1050}$color5 ${top name 5}$alignr $color4 ${top cpu 5}%
+${offset 1050} ${diskiograph 15,180 262729 87CEFA}

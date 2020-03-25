@@ -6,11 +6,6 @@ label=
 instance=caps
 interval=1
 
-[network]
-label=
-instance=wls1
-interval=10
-
 #[bandwidth]
 #instance=wls1;in
 #label=
@@ -21,12 +16,12 @@ interval=10
 #label=
 #interval=1
 
-[brightness]
+#[brightness]
 #label=
-instance=5
-interval=1
-signal=11
-min_width="0%"
+#instance=5
+#interval=1
+#signal=11
+#min_width="0%"
 
 [audio]
 #label=
@@ -34,7 +29,7 @@ interval=once
 signal=1
 
 [packages]
-label=
+label=
 interval=30
 
 [space]
@@ -47,7 +42,7 @@ instance=mem;free
 interval=10
 
 [load]
-label=
+label=
 interval=10
 
 [cpu]
@@ -65,15 +60,17 @@ interval=10
 
 [datetime]
 label=
-interval=5
+interval=1
 
 [bluetooth]
 label=
-interval=10
+interval=1
 
 [poweroff]
 color=#FF0011
 full_text=
-command=echo ""; [[ -z "${BLOCK_NAME}" ]] || .config/i3-blocks/blocks/poweroff
 
-
+[network]
+label=
+instance=wlp2s0
+interval=10

@@ -1,21 +1,21 @@
 #!/bin/bash
 
+STATUS=$(rfkill list 1 | grep -wo 'no')
+
+if [[ "${STATUS}" != "no" ]]; then
+        echo "ON"
+else
+        echo "OFF"
+        echo "OFF"
+        echo ""
+fi
+
+
 # Left click
 if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
-      dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#11119F " BTManager"
+      dunstify -t 1675 -h string:fgcolor:#FFFFFF -h string:bgcolor:#11119F " BTManager" && blueberry
 
-      blueberry
 # Right click
 elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
         termite -e "/home/fz/.scripts/bluetooth.sh"
-fi
-
-STATUS=$(bluetooth | grep -wo 'on')
-
-if [[ "${STATUS}" = "on" ]]; then
-        echo "ON"
-        echo "ON"
-        echo ""
-else
-        echo "OFF"
 fi

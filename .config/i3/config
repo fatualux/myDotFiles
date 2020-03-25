@@ -48,11 +48,12 @@ bindsym $mod+Shift+c exec nautilus /
 bindsym $mod+Shift+n exec telegram-desktop
 bindsym $mod+Shift+t exec termite
 bindsym $mod+Shift+g exec gvim
-bindsym $mod+Shift+s exec spotify
 bindsym $mod+Shift+a exec audacious
+bindsym $mod+Shift+p exec termite -e "gist"
 bindsym $mod+Shift+y exec termite -e ".scripts/translate.sh"
 
-
+bindsym $mod+Shift+f exec termite -e ".scripts/web_search.sh"
+#bindsym $mod+Shift+s exec spotify
 
     # XF86 Fn keys
 
@@ -77,7 +78,17 @@ bindsym XF86AudioStop exec --no-startup-id audacious --stop
 bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl -s 3%+; dunstify -r 111 ' +' $(xbacklight -get)%"
 bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl -s 3%-; dunstify -r 111 ' -' $(xbacklight -get)%"
 
+# increase/decrease keyboard brightness
+bindsym XF86KbdBrightnessUp exec --no-startup-id "macbook-lighter-kbd -i 3"
+bindsym XF86KbdBrightnessDown exec --no-startup-id "macbook-lighter-kbd -d 3"
+
 mouse_warping output
+
+# eject CD/DVD on MacBook Pro
+
+bindsym XF86Eject exec --no-startup-id "eject; dunstify -r 111 ' EJECT'"
+
+
 
     # CHANGE FOCUS (with arrows)
 bindsym $mod+Left focus left
@@ -196,7 +207,7 @@ bindsym $mod+m exec i3-msg bar mode toggle
             bar {
             status_command i3blocks -c .config/i3-blocks/config
             i3bar_command i3bar
-            font pango: Xolonium 9
+            font pango: Xolonium 8
             position top
             mode dock
             modifier Mod1
@@ -217,12 +228,13 @@ bindsym $mod+m exec i3-msg bar mode toggle
 #exec --no-startup-id feh --bg-fill ~/.config/i3/background.jpg
 exec --no-startup-id dunst &
 exec --no-startup-id compton &
-exec_always --no-startup-id pulseaudio --start
+exec_always --no-startup-id pulseaudio -k && pulseaudio --start
 exec_always --no-startup-id nm-applet
 exec --no-startup-id conky
 #exec_always --no-startup-id ~/.config/vbar/launch
+#exec --no-startup-id veracrypt &
 
- # Windows rules
+# Windows rules
 
 for_window [class="Pinentry"] floating enable
 for_window [window_role="pop-up"] floating enable
@@ -235,6 +247,8 @@ for_window [class="Firefox"] border pixel 1
 for_window [class="Spotify"] move to workspace 15
 assign [class="Telegram"] → 13
 assign [class="Audacious"] → 14
+assign [class="cmst"] → 0
+assign [class="VeraCrypt"] → 0
 
 for_window [class="XTerm"] floating enable move right 660px, move down 300px
 for_window [class="Termite"] floating enable
@@ -258,10 +272,10 @@ for_window [class="VirtualBox"] floating enable
 bindsym $mod+Ctrl+Escape exec i3lock-wrapper -l
 
  # Screenshot keybinds
-bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/Screen/' && dunstify -r 222 "SCREENSHOT AQUIRED."
-bindsym --release Control+Print exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "Region captured."
-bindsym Mod1+Print exec scrot -u '%Y-%m-%d-%s_screenshot_$wx$h.jpg' && dunstify -r 222 "Window captured."
-bindsym Control+Shift+Print exec scrot -w '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "SCREENSHOT TO CLIPBOARD."
+bindsym $mod + P exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/Screen/' && dunstify -r 222 "SCREENSHOT AQUIRED."
+bindsym --release Control+P exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "Region captured."
+bindsym Mod1+P exec scrot -u '%Y-%m-%d-%s_screenshot_$wx$h.jpg' && dunstify -r 222 "Window captured."
+bindsym Control+Shift+P exec scrot -w '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "SCREENSHOT TO CLIPBOARD."
 
  # Screenrecord keybinds
 bindsym $mod+Control+r exec bash .scripts/screencast.sh

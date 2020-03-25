@@ -128,6 +128,8 @@ days=$(( uptime/60/60/24 ))
 
 echo "$days days, $hours hours, $minutes minutes, $seconds seconds";
 
+
+
 echo " "
 
 
@@ -143,6 +145,11 @@ alias sudo='sudo '
 
 alias grep='grep --color=auto'
 
+alias npm='npq'
+
+alias pacman='pacmatic'
+
+alias python='python3'
+
 #Disown application from terminal when launched by shell command
 PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'disown -a -h'
-
