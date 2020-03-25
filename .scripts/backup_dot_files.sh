@@ -19,7 +19,6 @@ git add -f .vimrc
 git add -f .xinitrc
 
 git add -f .config/compton/
-git add -f .config/conky/
 git add -f .config/dunst/
 git add -f .config/gnome2/
 git add -f .config/gtk-2.0/
@@ -31,7 +30,6 @@ git add -f .config/i3-blocks/
 git add -f .config/i3status/
 git add -f .config/oomox/
 git add -f .config/termite/
-git add -f .config/touchegg/
 
 git add -f .fonts/
 git add -f .gconf/

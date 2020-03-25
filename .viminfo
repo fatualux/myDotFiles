@@ -20,6 +20,12 @@
 $&
 
 # Command Line History (newest to oldest):
+:wq!
+|2,0,1585102068,,"wq!"
+:wq
+|2,0,1585102057,,"wq"
+:q
+|2,0,1585101999,,"q"
 :e .config/i3-blocks/blocks/poweroff
 |2,0,1585065837,,"e .config/i3-blocks/blocks/poweroff"
 :e .config/i3-blocks/blocks/packages
@@ -32,10 +38,6 @@ $&
 |2,0,1585065424,,"e .config/i3-blocks/blocks/alarm"
 :e .scripts/timer.sh
 |2,0,1585065415,,"e .scripts/timer.sh"
-:q
-|2,0,1585063514,,"q"
-:wq
-|2,0,1585063090,,"wq"
 :split
 |2,0,1585062824,,"split"
 :s
@@ -54,8 +56,6 @@ $&
 |2,0,1583945167,,"e .config/i3/config"
 :e .xinitrc
 |2,0,1583945151,,"e .xinitrc"
-:wq!
-|2,0,1583793445,,"wq!"
 :PlugInstall
 |2,0,1583792961,,"PlugInstall"
 :PlugClean
@@ -476,18 +476,24 @@ $&
 |<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi",>2
 |<"","    # percentage progress"
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1585065459,""
+	git add -f .config/touchegg/
+|3,1,1,1,1,0,1585102052,"git add -f .config/touchegg/"
 "2	LINE	0
-	termite -e ".scripts/tddimer.sh"
-|3,0,2,1,1,0,1585065458,"termite -e \".scripts/tddimer.sh\""
+	git add -f .config/conky/
+|3,0,2,1,1,0,1585102042,"git add -f .config/conky/"
 "3	LINE	0
 	
-|3,0,3,1,1,0,1585065436,""
+|3,0,3,1,1,0,1585065459,""
 "4	LINE	0
-	mplayer Music/Varie/RcOST.flac
-|3,0,4,1,1,0,1585063420,"mplayer Music/Varie/RcOST.flac"
+	termite -e ".scripts/tddimer.sh"
+|3,0,4,1,1,0,1585065458,"termite -e \".scripts/tddimer.sh\""
 "5	LINE	0
+	
+|3,0,5,1,1,0,1585065436,""
+"6	LINE	0
+	mplayer Music/Varie/RcOST.flac
+|3,0,6,1,1,0,1585063420,"mplayer Music/Varie/RcOST.flac"
+"7	LINE	0
 	#!/usr/bin/bash
 	
 	echo "Choose an interval for your alarm:";
@@ -538,11 +544,11 @@ $&
 	
 	    # percentage progress
 	    local PROGRESS=$( bc -l <<< "( 100 * $TIME ) / ($DURATION-$INT)" | awk '{ printf "%.0f", $0 }' )
-|3,0,5,1,50,0,1585063059,"#!/usr/bin/bash","","echo \"Choose an interval for your alarm:\";","read interval;","clear && echo $interval\"minutes\";","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
+|3,0,7,1,50,0,1585063059,"#!/usr/bin/bash","","echo \"Choose an interval for your alarm:\";","read interval;","clear && echo $interval\"minutes\";","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
 |<"  echo -ne \"$(tput civis)\\r$(tput el)│\"                # clean line","","  local START=$( date +%s%N )","","  while [ $SECS -lt $DURATION ]; do","    local COLS=$( tput cols )","","    # main bar","    local L=$( bc -l <<< \"( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)\" | awk '{ printf \"%f\", $0 }' )","    local N=$( bc -l <<< $L                                              | awk '{ printf \"%d\", $0 }' )","",>80
 |<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi",>2
 |<"","    # percentage progress","    local PROGRESS=$( bc -l <<< \"( 100 * $TIME ) / ($DURATION-$INT)\" | awk '{ printf \"%.0f\", $0 }' )"
-"6	LINE	0
+"8	LINE	0
 	#! /bin/bash#!
 	#/bin/sh
 	
@@ -593,247 +599,270 @@ $&
 	      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )
 	      echo -ne \\u$PB
 	    fi
-|3,0,6,1,50,0,1585063033,"#! /bin/bash#!","#/bin/sh","","echo \".:TIMER:.\"","echo \"How many minutes?\"","","read -r ch_minutes","interval=$((ch_minutes * 60))","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
+|3,0,8,1,50,0,1585063033,"#! /bin/bash#!","#/bin/sh","","echo \".:TIMER:.\"","echo \"How many minutes?\"","","read -r ch_minutes","interval=$((ch_minutes * 60))","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
 |<"  echo -ne \"$(tput civis)\\r$(tput el)│\"                # clean line","","  local START=$( date +%s%N )","","  while [ $SECS -lt $DURATION ]; do","    local COLS=$( tput cols )","","    # main bar","    local L=$( bc -l <<< \"( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)\" | awk '{ printf \"%f\", $0 }' )","    local N=$( bc -l <<< $L                                              | awk '{ printf \"%d\", $0 }' )","",>80
 |<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi"
-"7	LINE	0
-	
-|3,0,7,1,1,0,1585062895,""
-"8	LINE	0
-	  progress-bar $interval*60;
-|3,0,8,1,1,0,1585062745,"  progress-bar $interval*60;"
 "9	LINE	0
 	
-|3,0,9,1,1,0,1585062744,""
+|3,0,9,1,1,0,1585062895,""
 "-	CHAR	0
 	 
 |3,0,36,0,1,0,1585062797," "
 
 # File marks:
-'0  33  0  ~/.config/i3-blocks/blocks/poweroff
-|4,48,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
-'1  1  68  ~/.config/i3-blocks/blocks/packages
-|4,49,1,68,1585065404,"~/.config/i3-blocks/blocks/packages"
-'2  1  68  ~/.config/i3-blocks/blocks/packages
-|4,50,1,68,1585065404,"~/.config/i3-blocks/blocks/packages"
-'3  27  16  ~/.scripts/timer.sh
-|4,51,27,16,1585063514,"~/.scripts/timer.sh"
-'4  27  16  ~/.scripts/timer.sh
-|4,52,27,16,1585063514,"~/.scripts/timer.sh"
-'5  27  16  ~/.scripts/timer.sh
-|4,53,27,16,1585063514,"~/.scripts/timer.sh"
-'6  27  16  ~/.scripts/timer.sh
-|4,54,27,16,1585063514,"~/.scripts/timer.sh"
-'7  1  28  ~/.config/i3-blocks/blocks/alarm
-|4,55,1,28,1585063091,"~/.config/i3-blocks/blocks/alarm"
-'8  1  28  ~/.config/i3-blocks/blocks/alarm
-|4,56,1,28,1585063091,"~/.config/i3-blocks/blocks/alarm"
-'9  1  28  ~/.config/i3-blocks/blocks/alarm
-|4,57,1,28,1585063091,"~/.config/i3-blocks/blocks/alarm"
+'0  34  0  ~/.scripts/backup_dot_files.sh
+|4,48,34,0,1585102068,"~/.scripts/backup_dot_files.sh"
+'1  2  0  ~/.git/index
+|4,49,2,0,1585101999,"~/.git/index"
+'2  1  0  ~/.git/config
+|4,50,1,0,1585101960,"~/.git/config"
+'3  1  0  ~/.gitignore
+|4,51,1,0,1585101920,"~/.gitignore"
+'4  1  0  ~/.gitignore
+|4,52,1,0,1585101920,"~/.gitignore"
+'5  1  0  ~/.gitconfig
+|4,53,1,0,1585101899,"~/.gitconfig"
+'6  1  0  ~/.gitconfig
+|4,54,1,0,1585101899,"~/.gitconfig"
+'7  1  0  ~/.gitconfig
+|4,55,1,0,1585101899,"~/.gitconfig"
+'8  1  0  ~/.gitconfig
+|4,56,1,0,1585101899,"~/.gitconfig"
+'9  1  0  ~/NERD_tree_1
+|4,57,1,0,1585101880,"~/NERD_tree_1"
 
 # Jumplist (newest first):
+-'  34  0  ~/.scripts/backup_dot_files.sh
+|4,39,34,0,1585102068,"~/.scripts/backup_dot_files.sh"
+-'  1  0  ~/.scripts/backup_dot_files.sh
+|4,39,1,0,1585102026,"~/.scripts/backup_dot_files.sh"
+-'  2  0  ~/.git/index
+|4,39,2,0,1585101999,"~/.git/index"
+-'  2  0  ~/.git/index
+|4,39,2,0,1585101999,"~/.git/index"
+-'  1  0  ~/.git/index
+|4,39,1,0,1585101984,"~/.git/index"
+-'  1  0  ~/.git/index
+|4,39,1,0,1585101984,"~/.git/index"
+-'  1  0  ~/.git/config
+|4,39,1,0,1585101960,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1585101960,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1585101960,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1585101960,"~/.git/config"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585101920,"~/.gitignore"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1585101899,"~/.gitconfig"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1585101880,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
+-'  33  0  ~/.config/i3-blocks/blocks/poweroff
+|4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
 -'  33  0  ~/.config/i3-blocks/blocks/poweroff
 |4,39,33,0,1585065879,"~/.config/i3-blocks/blocks/poweroff"
 -'  32  0  ~/.config/i3-blocks/blocks/packages
 |4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
--'  10  51  ~/.config/i3-blocks/blocks/datetime
-|4,39,10,51,1585065792,"~/.config/i3-blocks/blocks/datetime"
--'  11  3  ~/.config/i3-blocks/blocks/datetime
-|4,39,11,3,1585065780,"~/.config/i3-blocks/blocks/datetime"
--'  1  0  ~/.config/i3-blocks/blocks/datetime
-|4,39,1,0,1585065653,"~/.config/i3-blocks/blocks/datetime"
--'  29  2  ~/.config/i3-blocks/blocks/packages
-|4,39,29,2,1585065619,"~/.config/i3-blocks/blocks/packages"
--'  1  1  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,1,1585065515,"~/.config/i3-blocks/blocks/alarm"
--'  1  0  ~/.scripts/timer.sh
-|4,39,1,0,1585065424,"~/.scripts/timer.sh"
--'  77  44  ~/.scripts/timer.sh
-|4,39,77,44,1585065416,"~/.scripts/timer.sh"
--'  1  10  ~/.config/i3-blocks/blocks/packages
-|4,39,1,10,1585065415,"~/.config/i3-blocks/blocks/packages"
--'  1  68  ~/.config/i3-blocks/blocks/packages
-|4,39,1,68,1585065404,"~/.config/i3-blocks/blocks/packages"
--'  77  44  ~/.scripts/timer.sh
-|4,39,77,44,1585065374,"~/.scripts/timer.sh"
--'  74  14  ~/.scripts/timer.sh
-|4,39,74,14,1585064743,"~/.scripts/timer.sh"
--'  74  14  ~/.scripts/timer.sh
-|4,39,74,14,1585064743,"~/.scripts/timer.sh"
--'  76  84  ~/.scripts/timer.sh
-|4,39,76,84,1585064737,"~/.scripts/timer.sh"
--'  76  84  ~/.scripts/timer.sh
-|4,39,76,84,1585064737,"~/.scripts/timer.sh"
--'  1  0  ~/.scripts/timer.sh
-|4,39,1,0,1585063558,"~/.scripts/timer.sh"
--'  27  16  ~/.scripts/timer.sh
-|4,39,27,16,1585063514,"~/.scripts/timer.sh"
--'  27  16  ~/.scripts/timer.sh
-|4,39,27,16,1585063514,"~/.scripts/timer.sh"
--'  27  16  ~/.scripts/timer.sh
-|4,39,27,16,1585063514,"~/.scripts/timer.sh"
--'  71  0  ~/.scripts/timer.sh
-|4,39,71,0,1585063506,"~/.scripts/timer.sh"
--'  71  0  ~/.scripts/timer.sh
-|4,39,71,0,1585063506,"~/.scripts/timer.sh"
--'  1  0  ~/.scripts/timer.sh
-|4,39,1,0,1585063506,"~/.scripts/timer.sh"
--'  71  0  ~/.scripts/timer.sh
-|4,39,71,0,1585063506,"~/.scripts/timer.sh"
--'  1  0  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,0,1585063168,"~/.config/i3-blocks/blocks/alarm"
--'  1  0  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,0,1585063168,"~/.config/i3-blocks/blocks/alarm"
--'  1  28  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,28,1585063091,"~/.config/i3-blocks/blocks/alarm"
--'  1  28  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,28,1585063091,"~/.config/i3-blocks/blocks/alarm"
--'  20  12  ~/.scripts/timer.sh
-|4,39,20,12,1585063056,"~/.scripts/timer.sh"
--'  19  12  ~/.scripts/timer.sh
-|4,39,19,12,1585063056,"~/.scripts/timer.sh"
--'  20  12  ~/.scripts/timer.sh
-|4,39,20,12,1585063056,"~/.scripts/timer.sh"
--'  19  12  ~/.scripts/timer.sh
-|4,39,19,12,1585063056,"~/.scripts/timer.sh"
--'  20  12  ~/.scripts/timer.sh
-|4,39,20,12,1585063056,"~/.scripts/timer.sh"
--'  19  12  ~/.scripts/timer.sh
-|4,39,19,12,1585063056,"~/.scripts/timer.sh"
--'  1  0  ~/.scripts/timer.sh
-|4,39,1,0,1585063032,"~/.scripts/timer.sh"
--'  12  1  ~/.scripts/timer.sh
-|4,39,12,1,1585062981,"~/.scripts/timer.sh"
--'  11  1  ~/.scripts/timer.sh
-|4,39,11,1,1585062981,"~/.scripts/timer.sh"
--'  12  1  ~/.scripts/timer.sh
-|4,39,12,1,1585062981,"~/.scripts/timer.sh"
--'  11  1  ~/.scripts/timer.sh
-|4,39,11,1,1585062981,"~/.scripts/timer.sh"
--'  12  1  ~/.scripts/timer.sh
-|4,39,12,1,1585062981,"~/.scripts/timer.sh"
--'  11  1  ~/.scripts/timer.sh
-|4,39,11,1,1585062981,"~/.scripts/timer.sh"
--'  11  1  ~/.scripts/timer.sh
-|4,39,11,1,1585062981,"~/.scripts/timer.sh"
--'  80  32  ~/.config/i3-blocks/blocks/alarm
-|4,39,80,32,1585062840,"~/.config/i3-blocks/blocks/alarm"
--'  5  32  ~/.config/i3-blocks/blocks/alarm
-|4,39,5,32,1585062840,"~/.config/i3-blocks/blocks/alarm"
--'  5  32  ~/.config/i3-blocks/blocks/alarm
-|4,39,5,32,1585062840,"~/.config/i3-blocks/blocks/alarm"
--'  5  32  ~/.config/i3-blocks/blocks/alarm
-|4,39,5,32,1585062840,"~/.config/i3-blocks/blocks/alarm"
--'  5  32  ~/.config/i3-blocks/blocks/alarm
-|4,39,5,32,1585062840,"~/.config/i3-blocks/blocks/alarm"
--'  5  32  ~/.config/i3-blocks/blocks/alarm
-|4,39,5,32,1585062840,"~/.config/i3-blocks/blocks/alarm"
--'  5  32  ~/.config/i3-blocks/blocks/alarm
-|4,39,5,32,1585062840,"~/.config/i3-blocks/blocks/alarm"
--'  1  0  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,0,1585062699,"~/.config/i3-blocks/blocks/alarm"
--'  1  0  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,0,1585062699,"~/.config/i3-blocks/blocks/alarm"
--'  1  0  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,0,1585062699,"~/.config/i3-blocks/blocks/alarm"
--'  1  0  ~/.config/i3-blocks/blocks/alarm
-|4,39,1,0,1585062699,"~/.config/i3-blocks/blocks/alarm"
--'  74  96  ~/.scripts/timer.sh
-|4,39,74,96,1585062213,"~/.scripts/timer.sh"
--'  74  12  ~/.scripts/timer.sh
-|4,39,74,12,1585062213,"~/.scripts/timer.sh"
--'  74  12  ~/.scripts/timer.sh
-|4,39,74,12,1585062213,"~/.scripts/timer.sh"
--'  74  12  ~/.scripts/timer.sh
-|4,39,74,12,1585062213,"~/.scripts/timer.sh"
--'  74  12  ~/.scripts/timer.sh
-|4,39,74,12,1585062213,"~/.scripts/timer.sh"
--'  74  21  ~/.scripts/timer.sh
-|4,39,74,21,1585062061,"~/.scripts/timer.sh"
--'  74  21  ~/.scripts/timer.sh
-|4,39,74,21,1585062061,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  8  0  ~/.scripts/timer.sh
-|4,39,8,0,1585061840,"~/.scripts/timer.sh"
--'  10  0  ~/.scripts/timer.sh
-|4,39,10,0,1585061838,"~/.scripts/timer.sh"
--'  10  0  ~/.scripts/timer.sh
-|4,39,10,0,1585061838,"~/.scripts/timer.sh"
--'  10  0  ~/.scripts/timer.sh
-|4,39,10,0,1585061838,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061838,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061838,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061838,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061838,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061838,"~/.scripts/timer.sh"
--'  9  0  ~/.scripts/timer.sh
-|4,39,9,0,1585061838,"~/.scripts/timer.sh"
--'  18  27  ~/.scripts/timer.sh
-|4,39,18,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  18  27  ~/.scripts/timer.sh
-|4,39,18,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  18  27  ~/.scripts/timer.sh
-|4,39,18,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  17  27  ~/.scripts/timer.sh
-|4,39,17,27,1585020974,"~/.scripts/timer.sh"
--'  25  37  ~/.scripts/timer.sh
-|4,39,25,37,1585018993,"~/.scripts/timer.sh"
--'  24  37  ~/.scripts/timer.sh
-|4,39,24,37,1585018993,"~/.scripts/timer.sh"
--'  25  37  ~/.scripts/timer.sh
-|4,39,25,37,1585018993,"~/.scripts/timer.sh"
--'  24  37  ~/.scripts/timer.sh
-|4,39,24,37,1585018993,"~/.scripts/timer.sh"
--'  25  37  ~/.scripts/timer.sh
-|4,39,25,37,1585018993,"~/.scripts/timer.sh"
--'  24  37  ~/.scripts/timer.sh
-|4,39,24,37,1585018993,"~/.scripts/timer.sh"
--'  24  37  ~/.scripts/timer.sh
-|4,39,24,37,1585018993,"~/.scripts/timer.sh"
--'  24  37  ~/.scripts/timer.sh
-|4,39,24,37,1585018993,"~/.scripts/timer.sh"
--'  24  37  ~/.scripts/timer.sh
-|4,39,24,37,1585018993,"~/.scripts/timer.sh"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
+-'  32  0  ~/.config/i3-blocks/blocks/packages
+|4,39,32,0,1585065837,"~/.config/i3-blocks/blocks/packages"
 
 # History of marks within files (newest to oldest):
+
+> ~/.scripts/backup_dot_files.sh
+	*	1585102063	0
+	"	34	0
+	.	33	0
+	+	22	0
+	+	33	0
+
+> ~/.git/index
+	*	1585101996	0
+	"	2	0
+
+> ~/.git/config
+	*	1585101955	0
+	"	1	0
+
+> ~/.gitignore
+	*	1585101913	0
+	"	1	0
+
+> ~/.gitconfig
+	*	1585101894	0
+	"	1	0
+
+> ~/NERD_tree_1
+	*	1585101878	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/.config/i3-blocks/blocks/poweroff
 	*	1585065879	0
