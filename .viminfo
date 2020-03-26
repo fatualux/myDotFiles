@@ -21,11 +21,15 @@ $&
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1585102246,,"q"
+|2,0,1585241533,,"q"
+:w
+|2,0,1585103014,,"w"
+:wq
+|2,0,1585102877,,"wq"
+:e .config/i3/config
+|2,0,1585102809,,"e .config/i3/config"
 :e .config/i3-blocks/blocks/packages
 |2,0,1585101147,,"e .config/i3-blocks/blocks/packages"
-:w
-|2,0,1585101142,,"w"
 :e .config/i3-blocks/blocks/datetime
 |2,0,1585101047,,"e .config/i3-blocks/blocks/datetime"
 :e .config/i3-blocks/blocks/poweroff
@@ -34,8 +38,6 @@ $&
 |2,0,1585100723,,"e .config/i3-blocks/config"
 :wq!
 |2,0,1585102068,,"wq!"
-:wq
-|2,0,1585102057,,"wq"
 :e .config/i3-blocks/blocks/alarm
 |2,0,1585065424,,"e .config/i3-blocks/blocks/alarm"
 :e .scripts/timer.sh
@@ -54,8 +56,6 @@ $&
 |2,0,1584555757,,"e .conkyrc"
 :e ciao.txr
 |2,0,1584049259,,"e ciao.txr"
-:e .config/i3/config
-|2,0,1583945167,,"e .config/i3/config"
 :e .xinitrc
 |2,0,1583945151,,"e .xinitrc"
 :PlugInstall
@@ -420,80 +420,31 @@ $&
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	#!/usr/bin/bash
+""0	LINE	0
+	bindsym $mod+Shift+y exec termite -e ".scripts/translate.sh"
+|3,1,0,1,1,0,1585102822,"bindsym $mod+Shift+y exec termite -e \".scripts/translate.sh\""
+"1	LINE	0
 	
-	echo "Choose an interval for your alarm:";
-	read chosenInterval;
-	interval=$((chosenInterval*60))
-	clear
-	
-	progress_bar()
-	{
-	  local DURATION=$1
-	  local INT=0.25      # refresh interval
-	
-	  local TIME=0
-	  local CURLEN=0
-	  local SECS=0
-	  local FRACTION=0
-	
-	  local FB=2588       # full block
-	
-	  trap "echo -e $(tput cnorm); trap - SIGINT; return" SIGINT
-	
-	  echo -ne "$(tput civis)\r$(tput el)│"                # clean line
-	
-	  local START=$( date +%s%N )
-	
-	  while [ $SECS -lt $DURATION ]; do
-	    local COLS=$( tput cols )
-	
-	    # main bar
-	    local L=$( bc -l <<< "( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)" | awk '{ printf "%f", $0 }' )
-	    local N=$( bc -l <<< $L                                              | awk '{ printf "%d", $0 }' )
-	
-	    [ $FRACTION -ne 0 ] && echo -ne "$( tput cub 1 )"  # erase partial block
-	
-	    if [ $N -gt $CURLEN ]; then
-	      for i in $( seq 1 $(( N - CURLEN )) ); do
-	        echo -ne \\u$FB
-	      done
-	      CURLEN=$N
-	    fi
-	
-	    # partial block adjustment
-	    FRACTION=$( bc -l <<< "( $L - $N ) * 8" | awk '{ printf "%.0f", $0 }' )
-	
-	    if [ $FRACTION -ne 0 ]; then 
-	      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )
-	      echo -ne \\u$PB
-	    fi
-	
-	    # percentage progress
-|3,0,0,1,50,0,1585065418,"#!/usr/bin/bash","","echo \"Choose an interval for your alarm:\";","read chosenInterval;","interval=$((chosenInterval*60))","clear","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
-|<"  echo -ne \"$(tput civis)\\r$(tput el)│\"                # clean line","","  local START=$( date +%s%N )","","  while [ $SECS -lt $DURATION ]; do","    local COLS=$( tput cols )","","    # main bar","    local L=$( bc -l <<< \"( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)\" | awk '{ printf \"%f\", $0 }' )","    local N=$( bc -l <<< $L                                              | awk '{ printf \"%d\", $0 }' )","",>80
-|<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi",>2
-|<"","    # percentage progress"
-""1	LINE	0
-	git add -f .config/touchegg/
-|3,1,1,1,1,0,1585102052,"git add -f .config/touchegg/"
+|3,0,1,1,1,0,1585102826,""
 "2	LINE	0
-	git add -f .config/conky/
-|3,0,2,1,1,0,1585102042,"git add -f .config/conky/"
+	git add -f .config/touchegg/
+|3,0,2,1,1,0,1585102052,"git add -f .config/touchegg/"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1585065459,""
+	git add -f .config/conky/
+|3,0,3,1,1,0,1585102042,"git add -f .config/conky/"
 "4	LINE	0
-	termite -e ".scripts/tddimer.sh"
-|3,0,4,1,1,0,1585065458,"termite -e \".scripts/tddimer.sh\""
-"5	LINE	0
 	
-|3,0,5,1,1,0,1585065436,""
+|3,0,4,1,1,0,1585065459,""
+"5	LINE	0
+	termite -e ".scripts/tddimer.sh"
+|3,0,5,1,1,0,1585065458,"termite -e \".scripts/tddimer.sh\""
 "6	LINE	0
-	mplayer Music/Varie/RcOST.flac
-|3,0,6,1,1,0,1585063420,"mplayer Music/Varie/RcOST.flac"
+	
+|3,0,6,1,1,0,1585065436,""
 "7	LINE	0
+	mplayer Music/Varie/RcOST.flac
+|3,0,7,1,1,0,1585063420,"mplayer Music/Varie/RcOST.flac"
+"8	LINE	0
 	#!/usr/bin/bash
 	
 	echo "Choose an interval for your alarm:";
@@ -544,11 +495,11 @@ $&
 	
 	    # percentage progress
 	    local PROGRESS=$( bc -l <<< "( 100 * $TIME ) / ($DURATION-$INT)" | awk '{ printf "%.0f", $0 }' )
-|3,0,7,1,50,0,1585063059,"#!/usr/bin/bash","","echo \"Choose an interval for your alarm:\";","read interval;","clear && echo $interval\"minutes\";","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
+|3,0,8,1,50,0,1585063059,"#!/usr/bin/bash","","echo \"Choose an interval for your alarm:\";","read interval;","clear && echo $interval\"minutes\";","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
 |<"  echo -ne \"$(tput civis)\\r$(tput el)│\"                # clean line","","  local START=$( date +%s%N )","","  while [ $SECS -lt $DURATION ]; do","    local COLS=$( tput cols )","","    # main bar","    local L=$( bc -l <<< \"( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)\" | awk '{ printf \"%f\", $0 }' )","    local N=$( bc -l <<< $L                                              | awk '{ printf \"%d\", $0 }' )","",>80
 |<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi",>2
 |<"","    # percentage progress","    local PROGRESS=$( bc -l <<< \"( 100 * $TIME ) / ($DURATION-$INT)\" | awk '{ printf \"%.0f\", $0 }' )"
-"8	LINE	0
+"9	LINE	0
 	#! /bin/bash#!
 	#/bin/sh
 	
@@ -599,248 +550,271 @@ $&
 	      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )
 	      echo -ne \\u$PB
 	    fi
-|3,0,8,1,50,0,1585063033,"#! /bin/bash#!","#/bin/sh","","echo \".:TIMER:.\"","echo \"How many minutes?\"","","read -r ch_minutes","interval=$((ch_minutes * 60))","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
+|3,0,9,1,50,0,1585063033,"#! /bin/bash#!","#/bin/sh","","echo \".:TIMER:.\"","echo \"How many minutes?\"","","read -r ch_minutes","interval=$((ch_minutes * 60))","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
 |<"  echo -ne \"$(tput civis)\\r$(tput el)│\"                # clean line","","  local START=$( date +%s%N )","","  while [ $SECS -lt $DURATION ]; do","    local COLS=$( tput cols )","","    # main bar","    local L=$( bc -l <<< \"( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)\" | awk '{ printf \"%f\", $0 }' )","    local N=$( bc -l <<< $L                                              | awk '{ printf \"%d\", $0 }' )","",>80
 |<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi"
-"9	LINE	0
-	
-|3,0,9,1,1,0,1585062895,""
 "-	CHAR	0
-	 
-|3,0,36,0,1,0,1585062797," "
+	a
+|3,0,36,0,1,0,1585102957,"a"
 
 # File marks:
-'0  7  0  ~/.scripts/backup_dot_files.sh
-|4,48,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
-'1  32  0  ~/.config/i3-blocks/blocks/packages
-|4,49,32,0,1585102142,"~/.config/i3-blocks/blocks/packages"
-'2  34  0  ~/.scripts/backup_dot_files.sh
-|4,50,34,0,1585102068,"~/.scripts/backup_dot_files.sh"
-'3  34  0  ~/.scripts/backup_dot_files.sh
-|4,51,34,0,1585102068,"~/.scripts/backup_dot_files.sh"
-'4  2  0  ~/.git/index
-|4,52,2,0,1585101999,"~/.git/index"
-'5  1  0  ~/.git/config
-|4,53,1,0,1585101960,"~/.git/config"
-'6  1  0  ~/.gitignore
-|4,54,1,0,1585101920,"~/.gitignore"
-'7  1  0  ~/.gitignore
-|4,55,1,0,1585101920,"~/.gitignore"
-'8  1  0  ~/.gitconfig
-|4,56,1,0,1585101899,"~/.gitconfig"
-'9  1  0  ~/.gitconfig
-|4,57,1,0,1585101899,"~/.gitconfig"
+'0  45  0  ~/.scripts/backup_dot_files.sh
+|4,48,45,0,1585241592,"~/.scripts/backup_dot_files.sh"
+'1  1  0  ~/.gitignore
+|4,49,1,0,1585241577,"~/.gitignore"
+'2  1  0  ~/.git/.gitignore
+|4,50,1,0,1585241427,"~/.git/.gitignore"
+'3  1  0  ~/.gitignore
+|4,51,1,0,1585241402,"~/.gitignore"
+'4  45  0  ~/.scripts/backup_dot_files.sh
+|4,52,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+'5  54  19  ~/.config/i3/config
+|4,53,54,19,1585103020,"~/.config/i3/config"
+'6  54  51  ~/.config/i3/config
+|4,54,54,51,1585102877,"~/.config/i3/config"
+'7  7  0  ~/.scripts/backup_dot_files.sh
+|4,55,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+'8  7  0  ~/.scripts/backup_dot_files.sh
+|4,56,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+'9  32  0  ~/.config/i3-blocks/blocks/packages
+|4,57,32,0,1585102142,"~/.config/i3-blocks/blocks/packages"
 
 # Jumplist (newest first):
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585241592,"~/.scripts/backup_dot_files.sh"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585241577,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585241577,"~/.gitignore"
+-'  1  0  ~/.git/.gitignore
+|4,39,1,0,1585241427,"~/.git/.gitignore"
+-'  1  0  ~/.git/.gitignore
+|4,39,1,0,1585241427,"~/.git/.gitignore"
+-'  1  0  ~/.git/.gitignore
+|4,39,1,0,1585241427,"~/.git/.gitignore"
+-'  1  0  ~/.git/.gitignore
+|4,39,1,0,1585241427,"~/.git/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585241402,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585241402,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585241402,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1585241402,"~/.gitignore"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  45  0  ~/.scripts/backup_dot_files.sh
+|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  19  ~/.config/i3/config
+|4,39,54,19,1585103020,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  54  51  ~/.config/i3/config
+|4,39,54,51,1585102877,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585102809,"~/.config/i3/config"
 -'  7  0  ~/.scripts/backup_dot_files.sh
 |4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  32  0  ~/.config/i3-blocks/blocks/packages
-|4,39,32,0,1585102142,"~/.config/i3-blocks/blocks/packages"
--'  34  0  ~/.scripts/backup_dot_files.sh
-|4,39,34,0,1585102139,"~/.scripts/backup_dot_files.sh"
--'  34  0  ~/.scripts/backup_dot_files.sh
-|4,39,34,0,1585102068,"~/.scripts/backup_dot_files.sh"
--'  1  0  ~/.scripts/backup_dot_files.sh
-|4,39,1,0,1585102026,"~/.scripts/backup_dot_files.sh"
--'  1  0  ~/.scripts/backup_dot_files.sh
-|4,39,1,0,1585102026,"~/.scripts/backup_dot_files.sh"
--'  2  0  ~/.git/index
-|4,39,2,0,1585101999,"~/.git/index"
--'  2  0  ~/.git/index
-|4,39,2,0,1585101999,"~/.git/index"
--'  2  0  ~/.git/index
-|4,39,2,0,1585101999,"~/.git/index"
--'  2  0  ~/.git/index
-|4,39,2,0,1585101999,"~/.git/index"
--'  1  0  ~/.git/index
-|4,39,1,0,1585101984,"~/.git/index"
--'  1  0  ~/.git/index
-|4,39,1,0,1585101984,"~/.git/index"
--'  1  0  ~/.git/index
-|4,39,1,0,1585101984,"~/.git/index"
--'  1  0  ~/.git/index
-|4,39,1,0,1585101984,"~/.git/index"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.git/config
-|4,39,1,0,1585101960,"~/.git/config"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585101920,"~/.gitignore"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1585101899,"~/.gitconfig"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1585101880,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1585101861,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1585101861,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1585101861,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1585101861,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1585101861,"~/NERD_tree_1"
--'  16  2  ~/NERD_tree_1
-|4,39,16,2,1585101861,"~/NERD_tree_1"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+-'  7  0  ~/.scripts/backup_dot_files.sh
+|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
 
 # History of marks within files (newest to oldest):
 
-> ~/.scripts/backup_dot_files.sh
-	*	1585102244	0
-	"	7	0
-	.	33	0
-	+	22	0
-	+	33	0
+> ~/.gitignore
+	*	1585241552	0
+	"	1	0
+	^	1	7
+	.	1	0
+	+	1	0
+	a	1	6
+	m	1	7
+
+> ~/.git/.gitignore
+	*	1585241425	0
+	"	1	0
+
+> ~/.config/i3/config
+	*	1585103014	0
+	"	54	19
+	^	54	20
+	.	54	19
+	+	164	0
+	+	231	63
+	+	164	0
+	+	232	0
+	+	233	0
+	+	55	0
+	+	55	36
+	+	55	0
+	+	53	0
+	+	55	0
+	+	55	59
+	+	54	0
+	+	54	50
+	+	54	19
 
 > ~/.config/i3-blocks/blocks/packages
 	*	1585102141	0
@@ -857,10 +831,6 @@ $&
 	*	1585101955	0
 	"	1	0
 
-> ~/.gitignore
-	*	1585101913	0
-	"	1	0
-
 > ~/.gitconfig
 	*	1585101894	0
 	"	1	0
@@ -870,6 +840,10 @@ $&
 	"	1	0
 	.	1	0
 	+	1	0
+
+> ~/.scripts/backup_dot_files.sh
+	*	1585101418	0
+	"	45	0
 
 > ~/.config/i3-blocks/blocks/datetime
 	*	1585101142	0
@@ -1083,24 +1057,6 @@ $&
 	+	16	86
 	+	7	0
 	+	16	0
-
-> ~/.config/i3/config
-	*	1584973825	0
-	"	54	0
-	^	54	0
-	.	54	0
-	+	164	0
-	+	231	63
-	+	164	0
-	+	232	0
-	+	233	0
-	+	55	0
-	+	55	36
-	+	55	0
-	+	53	0
-	+	55	0
-	+	55	59
-	+	54	0
 
 > ~/web_search.sh
 	*	1584972351	0

@@ -51,7 +51,7 @@ bindsym $mod+Shift+g exec gvim
 bindsym $mod+Shift+a exec audacious
 bindsym $mod+Shift+p exec termite -e "gist"
 bindsym $mod+Shift+y exec termite -e ".scripts/translate.sh"
-
+bindsym $mod+Shift+z exec termite -e ".scripts/timer.sh"
 bindsym $mod+Shift+f exec termite -e ".scripts/web_search.sh"
 #bindsym $mod+Shift+s exec spotify
 
