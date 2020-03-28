@@ -11,7 +11,6 @@ git add -f .asoundrc
 git add -f .bashrc
 git add -f .conkyrc
 git add -f .fonts.conf
-git add -f .gitconfig
 git add -f .gtkrc
 git add -f .gtkrc-2.0
 git add -f .viminfo
@@ -39,6 +38,7 @@ git add -f .icons/
 git add -f .scripts/
 git add -f .themes/
 git add -f .vim/
+git add -f .w3m/
 
 COMM=$(date)
 git commit -m "$COMM"

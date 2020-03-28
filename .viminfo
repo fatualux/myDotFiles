@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/find
+~MSle0~/keymap    h
 
 # Last Substitute Search Pattern:
 ~MSle0&20,70,90
@@ -20,14 +20,28 @@
 $&
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1585241533,,"q"
 :w
-|2,0,1585103014,,"w"
+|2,0,1585439201,,"w"
+:q
+|2,0,1585436285,,"q"
+:e .scripts/web_search.sh.bak
+|2,0,1585436274,,"e .scripts/web_search.sh.bak"
+:split
+|2,0,1585436227,,"split"
+:e .w3m/keymap
+|2,0,1585432820,,"e .w3m/keymap"
+:e .scripts/web_search.sh
+|2,0,1585438458,,"e .scripts/web_search.sh"
 :wq
-|2,0,1585102877,,"wq"
+|2,0,1585433668,,"wq"
+:w!
+|2,0,1585411031,,"w!"
+:w .scripts/web_search.sh!
+|2,0,1585323555,,"w .scripts/web_search.sh!"
+:w .scripts/web_search.sh
+|2,0,1585323546,,"w .scripts/web_search.sh"
 :e .config/i3/config
-|2,0,1585102809,,"e .config/i3/config"
+|2,0,1585323367,,"e .config/i3/config"
 :e .config/i3-blocks/blocks/packages
 |2,0,1585101147,,"e .config/i3-blocks/blocks/packages"
 :e .config/i3-blocks/blocks/datetime
@@ -42,8 +56,6 @@ $&
 |2,0,1585065424,,"e .config/i3-blocks/blocks/alarm"
 :e .scripts/timer.sh
 |2,0,1585065415,,"e .scripts/timer.sh"
-:split
-|2,0,1585062824,,"split"
 :s
 |2,0,1585059544,,"s"
 :a
@@ -122,8 +134,6 @@ $&
 |2,0,1576270283,,"tab split"
 :q!
 |2,0,1576170907,,"q!"
-:w!
-|2,0,1576170887,,"w!"
 :e! .config/i3-blocks/blocks/cpu
 |2,0,1576158340,,"e! .config/i3-blocks/blocks/cpu"
 :e! .config/i3-blocks/blocks/poweroff
@@ -232,6 +242,72 @@ $&
 |2,0,1556816864,,"\\"
 
 # Search String History (newest to oldest):
+?/keymap    h
+|2,1,1585435867,47,"keymap    h"
+?/keymap    C-g
+|2,1,1585435855,47,"keymap    C-g"
+?/keymap    A
+|2,1,1585435833,47,"keymap    A"
+?/keymap    I
+|2,1,1585435822,47,"keymap    I"
+?/keymap    b
+|2,1,1585435748,47,"keymap    b"
+?/keymap    B
+|2,1,1585435729,47,"keymap    B"
+?/keymap    m
+|2,1,1585435698,47,"keymap    m"
+?/keymap    v
+|2,1,1585435654,47,"keymap    v"
+?/v
+|2,1,1585435641,47,"v"
+?/edit
+|2,1,1585435093,47,"edit"
+?/TAB
+|2,1,1585433726,47,"TAB"
+?/y
+|2,1,1585432755,47,"y"
+?/next_li
+|2,1,1585414488,47,"next_li"
+?/prev
+|2,1,1585414216,47,"prev"
+?/PREV
+|2,1,1585413508,47,"PREV"
+?/)
+|2,1,1585413379,47,")"
+?/(
+|2,1,1585413358,47,"("
+?/search
+|2,1,1585411813,47,"search"
+?/NEXT LIN
+|2,1,1585354129,47,"NEXT LIN"
+?/line
+|2,1,1585353786,47,"line"
+? ###
+|2,1,1585353397,,"###"
+?/venerd
+|2,1,1585353265,47,"venerd"
+?/browser
+|2,1,1585353106,47,"browser"
+?/M
+|2,1,1585353086,47,"M"
+?/opacity
+|2,1,1585351106,47,"opacity"
+?/shadow
+|2,1,1585351038,47,"shadow"
+?/text
+|2,1,1585350219,47,"text"
+?/yank
+|2,1,1585350212,47,"yank"
+?/visual
+|2,1,1585350203,47,"visual"
+?/copy
+|2,1,1585350197,47,"copy"
+?/select
+|2,1,1585350170,47,"select"
+?/sele
+|2,1,1585349619,47,"sele"
+?/fire
+|2,1,1585323512,47,"fire"
 ?/dunstify
 |2,1,1584920359,47,"dunstify"
 ?/find
@@ -348,8 +424,6 @@ $&
 |2,1,1567238089,47,"powerst"
 ?/screenre
 |2,1,1567111216,47,"screenre"
-?/venerd
-|2,1,1567109091,47,"venerd"
 ?/awesome
 |2,1,1567088988,47,"awesome"
 ?/awe
@@ -401,7 +475,7 @@ $&
 
 # Expression History (newest to oldest):
 =acp#onPopupPost()
-|2,2,1585065329,,"acp#onPopupPost()"
+|2,2,1585410995,,"acp#onPopupPost()"
 
 # Input Line History (newest to oldest):
 @y
@@ -420,385 +494,544 @@ $&
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	bindsym $mod+Shift+y exec termite -e ".scripts/translate.sh"
-|3,1,0,1,1,0,1585102822,"bindsym $mod+Shift+y exec termite -e \".scripts/translate.sh\""
-"1	LINE	0
+"0	CHAR	0
+	/bin/dunstify ".:W3M - Web Browser:."
 	
-|3,0,1,1,1,0,1585102826,""
+	COLS=$(tput cols)
+	text="What are you looking for?"
+	h_text=${#text}
+	
+	
+|3,0,0,0,7,0,1585438475,"/bin/dunstify \".:W3M - Web Browser:.\"","","COLS=$(tput cols)","text=\"What are you looking for?\"","h_text=${#text}","",""
+""1	LINE	0
+	git add -f .gitconfig
+|3,1,1,1,1,0,1585439138,"git add -f .gitconfig"
 "2	LINE	0
-	git add -f .config/touchegg/
-|3,0,2,1,1,0,1585102052,"git add -f .config/touchegg/"
-"3	LINE	0
-	git add -f .config/conky/
-|3,0,3,1,1,0,1585102042,"git add -f .config/conky/"
-"4	LINE	0
 	
-|3,0,4,1,1,0,1585065459,""
+|3,0,2,1,1,0,1585438541,""
+"3	LINE	0
+	
+|3,0,3,1,1,0,1585438541,""
+"4	LINE	0
+	echo  
+|3,0,4,1,1,0,1585438340,"echo  "
 "5	LINE	0
-	termite -e ".scripts/tddimer.sh"
-|3,0,5,1,1,0,1585065458,"termite -e \".scripts/tddimer.sh\""
+	echo  
+|3,0,5,1,1,0,1585438337,"echo  "
 "6	LINE	0
 	
-|3,0,6,1,1,0,1585065436,""
+|3,0,6,1,1,0,1585438326,""
 "7	LINE	0
-	mplayer Music/Varie/RcOST.flac
-|3,0,7,1,1,0,1585063420,"mplayer Music/Varie/RcOST.flac"
+	echo  
+|3,0,7,1,1,0,1585438325,"echo  "
 "8	LINE	0
-	#!/usr/bin/bash
-	
-	echo "Choose an interval for your alarm:";
-	read interval;
-	clear && echo $interval"minutes";
-	
-	progress_bar()
-	{
-	  local DURATION=$1
-	  local INT=0.25      # refresh interval
-	
-	  local TIME=0
-	  local CURLEN=0
-	  local SECS=0
-	  local FRACTION=0
-	
-	  local FB=2588       # full block
-	
-	  trap "echo -e $(tput cnorm); trap - SIGINT; return" SIGINT
-	
-	  echo -ne "$(tput civis)\r$(tput el)│"                # clean line
-	
-	  local START=$( date +%s%N )
-	
-	  while [ $SECS -lt $DURATION ]; do
-	    local COLS=$( tput cols )
-	
-	    # main bar
-	    local L=$( bc -l <<< "( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)" | awk '{ printf "%f", $0 }' )
-	    local N=$( bc -l <<< $L                                              | awk '{ printf "%d", $0 }' )
-	
-	    [ $FRACTION -ne 0 ] && echo -ne "$( tput cub 1 )"  # erase partial block
-	
-	    if [ $N -gt $CURLEN ]; then
-	      for i in $( seq 1 $(( N - CURLEN )) ); do
-	        echo -ne \\u$FB
-	      done
-	      CURLEN=$N
-	    fi
-	
-	    # partial block adjustment
-	    FRACTION=$( bc -l <<< "( $L - $N ) * 8" | awk '{ printf "%.0f", $0 }' )
-	
-	    if [ $FRACTION -ne 0 ]; then 
-	      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )
-	      echo -ne \\u$PB
-	    fi
-	
-	    # percentage progress
-	    local PROGRESS=$( bc -l <<< "( 100 * $TIME ) / ($DURATION-$INT)" | awk '{ printf "%.0f", $0 }' )
-|3,0,8,1,50,0,1585063059,"#!/usr/bin/bash","","echo \"Choose an interval for your alarm:\";","read interval;","clear && echo $interval\"minutes\";","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
-|<"  echo -ne \"$(tput civis)\\r$(tput el)│\"                # clean line","","  local START=$( date +%s%N )","","  while [ $SECS -lt $DURATION ]; do","    local COLS=$( tput cols )","","    # main bar","    local L=$( bc -l <<< \"( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)\" | awk '{ printf \"%f\", $0 }' )","    local N=$( bc -l <<< $L                                              | awk '{ printf \"%d\", $0 }' )","",>80
-|<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi",>2
-|<"","    # percentage progress","    local PROGRESS=$( bc -l <<< \"( 100 * $TIME ) / ($DURATION-$INT)\" | awk '{ printf \"%.0f\", $0 }' )"
+	echo Word or phrase?
+|3,0,8,1,1,0,1585438323,"echo Word or phrase?"
 "9	LINE	0
-	#! /bin/bash#!
-	#/bin/sh
-	
-	echo ".:TIMER:."
-	echo "How many minutes?"
-	
-	read -r ch_minutes
-	interval=$((ch_minutes * 60))
-	
-	progress_bar()
-	{
-	  local DURATION=$1
-	  local INT=0.25      # refresh interval
-	
-	  local TIME=0
-	  local CURLEN=0
-	  local SECS=0
-	  local FRACTION=0
-	
-	  local FB=2588       # full block
-	
-	  trap "echo -e $(tput cnorm); trap - SIGINT; return" SIGINT
-	
-	  echo -ne "$(tput civis)\r$(tput el)│"                # clean line
-	
-	  local START=$( date +%s%N )
-	
-	  while [ $SECS -lt $DURATION ]; do
-	    local COLS=$( tput cols )
-	
-	    # main bar
-	    local L=$( bc -l <<< "( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)" | awk '{ printf "%f", $0 }' )
-	    local N=$( bc -l <<< $L                                              | awk '{ printf "%d", $0 }' )
-	
-	    [ $FRACTION -ne 0 ] && echo -ne "$( tput cub 1 )"  # erase partial block
-	
-	    if [ $N -gt $CURLEN ]; then
-	      for i in $( seq 1 $(( N - CURLEN )) ); do
-	        echo -ne \\u$FB
-	      done
-	      CURLEN=$N
-	    fi
-	
-	    # partial block adjustment
-	    FRACTION=$( bc -l <<< "( $L - $N ) * 8" | awk '{ printf "%.0f", $0 }' )
-	
-	    if [ $FRACTION -ne 0 ]; then 
-	      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )
-	      echo -ne \\u$PB
-	    fi
-|3,0,9,1,50,0,1585063033,"#! /bin/bash#!","#/bin/sh","","echo \".:TIMER:.\"","echo \"How many minutes?\"","","read -r ch_minutes","interval=$((ch_minutes * 60))","","progress_bar()","{","  local DURATION=$1","  local INT=0.25      # refresh interval","","  local TIME=0","  local CURLEN=0","  local SECS=0","  local FRACTION=0","","  local FB=2588       # full block","","  trap \"echo -e $(tput cnorm); trap - SIGINT; return\" SIGINT","",>74
-|<"  echo -ne \"$(tput civis)\\r$(tput el)│\"                # clean line","","  local START=$( date +%s%N )","","  while [ $SECS -lt $DURATION ]; do","    local COLS=$( tput cols )","","    # main bar","    local L=$( bc -l <<< \"( ( $COLS - 5 ) * $TIME  ) / ($DURATION-$INT)\" | awk '{ printf \"%f\", $0 }' )","    local N=$( bc -l <<< $L                                              | awk '{ printf \"%d\", $0 }' )","",>80
-|<"    [ $FRACTION -ne 0 ] && echo -ne \"$( tput cub 1 )\"  # erase partial block","","    if [ $N -gt $CURLEN ]; then","      for i in $( seq 1 $(( N - CURLEN )) ); do","        echo -ne \\\\u$FB","      done","      CURLEN=$N","    fi","","    # partial block adjustment","    FRACTION=$( bc -l <<< \"( $L - $N ) * 8\" | awk '{ printf \"%.0f\", $0 }' )","","    if [ $FRACTION -ne 0 ]; then ","      local PB=$( printf %x $(( 0x258F - FRACTION + 1 )) )","      echo -ne \\\\u$PB","    fi"
+	echo "-------------------------"
+|3,0,9,1,1,0,1585437611,"echo \"-------------------------\""
 "-	CHAR	0
-	a
-|3,0,36,0,1,0,1585102957,"a"
+	+
+|3,0,36,0,1,0,1585438170,"+"
 
 # File marks:
-'0  45  0  ~/.scripts/backup_dot_files.sh
-|4,48,45,0,1585241592,"~/.scripts/backup_dot_files.sh"
-'1  1  0  ~/.gitignore
-|4,49,1,0,1585241577,"~/.gitignore"
-'2  1  0  ~/.git/.gitignore
-|4,50,1,0,1585241427,"~/.git/.gitignore"
-'3  1  0  ~/.gitignore
-|4,51,1,0,1585241402,"~/.gitignore"
-'4  45  0  ~/.scripts/backup_dot_files.sh
-|4,52,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
-'5  54  19  ~/.config/i3/config
-|4,53,54,19,1585103020,"~/.config/i3/config"
-'6  54  51  ~/.config/i3/config
-|4,54,54,51,1585102877,"~/.config/i3/config"
-'7  7  0  ~/.scripts/backup_dot_files.sh
-|4,55,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
-'8  7  0  ~/.scripts/backup_dot_files.sh
-|4,56,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
-'9  32  0  ~/.config/i3-blocks/blocks/packages
-|4,57,32,0,1585102142,"~/.config/i3-blocks/blocks/packages"
+'0  43  0  ~/.scripts/backup_dot_files.sh
+|4,48,43,0,1585439204,"~/.scripts/backup_dot_files.sh"
+'1  15  0  ~/.w3m/keymap
+|4,49,15,0,1585438890,"~/.w3m/keymap"
+'2  14  12  ~/.scripts/web_search.sh
+|4,50,14,12,1585438809,"~/.scripts/web_search.sh"
+'3  8  0  ~/.scripts/translate.sh
+|4,51,8,0,1585438578,"~/.scripts/translate.sh"
+'4  6  0  ~/.scripts/web_search.sh
+|4,52,6,0,1585438401,"~/.scripts/web_search.sh"
+'5  6  0  ~/.scripts/web_search.sh
+|4,53,6,0,1585438401,"~/.scripts/web_search.sh"
+'6  10  0  ~/.scripts/web_search.sh
+|4,54,10,0,1585438285,"~/.scripts/web_search.sh"
+'7  10  0  ~/.scripts/web_search.sh
+|4,55,10,0,1585438285,"~/.scripts/web_search.sh"
+'8  10  0  ~/.scripts/web_search.sh
+|4,56,10,0,1585438285,"~/.scripts/web_search.sh"
+'9  10  0  ~/.scripts/web_search.sh
+|4,57,10,0,1585438285,"~/.scripts/web_search.sh"
 
 # Jumplist (newest first):
+-'  43  0  ~/.scripts/backup_dot_files.sh
+|4,39,43,0,1585439204,"~/.scripts/backup_dot_files.sh"
 -'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585241592,"~/.scripts/backup_dot_files.sh"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585241577,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585241577,"~/.gitignore"
--'  1  0  ~/.git/.gitignore
-|4,39,1,0,1585241427,"~/.git/.gitignore"
--'  1  0  ~/.git/.gitignore
-|4,39,1,0,1585241427,"~/.git/.gitignore"
--'  1  0  ~/.git/.gitignore
-|4,39,1,0,1585241427,"~/.git/.gitignore"
--'  1  0  ~/.git/.gitignore
-|4,39,1,0,1585241427,"~/.git/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585241402,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585241402,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585241402,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1585241402,"~/.gitignore"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585103402,"~/.scripts/backup_dot_files.sh"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  19  ~/.config/i3/config
-|4,39,54,19,1585103020,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  54  51  ~/.config/i3/config
-|4,39,54,51,1585102877,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1585102809,"~/.config/i3/config"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
--'  7  0  ~/.scripts/backup_dot_files.sh
-|4,39,7,0,1585102246,"~/.scripts/backup_dot_files.sh"
+|4,39,45,0,1585439128,"~/.scripts/backup_dot_files.sh"
+-'  15  0  ~/.w3m/keymap
+|4,39,15,0,1585438890,"~/.w3m/keymap"
+-'  15  0  ~/.w3m/keymap
+|4,39,15,0,1585438890,"~/.w3m/keymap"
+-'  14  12  ~/.scripts/web_search.sh
+|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
+-'  14  12  ~/.scripts/web_search.sh
+|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
+-'  4  0  ~/.scripts/web_search.sh
+|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
+-'  4  0  ~/.scripts/web_search.sh
+|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
+-'  8  0  ~/.scripts/translate.sh
+|4,39,8,0,1585438578,"~/.scripts/translate.sh"
+-'  8  0  ~/.scripts/translate.sh
+|4,39,8,0,1585438578,"~/.scripts/translate.sh"
+-'  8  0  ~/.scripts/translate.sh
+|4,39,8,0,1585438578,"~/.scripts/translate.sh"
+-'  8  0  ~/.scripts/translate.sh
+|4,39,8,0,1585438578,"~/.scripts/translate.sh"
+-'  14  0  ~/.scripts/translate.sh
+|4,39,14,0,1585438410,"~/.scripts/translate.sh"
+-'  14  0  ~/.scripts/translate.sh
+|4,39,14,0,1585438410,"~/.scripts/translate.sh"
+-'  14  0  ~/.scripts/translate.sh
+|4,39,14,0,1585438410,"~/.scripts/translate.sh"
+-'  14  0  ~/.scripts/translate.sh
+|4,39,14,0,1585438410,"~/.scripts/translate.sh"
+-'  6  0  ~/.scripts/web_search.sh
+|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
+-'  6  0  ~/.scripts/web_search.sh
+|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
+-'  6  0  ~/.scripts/web_search.sh
+|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
+-'  6  0  ~/.scripts/web_search.sh
+|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
+-'  1  0  ~/.scripts/translate.sh
+|4,39,1,0,1585438293,"~/.scripts/translate.sh"
+-'  1  0  ~/.scripts/translate.sh
+|4,39,1,0,1585438293,"~/.scripts/translate.sh"
+-'  1  0  ~/.scripts/translate.sh
+|4,39,1,0,1585438293,"~/.scripts/translate.sh"
+-'  1  0  ~/.scripts/translate.sh
+|4,39,1,0,1585438293,"~/.scripts/translate.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438285,"~/.scripts/web_search.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438285,"~/.scripts/web_search.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438285,"~/.scripts/web_search.sh"
+-'  10  0  ~/.scripts/web_search.sh
+|4,39,10,0,1585438285,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  8  14  ~/.scripts/web_search.sh
+|4,39,8,14,1585438079,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  5  0  ~/.scripts/web_search.sh
+|4,39,5,0,1585437098,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  16  76  ~/.scripts/web_search.sh
+|4,39,16,76,1585436768,"~/.scripts/web_search.sh"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585436699,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585436699,"~/.w3m/keymap"
+-'  32  0  ~/.w3m/keymap
+|4,39,32,0,1585435977,"~/.w3m/keymap"
+-'  32  0  ~/.w3m/keymap
+|4,39,32,0,1585435977,"~/.w3m/keymap"
+-'  28  0  ~/.w3m/keymap
+|4,39,28,0,1585435867,"~/.w3m/keymap"
+-'  28  0  ~/.w3m/keymap
+|4,39,28,0,1585435867,"~/.w3m/keymap"
+-'  27  0  ~/.w3m/keymap
+|4,39,27,0,1585435855,"~/.w3m/keymap"
+-'  27  0  ~/.w3m/keymap
+|4,39,27,0,1585435855,"~/.w3m/keymap"
+-'  26  0  ~/.w3m/keymap
+|4,39,26,0,1585435833,"~/.w3m/keymap"
+-'  26  0  ~/.w3m/keymap
+|4,39,26,0,1585435833,"~/.w3m/keymap"
+-'  95  11  ~/.w3m/keymap
+|4,39,95,11,1585435822,"~/.w3m/keymap"
+-'  95  11  ~/.w3m/keymap
+|4,39,95,11,1585435822,"~/.w3m/keymap"
+-'  96  0  ~/.w3m/keymap
+|4,39,96,0,1585435765,"~/.w3m/keymap"
+-'  96  0  ~/.w3m/keymap
+|4,39,96,0,1585435765,"~/.w3m/keymap"
+-'  22  0  ~/.w3m/keymap
+|4,39,22,0,1585435761,"~/.w3m/keymap"
+-'  22  0  ~/.w3m/keymap
+|4,39,22,0,1585435761,"~/.w3m/keymap"
+-'  21  0  ~/.w3m/keymap
+|4,39,21,0,1585435751,"~/.w3m/keymap"
+-'  21  0  ~/.w3m/keymap
+|4,39,21,0,1585435751,"~/.w3m/keymap"
+-'  128  0  ~/.w3m/keymap
+|4,39,128,0,1585435705,"~/.w3m/keymap"
+-'  128  0  ~/.w3m/keymap
+|4,39,128,0,1585435705,"~/.w3m/keymap"
+-'  127  0  ~/.w3m/keymap
+|4,39,127,0,1585435703,"~/.w3m/keymap"
+-'  127  0  ~/.w3m/keymap
+|4,39,127,0,1585435703,"~/.w3m/keymap"
+-'  17  0  ~/.w3m/keymap
+|4,39,17,0,1585435701,"~/.w3m/keymap"
+-'  17  0  ~/.w3m/keymap
+|4,39,17,0,1585435701,"~/.w3m/keymap"
+-'  16  0  ~/.w3m/keymap
+|4,39,16,0,1585435700,"~/.w3m/keymap"
+-'  16  0  ~/.w3m/keymap
+|4,39,16,0,1585435700,"~/.w3m/keymap"
+-'  1  0  ~/.w3m/keymap
+|4,39,1,0,1585435698,"~/.w3m/keymap"
+-'  1  0  ~/.w3m/keymap
+|4,39,1,0,1585435698,"~/.w3m/keymap"
+-'  14  0  ~/.w3m/keymap
+|4,39,14,0,1585435668,"~/.w3m/keymap"
+-'  14  0  ~/.w3m/keymap
+|4,39,14,0,1585435668,"~/.w3m/keymap"
+-'  123  17  ~/.w3m/keymap
+|4,39,123,17,1585435621,"~/.w3m/keymap"
+-'  116  17  ~/.w3m/keymap
+|4,39,116,17,1585435621,"~/.w3m/keymap"
+-'  123  17  ~/.w3m/keymap
+|4,39,123,17,1585435621,"~/.w3m/keymap"
+-'  116  17  ~/.w3m/keymap
+|4,39,116,17,1585435621,"~/.w3m/keymap"
+-'  29  0  ~/.w3m/keymap
+|4,39,29,0,1585435152,"~/.w3m/keymap"
+-'  30  0  ~/.w3m/keymap
+|4,39,30,0,1585435152,"~/.w3m/keymap"
+-'  29  0  ~/.w3m/keymap
+|4,39,29,0,1585435152,"~/.w3m/keymap"
+-'  30  0  ~/.w3m/keymap
+|4,39,30,0,1585435152,"~/.w3m/keymap"
+-'  3  11  ~/.w3m/keymap
+|4,39,3,11,1585435093,"~/.w3m/keymap"
+-'  3  11  ~/.w3m/keymap
+|4,39,3,11,1585435093,"~/.w3m/keymap"
+-'  40  23  ~/.w3m/keymap
+|4,39,40,23,1585433740,"~/.w3m/keymap"
+-'  40  23  ~/.w3m/keymap
+|4,39,40,23,1585433740,"~/.w3m/keymap"
+-'  39  17  ~/.w3m/keymap
+|4,39,39,17,1585433739,"~/.w3m/keymap"
+-'  38  21  ~/.w3m/keymap
+|4,39,38,21,1585433739,"~/.w3m/keymap"
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitignore
-	*	1585241552	0
+> ~/.scripts/backup_dot_files.sh
+	*	1585439202	0
+	"	43	0
+	^	43	0
+	.	42	0
+	+	14	0
+	+	41	15
+	+	42	0
+
+> ~/.w3m/keymap
+	*	1585438888	0
+	"	15	0
+	^	96	12
+	.	12	0
+	+	50	12
+	+	105	0
+	+	133	21
+	+	134	0
+	+	98	0
+	+	100	26
+	+	105	0
+	+	106	22
+	+	111	0
+	+	106	21
+	+	115	13
+	+	112	0
+	+	95	25
+	+	97	11
+	+	95	0
+	+	96	11
+	+	95	11
+	+	112	0
+	+	107	0
+	+	111	0
+	+	111	12
+	+	112	12
+	+	113	0
+	+	115	34
+	+	113	0
+	+	115	41
+	+	113	0
+	+	30	0
+	+	113	0
+	+	115	41
+	+	115	13
+	+	128	31
+	+	113	0
+	+	16	0
+	+	113	0
+	+	17	0
+	+	113	14
+	+	100	26
+	+	113	0
+	+	101	0
+	+	105	0
+	+	129	0
+	+	115	13
+	+	115	22
+	+	115	13
+	+	100	15
+	+	101	0
+	+	115	13
+	+	115	0
+	+	128	31
+	+	133	0
+	+	40	0
+	+	115	0
+	+	128	31
+	+	128	30
+	+	107	25
+	+	107	21
+	+	108	0
+	+	111	0
+	+	110	15
+	+	113	0
+	+	55	0
+	+	56	0
+	+	115	0
+	+	113	0
+	+	135	0
+	+	40	0
+	+	42	0
+	+	31	0
+	+	30	0
+	+	25	0
+	+	13	0
+	+	54	0
+	+	52	0
+	+	51	0
+	+	91	0
+	+	89	0
+	+	129	0
+	+	116	14
+	+	103	0
+	+	30	0
+	+	28	10
+	+	50	0
+	+	65	12
+	+	48	12
+	+	49	12
+	+	102	13
+	+	104	12
+	+	103	10
+	+	96	11
+	+	12	0
+
+> ~/.scripts/web_search.sh
+	*	1585438808	0
+	"	14	12
+	^	16	86
+	.	16	86
+	+	20	64
+	+	20	75
+	+	20	64
+	+	20	81
+	+	20	64
+	+	20	85
+	+	20	64
+	+	20	92
+	+	20	0
+	+	20	10
+	+	20	3
+	+	4	7
+	+	20	0
+	+	4	38
+	+	20	0
+	+	20	30
+	+	19	0
+	+	20	30
+	+	20	3
+	+	4	0
+	+	20	7
+	+	20	0
+	+	20	31
+	+	20	6
+	+	20	0
+	+	20	86
+	+	20	0
+	+	20	3
+	+	20	0
+	+	20	63
+	+	20	0
+	+	20	71
+	+	20	26
+	+	20	0
+	+	20	21
+	+	20	10
+	+	20	100
+	+	20	10
+	+	20	100
+	+	20	0
+	+	20	104
+	+	20	0
+	+	19	0
+	+	4	37
+	+	15	3
+	+	4	35
+	+	15	13
+	+	5	0
+	+	14	0
+	+	15	0
+	+	14	10
+	+	5	0
+	+	10	25
+	+	10	30
+	+	10	32
+	+	11	6
+	+	14	0
+	+	12	6
+	+	11	0
+	+	12	7
+	+	14	0
+	+	15	0
+	+	19	0
+	+	15	4
+	+	19	0
+	+	16	5
+	+	16	93
+	+	18	4
+	+	16	105
+	+	16	15
+	+	16	106
+	+	14	8
+	+	16	80
+	+	18	5
+	+	16	77
+	+	10	0
+	+	5	0
+	+	5	16
+	+	5	17
+	+	5	30
+	+	10	0
+	+	5	0
+	+	10	0
+	+	5	0
+	+	7	39
+	+	6	15
+	+	10	19
+	+	7	32
+	+	10	0
+	+	11	0
+	+	7	32
+	+	10	0
+	+	7	32
+	+	8	14
+	+	10	32
+	+	16	86
+
+> ~/.scripts/translate.sh
+	*	1585438554	0
+	"	8	0
+	.	8	0
+	+	2	0
+	+	8	0
+	+	9	0
+	+	11	0
+	+	13	0
+	+	14	0
+	+	2	0
+	+	3	26
+	+	6	19
+	+	8	0
+
+> ~/.scripts/web_search.sh.bak
+	*	1585436280	0
 	"	1	0
-	^	1	7
+
+> ~/clip
+	*	1585432336	0
+	"	6	0
+
+> ~/.w3m/README
+	*	1585410231	0
+	"	244	0
 	.	1	0
 	+	1	0
-	a	1	6
-	m	1	7
 
-> ~/.git/.gitignore
-	*	1585241425	0
-	"	1	0
+> /sys/module/nvidia/version
+	*	1585351669	0
+	"	1	6
+
+> /sys/module/nvidia/taint
+	*	1585351663	0
+	"	1	2
+
+> ~/.config/picom/picom.conf
+	*	1585351128	0
+	"	84	7
+	.	84	0
+	+	54	0
+	+	84	0
+
+> ~/.bash_history
+	*	1585344846	0
+	"	309	18
+	.	363	19
+	+	1	0
+	+	7	0
+	+	20	0
+	+	126	0
+	+	125	0
+	+	378	0
+	+	358	0
+	+	363	19
+
+> ~/.w3m/config
+	*	1585344092	0
+	"	17	0
 
 > ~/.config/i3/config
-	*	1585103014	0
-	"	54	19
+	*	1585323556	0
+	"	57	0
 	^	54	20
 	.	54	19
 	+	164	0
@@ -815,6 +1048,27 @@ $&
 	+	54	0
 	+	54	50
 	+	54	19
+
+> /run/media/fz/TOSHIBA EXT/home/fz/Documents/eMailAddresses
+	*	1585243471	0
+	"	1	0
+
+> ~/.git/MERGE_MSG
+	*	1585241846	0
+	"	1	0
+
+> ~/.gitignore
+	*	1585241552	0
+	"	1	0
+	^	1	7
+	.	1	0
+	+	1	0
+	a	1	6
+	m	1	7
+
+> ~/.git/.gitignore
+	*	1585241425	0
+	"	1	0
 
 > ~/.config/i3-blocks/blocks/packages
 	*	1585102141	0
@@ -840,10 +1094,6 @@ $&
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.scripts/backup_dot_files.sh
-	*	1585101418	0
-	"	45	0
 
 > ~/.config/i3-blocks/blocks/datetime
 	*	1585101142	0
@@ -999,65 +1249,6 @@ $&
 	+	76	86
 	+	77	44
 
-> ~/.scripts/web_search.sh
-	*	1584984756	0
-	"	16	77
-	^	16	24
-	.	16	0
-	+	4	0
-	+	4	16
-	+	7	0
-	+	4	29
-	+	7	32
-	+	12	13
-	+	14	3
-	+	12	12
-	+	14	10
-	+	17	0
-	+	14	10
-	+	16	73
-	+	3	0
-	+	16	19
-	+	4	29
-	+	7	15
-	+	17	14
-	+	16	0
-	+	17	0
-	+	16	75
-	+	17	0
-	+	16	81
-	+	17	0
-	+	16	85
-	+	17	0
-	+	18	28
-	+	19	0
-	+	7	0
-	+	14	10
-	+	20	3
-	+	4	7
-	+	7	0
-	+	4	38
-	+	7	0
-	+	12	0
-	+	8	30
-	+	5	0
-	+	6	30
-	+	9	3
-	+	4	0
-	+	9	7
-	+	11	0
-	+	13	0
-	+	11	0
-	+	6	31
-	+	8	6
-	+	7	6
-	+	6	6
-	+	7	6
-	+	11	0
-	+	16	86
-	+	7	0
-	+	16	0
-
 > ~/web_search.sh
 	*	1584972351	0
 	"	1	0
@@ -1080,12 +1271,6 @@ $&
 > ~/Builds/nvidia-bl/pk
 	*	1584799741	0
 	"	1	0
-
-> ~/.bash_history
-	*	1584750810	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/.scripts/screencast.sh
 	*	1584746322	0

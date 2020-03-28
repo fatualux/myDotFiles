@@ -1,12 +1,15 @@
 #! /bin/bash
 
-echo Word or phrase?
-echo  
+/bin/dunstify ".:TRANSLATOR:."
+
+COLS=$(tput cols)
+text="Word or phrase?"
+h_text=${#text}
+
+printf "%*s\n" $((COLS/2+h_text/2)) "$text"
 
 read -r term
 
-echo  
 echo Translating...
-echo  
 
 trans -p -t it "$term"

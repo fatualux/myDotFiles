@@ -1,20 +1,20 @@
 #! /bin/bash
 #! /bin/sh
 
-/bin/dunstify ".:FIREFOX WEB SEARCH:."
+/bin/dunstify ".:W3M - Web Browser:."
 
-echo "---------------------------"
-echo " What are you looking for?"
-echo "---------------------------"
+COLS=$(tput cols)
+text="What are you looking for?"
+h_text=${#text}
+
+printf "%*s\n" $((COLS/2+h_text/2)) "$text"
 echo ""
 echo ""
 
 read -r query
 
-echo "OK."
+URL=$(echo -ne "http://www.google.com/search?ie=ISO-8859-1&hl=it&source=hp&q=""$query")
 
-command=$(/bin/firefox "https://www.google.com/search?client=firefox-b-d&q=""$query")
+w3m "$URL"
 
-exec termite -e "$command" &
 
-exit
