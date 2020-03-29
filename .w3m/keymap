@@ -29,118 +29,124 @@
 #keymap    I      NULL
 #keymap    a      NULL
 #keymap    /      NULL
+#keymap    C-w    NULL
+#keymap    M-w    NULL
+#keymap    M-W    NULL
+#keymap    C-z    NULL
+#keymap    J      NULL
+#keymap    K      NULL
 
+
+
+### MARK ###
 keymap    C-@    MARK
 keymap    \"     REG_MARK
-keymap    mu     MARK_URL
+keymap    /      MARK_URL
 keymap    ";"    MARK_WORD
 keymap    M-:    MARK_MID
 keymap    M-p    PREV_MARK
+keymap    M-n    NEXT_MARK
 
+### WORDS ###
+keymap    M-w     NEXT_WORD
+keymap    M-W     PREV_WORD
+
+### LINES ###
 keymap    I      LINE_BEGIN
 keymap    A      LINE_END
-keymap    li     LINE_INFO
+keymap    ?      LINE_INFO
+keymap    :?     GOTO_LINE
 
+### TABS ###
+keymap    TAB    NEW_TAB
+keymap    q      CLOSE_TAB
+keymap    t      NEXT_TAB
+keymap    T      PREV_TAB
+
+### LINKS ###
 keymap    SPC    NEXT_LINK
+keymap    C-SPC  PREV_LINK
 keymap    O      GOTO_LINK
 keymap    C-t    TAB_LINK
-keymap    C-T    PREV_LINK
+keymap    p      PEEK_LINK
 
+### HISTORY ###
 keymap    h      HISTORY
 
-keymap    C-k    COOKIE
-
+### SEARCH ###
 keymap    /      SEARCH
 keymap    C-N    SEARCH_BACK
+keymap    N      SEARCH_PREV
+keymap    n      SEARCH_NEXT
 
-keymap    C-w    WRAP_TOGGLE
-
-keymap    C-z    SUSPEND
-
+### COMMAND ###
 keymap    !      SHELL
 keymap    #      PIPE_SHELL
 keymap    @      READ_SHELL
 keymap    ::     COMMAND
 
+### ACTIONS ###
 keymap    u      UNDO
 keymap    C-r    REDO
+keymap    R      RELOAD
+keymap    c      PEEK
+keymap    v      VIEW
+keymap    V      LOAD
+keymap    m      MOUSE_TOGGLE
 
-keymap    C-RIGHT    NEXT_PAGE
-keymap    C-LEFT     PREV_PAGE
-keymap    ,    LEFT
-keymap    .    RIGHT
-keymap    >    SHIFT_RIGHT
-keymap    <    SHIFT_LEFT
-keymap    B    BACK
-
-keymap    G    END
-keymap    g    BEGIN
-
-keymap    =    INFO
-keymap    D    DOWNLOAD_LIST
-keymap    E    EDIT
-keymap    F    FRAME
-keymap    J    UP
-keymap    K    DOWN
-
-keymap    L    LIST
-keymap    y    EXTERN
-keymap    N    SEARCH_PREV
-keymap    :q   EXIT
-keymap    R    RELOAD
-
-keymap    vi    VIEW_IMAGE
-keymap    C-i   SAVE_IMAGE
-
-keymap    T     NEW_TAB
-keymap    q     CLOSE_TAB
-keymap    gt    NEXT_TAB
-
-keymap    U    GOTO
-keymap    V    LOAD
-keymap    W    PREV_WORD
-
-keymap    c    PEEK
-keymap    i    PEEK_IMG
-
-keymap    m    MOUSE_TOGGLE
-keymap    n    SEARCH_NEXT
-keymap    q    QUIT
-keymap    r    VERSION
-keymap    s    SELECT_MENU
-keymap    u    PEEK_LINK
-
-keymap    v    VIEW
-
-keymap    w    NEXT_WORD
-
-keymap    z    CENTER_V
-keymap    Z    CENTER_H
-
-keymap    {    PREV_TAB
-keymap    |    PIPE_BUF
-
-keymap    y      EXTERN_LINK
-keymap    M-W    DICT_WORD_AT
-keymap    ab     ADD_BOOKMARK
-keymap    C-b    BOOKMARK
-keymap    M-g    GOTO_LINE
-keymap    M-k    DEFINE_KEY
-keymap    M-l    LIST_MENU
-keymap    M-m    MOVE_LIST_MENU
-keymap    M-n    NEXT_MARK
-keymap    :set   SET_OPTION
-keymap    M-u    GOTO_RELATIVE
-keymap    M-w    DICT_WORD
-
+### NAVIGATION ###
+keymap    U        NEXT_PAGE
+keymap    Z        PREV_PAGE
+keymap    ,        LEFT
+keymap    .        RIGHT
+keymap    >        SHIFT_RIGHT
+keymap    <        SHIFT_LEFT
+keymap    B        BACK
+keymap    G        END
+keymap    g        BEGIN
+keymap    M-u      GOTO_RELATIVE
 keymap    UP       MOVE_UP
 keymap    DOWN     MOVE_DOWN
 keymap    RIGHT    MOVE_RIGHT
 keymap    LEFT     MOVE_LEFT
+keymap    z        CENTER_V
+keymap    Z        CENTER_H
+keymap    o        GOTO
 
+### EXTERNAL ###
+keymap    Y    EXTERN
+keymap    y    EXTERN_LINK
+
+### IMAGES ###
+keymap    j     VIEW_IMAGE
+keymap    :j    SAVE_IMAGE
+keymap    J     PEEK_IMG
+
+### BOOKMARKS ###
+keymap    C-a    ADD_BOOKMARK
+keymap    C-b    BOOKMARK
+
+### MENU ###
 keymap    M       MENU
-keymap    tm      TAB_MENU
+keymap    :t      TAB_MENU
+keymap    M-l     LIST_MENU
+keymap    M-m     MOVE_LIST_MENU
+keymap    m       SELECT_MENU
+keymap    l       LIST
 keymap    :w      SAVE
-keymap    :h      HELP
 keymap    w       SAVE_SCREEN
-keymap    o      OPTIONS
+keymap    :o      OPTIONS
+keymap    :set    SET_OPTION
+keymap    C-k     COOKIE
+keymap    D       DOWNLOAD_LIST
+keymap    E       EDIT
+keymap    M-k     DEFINE_KEY
+keymap    F       FRAME
+keymap    |       PIPE_BUF
+keymap    :h      HELP
+keymap    =       INFO
+keymap    r       VERSION
+
+### EXIT ###
+keymap    :q!   EXIT
+keymap    :q    QUIT

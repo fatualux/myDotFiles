@@ -20,8 +20,10 @@
 $&
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1585492624,,"q"
 :w
-|2,0,1585490314,,"w"
+|2,0,1585492621,,"w"
 :e .scripts/backup_dot_files.sh
 |2,0,1585490262,,"e .scripts/backup_dot_files.sh"
 :e .w3m/config
@@ -32,8 +34,6 @@ $&
 |2,0,1585455226,,"w .w3m/config"
 :q!
 |2,0,1585453887,,"q!"
-:q
-|2,0,1585453884,,"q"
 :w .w3m/keymap.default
 |2,0,1585441663,,"w .w3m/keymap.default"
 :tabnew
@@ -557,42 +557,60 @@ $&
 |3,0,36,0,1,0,1585441835," DOWNLOAD_LIST"
 
 # File marks:
-'0  32  0  ~/.scripts/backup_dot_files.sh
-|4,48,32,0,1585490335,"~/.scripts/backup_dot_files.sh"
-'1  69  16  ~/.w3m/keymap
-|4,49,69,16,1585456495,"~/.w3m/keymap"
-'2  30  0  ~/.w3m/config
-|4,50,30,0,1585454312,"~/.w3m/config"
+'0  32  21  ~/.scripts/backup_dot_files.sh
+|4,48,32,21,1585492624,"~/.scripts/backup_dot_files.sh"
+'1  32  0  ~/.scripts/backup_dot_files.sh
+|4,49,32,0,1585490335,"~/.scripts/backup_dot_files.sh"
+'2  69  16  ~/.w3m/keymap
+|4,50,69,16,1585456495,"~/.w3m/keymap"
 '3  30  0  ~/.w3m/config
 |4,51,30,0,1585454312,"~/.w3m/config"
-'4  63  0  ~/.w3m/config
-|4,52,63,0,1585454312,"~/.w3m/config"
+'4  30  0  ~/.w3m/config
+|4,52,30,0,1585454312,"~/.w3m/config"
 '5  63  0  ~/.w3m/config
 |4,53,63,0,1585454312,"~/.w3m/config"
-'6  30  0  ~/.w3m/config
-|4,54,30,0,1585454312,"~/.w3m/config"
+'6  63  0  ~/.w3m/config
+|4,54,63,0,1585454312,"~/.w3m/config"
 '7  30  0  ~/.w3m/config
 |4,55,30,0,1585454312,"~/.w3m/config"
-'8  63  0  ~/.w3m/config
-|4,56,63,0,1585454312,"~/.w3m/config"
+'8  30  0  ~/.w3m/config
+|4,56,30,0,1585454312,"~/.w3m/config"
 '9  63  0  ~/.w3m/config
 |4,57,63,0,1585454312,"~/.w3m/config"
 
 # Jumplist (newest first):
+-'  32  21  ~/.scripts/backup_dot_files.sh
+|4,39,32,21,1585492624,"~/.scripts/backup_dot_files.sh"
 -'  32  0  ~/.scripts/backup_dot_files.sh
 |4,39,32,0,1585490335,"~/.scripts/backup_dot_files.sh"
 -'  30  50  ~/.scripts/backup_dot_files.sh
 |4,39,30,50,1585490283,"~/.scripts/backup_dot_files.sh"
+-'  30  50  ~/.scripts/backup_dot_files.sh
+|4,39,30,50,1585490283,"~/.scripts/backup_dot_files.sh"
+-'  20  14  ~/.scripts/backup_dot_files.sh
+|4,39,20,14,1585490278,"~/.scripts/backup_dot_files.sh"
 -'  20  14  ~/.scripts/backup_dot_files.sh
 |4,39,20,14,1585490278,"~/.scripts/backup_dot_files.sh"
 -'  29  0  ~/.w3m/config
 |4,39,29,0,1585490262,"~/.w3m/config"
+-'  29  0  ~/.w3m/config
+|4,39,29,0,1585490262,"~/.w3m/config"
+-'  1  0  ~/.w3m/config
+|4,39,1,0,1585490243,"~/.w3m/config"
 -'  1  0  ~/.w3m/config
 |4,39,1,0,1585490243,"~/.w3m/config"
 -'  69  16  ~/.w3m/keymap
 |4,39,69,16,1585456495,"~/.w3m/keymap"
 -'  69  16  ~/.w3m/keymap
 |4,39,69,16,1585456495,"~/.w3m/keymap"
+-'  69  16  ~/.w3m/keymap
+|4,39,69,16,1585456495,"~/.w3m/keymap"
+-'  69  16  ~/.w3m/keymap
+|4,39,69,16,1585456495,"~/.w3m/keymap"
+-'  131  17  ~/.w3m/keymap
+|4,39,131,17,1585456278,"~/.w3m/keymap"
+-'  131  17  ~/.w3m/keymap
+|4,39,131,17,1585456278,"~/.w3m/keymap"
 -'  131  17  ~/.w3m/keymap
 |4,39,131,17,1585456278,"~/.w3m/keymap"
 -'  131  17  ~/.w3m/keymap
@@ -601,6 +619,14 @@ $&
 |4,39,115,15,1585456274,"~/.w3m/keymap"
 -'  115  15  ~/.w3m/keymap
 |4,39,115,15,1585456274,"~/.w3m/keymap"
+-'  115  15  ~/.w3m/keymap
+|4,39,115,15,1585456274,"~/.w3m/keymap"
+-'  115  15  ~/.w3m/keymap
+|4,39,115,15,1585456274,"~/.w3m/keymap"
+-'  107  22  ~/.w3m/keymap
+|4,39,107,22,1585456272,"~/.w3m/keymap"
+-'  107  22  ~/.w3m/keymap
+|4,39,107,22,1585456272,"~/.w3m/keymap"
 -'  107  22  ~/.w3m/keymap
 |4,39,107,22,1585456272,"~/.w3m/keymap"
 -'  107  22  ~/.w3m/keymap
@@ -609,6 +635,14 @@ $&
 |4,39,97,16,1585456266,"~/.w3m/keymap"
 -'  97  16  ~/.w3m/keymap
 |4,39,97,16,1585456266,"~/.w3m/keymap"
+-'  97  16  ~/.w3m/keymap
+|4,39,97,16,1585456266,"~/.w3m/keymap"
+-'  97  16  ~/.w3m/keymap
+|4,39,97,16,1585456266,"~/.w3m/keymap"
+-'  68  15  ~/.w3m/keymap
+|4,39,68,15,1585456263,"~/.w3m/keymap"
+-'  68  15  ~/.w3m/keymap
+|4,39,68,15,1585456263,"~/.w3m/keymap"
 -'  68  15  ~/.w3m/keymap
 |4,39,68,15,1585456263,"~/.w3m/keymap"
 -'  68  15  ~/.w3m/keymap
@@ -617,6 +651,14 @@ $&
 |4,39,44,17,1585456261,"~/.w3m/keymap"
 -'  44  17  ~/.w3m/keymap
 |4,39,44,17,1585456261,"~/.w3m/keymap"
+-'  44  17  ~/.w3m/keymap
+|4,39,44,17,1585456261,"~/.w3m/keymap"
+-'  44  17  ~/.w3m/keymap
+|4,39,44,17,1585456261,"~/.w3m/keymap"
+-'  143  18  ~/.w3m/keymap
+|4,39,143,18,1585456260,"~/.w3m/keymap"
+-'  143  18  ~/.w3m/keymap
+|4,39,143,18,1585456260,"~/.w3m/keymap"
 -'  143  18  ~/.w3m/keymap
 |4,39,143,18,1585456260,"~/.w3m/keymap"
 -'  143  18  ~/.w3m/keymap
@@ -625,6 +667,14 @@ $&
 |4,39,93,16,1585456226,"~/.w3m/keymap"
 -'  93  16  ~/.w3m/keymap
 |4,39,93,16,1585456226,"~/.w3m/keymap"
+-'  93  16  ~/.w3m/keymap
+|4,39,93,16,1585456226,"~/.w3m/keymap"
+-'  93  16  ~/.w3m/keymap
+|4,39,93,16,1585456226,"~/.w3m/keymap"
+-'  145  18  ~/.w3m/keymap
+|4,39,145,18,1585456223,"~/.w3m/keymap"
+-'  145  18  ~/.w3m/keymap
+|4,39,145,18,1585456223,"~/.w3m/keymap"
 -'  145  18  ~/.w3m/keymap
 |4,39,145,18,1585456223,"~/.w3m/keymap"
 -'  145  18  ~/.w3m/keymap
@@ -633,6 +683,12 @@ $&
 |4,39,80,15,1585456212,"~/.w3m/keymap"
 -'  80  15  ~/.w3m/keymap
 |4,39,80,15,1585456212,"~/.w3m/keymap"
+-'  80  15  ~/.w3m/keymap
+|4,39,80,15,1585456212,"~/.w3m/keymap"
+-'  80  15  ~/.w3m/keymap
+|4,39,80,15,1585456212,"~/.w3m/keymap"
+-'  1  0  ~/.w3m/config
+|4,39,1,0,1585455843,"~/.w3m/config"
 -'  1  0  ~/.w3m/config
 |4,39,1,0,1585455843,"~/.w3m/config"
 -'  2  0  ~/.w3m/config
@@ -667,6 +723,46 @@ $&
 |4,39,8,0,1585455772,"~/.w3m/config"
 -'  9  0  ~/.w3m/config
 |4,39,9,0,1585455772,"~/.w3m/config"
+-'  2  0  ~/.w3m/config
+|4,39,2,0,1585455772,"~/.w3m/config"
+-'  3  0  ~/.w3m/config
+|4,39,3,0,1585455772,"~/.w3m/config"
+-'  4  0  ~/.w3m/config
+|4,39,4,0,1585455772,"~/.w3m/config"
+-'  5  0  ~/.w3m/config
+|4,39,5,0,1585455772,"~/.w3m/config"
+-'  6  0  ~/.w3m/config
+|4,39,6,0,1585455772,"~/.w3m/config"
+-'  7  0  ~/.w3m/config
+|4,39,7,0,1585455772,"~/.w3m/config"
+-'  8  0  ~/.w3m/config
+|4,39,8,0,1585455772,"~/.w3m/config"
+-'  9  0  ~/.w3m/config
+|4,39,9,0,1585455772,"~/.w3m/config"
+-'  2  0  ~/.w3m/config
+|4,39,2,0,1585455772,"~/.w3m/config"
+-'  3  0  ~/.w3m/config
+|4,39,3,0,1585455772,"~/.w3m/config"
+-'  4  0  ~/.w3m/config
+|4,39,4,0,1585455772,"~/.w3m/config"
+-'  5  0  ~/.w3m/config
+|4,39,5,0,1585455772,"~/.w3m/config"
+-'  6  0  ~/.w3m/config
+|4,39,6,0,1585455772,"~/.w3m/config"
+-'  7  0  ~/.w3m/config
+|4,39,7,0,1585455772,"~/.w3m/config"
+-'  8  0  ~/.w3m/config
+|4,39,8,0,1585455772,"~/.w3m/config"
+-'  9  0  ~/.w3m/config
+|4,39,9,0,1585455772,"~/.w3m/config"
+-'  10  0  ~/.w3m/config
+|4,39,10,0,1585455771,"~/.w3m/config"
+-'  11  0  ~/.w3m/config
+|4,39,11,0,1585455771,"~/.w3m/config"
+-'  10  0  ~/.w3m/config
+|4,39,10,0,1585455771,"~/.w3m/config"
+-'  11  0  ~/.w3m/config
+|4,39,11,0,1585455771,"~/.w3m/config"
 -'  10  0  ~/.w3m/config
 |4,39,10,0,1585455771,"~/.w3m/config"
 -'  11  0  ~/.w3m/config
@@ -683,110 +779,14 @@ $&
 |4,39,14,0,1585455770,"~/.w3m/config"
 -'  15  0  ~/.w3m/config
 |4,39,15,0,1585455770,"~/.w3m/config"
--'  16  0  ~/.w3m/config
-|4,39,16,0,1585455770,"~/.w3m/config"
--'  17  0  ~/.w3m/config
-|4,39,17,0,1585455770,"~/.w3m/config"
--'  18  0  ~/.w3m/config
-|4,39,18,0,1585455770,"~/.w3m/config"
--'  12  0  ~/.w3m/config
-|4,39,12,0,1585455770,"~/.w3m/config"
--'  13  0  ~/.w3m/config
-|4,39,13,0,1585455770,"~/.w3m/config"
--'  14  0  ~/.w3m/config
-|4,39,14,0,1585455770,"~/.w3m/config"
--'  15  0  ~/.w3m/config
-|4,39,15,0,1585455770,"~/.w3m/config"
--'  16  0  ~/.w3m/config
-|4,39,16,0,1585455770,"~/.w3m/config"
--'  17  0  ~/.w3m/config
-|4,39,17,0,1585455770,"~/.w3m/config"
--'  18  0  ~/.w3m/config
-|4,39,18,0,1585455770,"~/.w3m/config"
--'  19  0  ~/.w3m/config
-|4,39,19,0,1585455769,"~/.w3m/config"
--'  20  0  ~/.w3m/config
-|4,39,20,0,1585455769,"~/.w3m/config"
--'  21  0  ~/.w3m/config
-|4,39,21,0,1585455769,"~/.w3m/config"
--'  19  0  ~/.w3m/config
-|4,39,19,0,1585455769,"~/.w3m/config"
--'  20  0  ~/.w3m/config
-|4,39,20,0,1585455769,"~/.w3m/config"
--'  21  0  ~/.w3m/config
-|4,39,21,0,1585455769,"~/.w3m/config"
--'  22  0  ~/.w3m/config
-|4,39,22,0,1585455768,"~/.w3m/config"
--'  23  0  ~/.w3m/config
-|4,39,23,0,1585455768,"~/.w3m/config"
--'  22  0  ~/.w3m/config
-|4,39,22,0,1585455768,"~/.w3m/config"
--'  23  0  ~/.w3m/config
-|4,39,23,0,1585455768,"~/.w3m/config"
--'  24  0  ~/.w3m/config
-|4,39,24,0,1585455765,"~/.w3m/config"
--'  25  0  ~/.w3m/config
-|4,39,25,0,1585455765,"~/.w3m/config"
--'  24  0  ~/.w3m/config
-|4,39,24,0,1585455765,"~/.w3m/config"
--'  25  0  ~/.w3m/config
-|4,39,25,0,1585455765,"~/.w3m/config"
--'  26  0  ~/.w3m/config
-|4,39,26,0,1585455764,"~/.w3m/config"
--'  26  0  ~/.w3m/config
-|4,39,26,0,1585455764,"~/.w3m/config"
--'  27  0  ~/.w3m/config
-|4,39,27,0,1585455762,"~/.w3m/config"
--'  28  0  ~/.w3m/config
-|4,39,28,0,1585455762,"~/.w3m/config"
--'  27  0  ~/.w3m/config
-|4,39,27,0,1585455762,"~/.w3m/config"
--'  28  0  ~/.w3m/config
-|4,39,28,0,1585455762,"~/.w3m/config"
--'  29  0  ~/.w3m/config
-|4,39,29,0,1585455761,"~/.w3m/config"
--'  30  0  ~/.w3m/config
-|4,39,30,0,1585455760,"~/.w3m/config"
--'  30  0  ~/.w3m/config
-|4,39,30,0,1585455760,"~/.w3m/config"
--'  63  0  ~/.w3m/config
-|4,39,63,0,1585454312,"~/.w3m/config"
--'  63  0  ~/.w3m/config
-|4,39,63,0,1585454312,"~/.w3m/config"
--'  63  0  ~/.w3m/config
-|4,39,63,0,1585454312,"~/.w3m/config"
--'  63  0  ~/.w3m/config
-|4,39,63,0,1585454312,"~/.w3m/config"
--'  63  0  ~/.w3m/config
-|4,39,63,0,1585454312,"~/.w3m/config"
--'  22  21  ~/.w3m/config
-|4,39,22,21,1585454295,"~/.w3m/config"
--'  22  21  ~/.w3m/config
-|4,39,22,21,1585454295,"~/.w3m/config"
--'  22  21  ~/.w3m/config
-|4,39,22,21,1585454295,"~/.w3m/config"
--'  22  21  ~/.w3m/config
-|4,39,22,21,1585454295,"~/.w3m/config"
--'  69  18  ~/.w3m/config
-|4,39,69,18,1585454292,"~/.w3m/config"
--'  69  18  ~/.w3m/config
-|4,39,69,18,1585454292,"~/.w3m/config"
--'  69  18  ~/.w3m/config
-|4,39,69,18,1585454292,"~/.w3m/config"
--'  69  18  ~/.w3m/config
-|4,39,69,18,1585454292,"~/.w3m/config"
--'  69  18  ~/.w3m/config
-|4,39,69,18,1585454292,"~/.w3m/config"
--'  1  0  ~/.w3m/config
-|4,39,1,0,1585454073,"~/.w3m/config"
 
 # History of marks within files (newest to oldest):
 
 > ~/.scripts/backup_dot_files.sh
-	*	1585490329	0
-	"	32	0
-	^	32	45
-	.	31	76
+	*	1585492622	0
+	"	32	21
+	^	32	22
+	.	32	21
 	+	14	0
 	+	32	15
 	+	32	23
@@ -796,6 +796,9 @@ $&
 	+	20	0
 	+	32	23
 	+	31	76
+	+	32	26
+	+	33	3
+	+	32	21
 
 > ~/.w3m/config
 	*	1585490247	0
