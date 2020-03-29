@@ -38,7 +38,8 @@ git add -f .icons/
 git add -f .scripts/
 git add -f .themes/
 git add -f .vim/
-git add -f .w3m/
+git add -f .w3m/keymap
+git add -f .w3m/README
 
 COMM=$(date)
 git commit -m "$COMM"
