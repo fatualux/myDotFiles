@@ -1,0 +1,146 @@
+# Ctrl  : C-, ^
+# Escape: ESC-, M-, ^[
+# Space : SPC, ' '
+# Tab   : TAB, ^i, ^I
+# Delete: DEL, ^?
+# Up    : UP, ^[[A
+# Down  : DOWN, ^[[B
+# Right : RIGHT, ^[[C
+# Left  : LEFT, ^[[D
+
+
+#keymap    C-l    NULL
+#keymap    C-h    NULL
+#keymap    C-j    NULL
+#keymap    C-m    NULL
+#keymap    C-q    NULL
+#keymap    :      NULL
+#keymap    ";"    NULL
+#keymap    C-g    NULL
+#keymap    C-u    NULL
+#keymap    $      NULL
+#keymap    C-v    NULL
+#keymap    SPC    NULL
+#keymap    C-s    NULL
+#keymap    ?      NULL
+#keymap    M-TAB  NULL
+#keymap    M-C-j  NULL
+#keymap    M-C-m  NULL
+#keymap    I      NULL
+#keymap    a      NULL
+#keymap    /      NULL
+
+keymap    C-@    MARK
+keymap    \"     REG_MARK
+keymap    mu     MARK_URL
+keymap    ";"    MARK_WORD
+keymap    M-:    MARK_MID
+keymap    M-p    PREV_MARK
+
+keymap    I      LINE_BEGIN
+keymap    A      LINE_END
+keymap    li     LINE_INFO
+
+keymap    SPC    NEXT_LINK
+keymap    O      GOTO_LINK
+keymap    C-t    TAB_LINK
+keymap    C-T    PREV_LINK
+
+keymap    h      HISTORY
+
+keymap    C-k    COOKIE
+
+keymap    /      SEARCH
+keymap    C-N    SEARCH_BACK
+
+keymap    C-w    WRAP_TOGGLE
+
+keymap    C-z    SUSPEND
+
+keymap    !      SHELL
+keymap    #      PIPE_SHELL
+keymap    @      READ_SHELL
+keymap    ::     COMMAND
+
+keymap    u      UNDO
+keymap    C-r    REDO
+
+keymap    C-RIGHT    NEXT_PAGE
+keymap    C-LEFT     PREV_PAGE
+keymap    ,    LEFT
+keymap    .    RIGHT
+keymap    >    SHIFT_RIGHT
+keymap    <    SHIFT_LEFT
+keymap    B    BACK
+
+keymap    G    END
+keymap    g    BEGIN
+
+keymap    =    INFO
+keymap    D    DOWNLOAD_LIST
+keymap    E    EDIT
+keymap    F    FRAME
+keymap    J    UP
+keymap    K    DOWN
+
+keymap    L    LIST
+keymap    y    EXTERN
+keymap    N    SEARCH_PREV
+keymap    :q   EXIT
+keymap    R    RELOAD
+
+keymap    vi    VIEW_IMAGE
+keymap    C-i   SAVE_IMAGE
+
+keymap    T     NEW_TAB
+keymap    q     CLOSE_TAB
+keymap    gt    NEXT_TAB
+
+keymap    U    GOTO
+keymap    V    LOAD
+keymap    W    PREV_WORD
+
+keymap    c    PEEK
+keymap    i    PEEK_IMG
+
+keymap    m    MOUSE_TOGGLE
+keymap    n    SEARCH_NEXT
+keymap    q    QUIT
+keymap    r    VERSION
+keymap    s    SELECT_MENU
+keymap    u    PEEK_LINK
+
+keymap    v    VIEW
+
+keymap    w    NEXT_WORD
+
+keymap    z    CENTER_V
+keymap    Z    CENTER_H
+
+keymap    {    PREV_TAB
+keymap    |    PIPE_BUF
+
+keymap    y      EXTERN_LINK
+keymap    M-W    DICT_WORD_AT
+keymap    ab     ADD_BOOKMARK
+keymap    C-b    BOOKMARK
+keymap    M-g    GOTO_LINE
+keymap    M-k    DEFINE_KEY
+keymap    M-l    LIST_MENU
+keymap    M-m    MOVE_LIST_MENU
+keymap    M-n    NEXT_MARK
+keymap    :set   SET_OPTION
+keymap    M-u    GOTO_RELATIVE
+keymap    M-w    DICT_WORD
+
+keymap    UP       MOVE_UP
+keymap    DOWN     MOVE_DOWN
+keymap    RIGHT    MOVE_RIGHT
+keymap    LEFT     MOVE_LEFT
+
+keymap    M       MENU
+keymap    tm      TAB_MENU
+keymap    :w      SAVE
+keymap    :h      HELP
+keymap    w       SAVE_SCREEN
+keymap    o      OPTIONS

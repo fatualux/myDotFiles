@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/keymap    h
+~MSle0~/NEXT
 
 # Last Substitute Search Pattern:
 ~MSle0&20,70,90
@@ -20,18 +20,30 @@
 $&
 
 # Command Line History (newest to oldest):
+:w
+|2,0,1585456454,,"w"
+:e .w3m/keymap
+|2,0,1585455843,,"e .w3m/keymap"
+:e .w3m/config
+|2,0,1585455238,,"e .w3m/config"
+:w .w3m/config
+|2,0,1585455226,,"w .w3m/config"
+:q!
+|2,0,1585453887,,"q!"
+:q
+|2,0,1585453884,,"q"
+:w .w3m/keymap.default
+|2,0,1585441663,,"w .w3m/keymap.default"
+:tabnew
+|2,0,1585441610,,"tabnew"
+:tab
+|2,0,1585441592,,"tab"
+:split
+|2,0,1585441569,,"split"
 :wq
 |2,0,1585440049,,"wq"
-:q
-|2,0,1585439563,,"q"
-:w
-|2,0,1585439201,,"w"
 :e .scripts/web_search.sh.bak
 |2,0,1585436274,,"e .scripts/web_search.sh.bak"
-:split
-|2,0,1585436227,,"split"
-:e .w3m/keymap
-|2,0,1585432820,,"e .w3m/keymap"
 :e .scripts/web_search.sh
 |2,0,1585438458,,"e .scripts/web_search.sh"
 :w!
@@ -132,8 +144,6 @@ $&
 |2,0,1576270290,,"e! .config/i3-blocks/blocks/packages"
 :tab split
 |2,0,1576270283,,"tab split"
-:q!
-|2,0,1576170907,,"q!"
 :e! .config/i3-blocks/blocks/cpu
 |2,0,1576158340,,"e! .config/i3-blocks/blocks/cpu"
 :e! .config/i3-blocks/blocks/poweroff
@@ -242,6 +252,24 @@ $&
 |2,0,1556816864,,"\\"
 
 # Search String History (newest to oldest):
+?/NEXT
+|2,1,1585456260,47,"NEXT"
+?/save
+|2,1,1585456212,47,"save"
+?/downlo
+|2,1,1585456204,47,"downlo"
+?/aut
+|2,1,1585454308,47,"aut"
+?/inlin
+|2,1,1585454302,47,"inlin"
+?/image
+|2,1,1585454292,47,"image"
+? \<LINE_INFO\>
+|2,1,1585441769,,"\\<LINE_INFO\\>"
+? \<LINE_END\>
+|2,1,1585441725,,"\\<LINE_END\\>"
+?/mark
+|2,1,1585441504,47,"mark"
 ?/keymap    h
 |2,1,1585435867,47,"keymap    h"
 ?/keymap    C-g
@@ -494,271 +522,423 @@ $&
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	COMM=$(date)
-	git commit -m "$COMM"
-	git push -u origin master
-|3,1,0,0,3,0,1585439744,"COMM=$(date)","git commit -m \"$COMM\"","git push -u origin master"
+""0	LINE	0
+	document_root
+|3,1,0,1,1,0,1585455902,"document_root"
 "1	LINE	0
-	git add -f .gitconfig
-|3,0,1,1,1,0,1585439138,"git add -f .gitconfig"
+	document_root
+|3,0,1,1,1,0,1585455784,"document_root"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1585438541,""
+	personal_document_root
+|3,0,2,1,1,0,1585455783,"personal_document_root"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1585438541,""
+	cgi_bin
+|3,0,3,1,1,0,1585455782,"cgi_bin"
 "4	LINE	0
-	echo  
-|3,0,4,1,1,0,1585438340,"echo  "
+	index_file
+|3,0,4,1,1,0,1585455781,"index_file"
 "5	LINE	0
-	echo  
-|3,0,5,1,1,0,1585438337,"echo  "
+	mime_types ~/.w3m/mime.types, /etc/mime.types
+|3,0,5,1,1,0,1585455779,"mime_types ~/.w3m/mime.types, /etc/mime.types"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1585438326,""
+	mailcap
+|3,0,6,1,1,0,1585455778,"mailcap"
 "7	LINE	0
-	echo  
-|3,0,7,1,1,0,1585438325,"echo  "
+	urimethodmap
+|3,0,7,1,1,0,1585455777,"urimethodmap"
 "8	LINE	0
-	echo Word or phrase?
-|3,0,8,1,1,0,1585438323,"echo Word or phrase?"
+	image_color green
+|3,0,8,1,1,0,1585455755,"image_color green"
 "9	LINE	0
-	echo "-------------------------"
-|3,0,9,1,1,0,1585437611,"echo \"-------------------------\""
+	form_color red
+|3,0,9,1,1,0,1585455754,"form_color red"
 "-	CHAR	0
-	+
-|3,0,36,0,1,0,1585438170,"+"
+	 DOWNLOAD_LIST
+|3,0,36,0,1,0,1585441835," DOWNLOAD_LIST"
 
 # File marks:
-'0  42  21  ~/.scripts/backup_dot_files.sh
-|4,48,42,21,1585440049,"~/.scripts/backup_dot_files.sh"
-'1  10  19  ~/.scripts/backup_dot_files.sh
-|4,49,10,19,1585439563,"~/.scripts/backup_dot_files.sh"
-'2  10  19  ~/.scripts/backup_dot_files.sh
-|4,50,10,19,1585439563,"~/.scripts/backup_dot_files.sh"
-'3  44  0  ~/.scripts/backup_dot_files.sh
-|4,51,44,0,1585439204,"~/.scripts/backup_dot_files.sh"
-'4  44  0  ~/.scripts/backup_dot_files.sh
-|4,52,44,0,1585439204,"~/.scripts/backup_dot_files.sh"
-'5  43  0  ~/.scripts/backup_dot_files.sh
-|4,53,43,0,1585439204,"~/.scripts/backup_dot_files.sh"
-'6  43  0  ~/.scripts/backup_dot_files.sh
-|4,54,43,0,1585439204,"~/.scripts/backup_dot_files.sh"
-'7  15  0  ~/.w3m/keymap
-|4,55,15,0,1585438890,"~/.w3m/keymap"
-'8  14  12  ~/.scripts/web_search.sh
-|4,56,14,12,1585438809,"~/.scripts/web_search.sh"
-'9  8  0  ~/.scripts/translate.sh
-|4,57,8,0,1585438578,"~/.scripts/translate.sh"
+'0  69  16  ~/.w3m/keymap
+|4,48,69,16,1585456495,"~/.w3m/keymap"
+'1  30  0  ~/.w3m/config
+|4,49,30,0,1585454312,"~/.w3m/config"
+'2  30  0  ~/.w3m/config
+|4,50,30,0,1585454312,"~/.w3m/config"
+'3  63  0  ~/.w3m/config
+|4,51,63,0,1585454312,"~/.w3m/config"
+'4  63  0  ~/.w3m/config
+|4,52,63,0,1585454312,"~/.w3m/config"
+'5  1  0  ~/.w3m/w3m-config
+|4,53,1,0,1585453887,"~/.w3m/w3m-config"
+'6  76  26  ~/.w3m/keymap
+|4,54,76,26,1585450420,"~/.w3m/keymap"
+'7  76  26  ~/.w3m/keymap
+|4,55,76,26,1585450420,"~/.w3m/keymap"
+'8  44  0  ~/.scripts/backup_dot_files.sh
+|4,56,44,0,1585441268,"~/.scripts/backup_dot_files.sh"
+'9  44  0  ~/.scripts/backup_dot_files.sh
+|4,57,44,0,1585440927,"~/.scripts/backup_dot_files.sh"
 
 # Jumplist (newest first):
--'  42  21  ~/.scripts/backup_dot_files.sh
-|4,39,42,21,1585440049,"~/.scripts/backup_dot_files.sh"
--'  10  19  ~/.scripts/backup_dot_files.sh
-|4,39,10,19,1585439681,"~/.scripts/backup_dot_files.sh"
--'  10  19  ~/.scripts/backup_dot_files.sh
-|4,39,10,19,1585439563,"~/.scripts/backup_dot_files.sh"
--'  44  0  ~/.scripts/backup_dot_files.sh
-|4,39,44,0,1585439505,"~/.scripts/backup_dot_files.sh"
--'  43  0  ~/.scripts/backup_dot_files.sh
-|4,39,43,0,1585439505,"~/.scripts/backup_dot_files.sh"
--'  43  0  ~/.scripts/backup_dot_files.sh
-|4,39,43,0,1585439204,"~/.scripts/backup_dot_files.sh"
--'  46  0  ~/.scripts/backup_dot_files.sh
-|4,39,46,0,1585439128,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585439128,"~/.scripts/backup_dot_files.sh"
--'  45  0  ~/.scripts/backup_dot_files.sh
-|4,39,45,0,1585439128,"~/.scripts/backup_dot_files.sh"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  15  0  ~/.w3m/keymap
-|4,39,15,0,1585438890,"~/.w3m/keymap"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  14  12  ~/.scripts/web_search.sh
-|4,39,14,12,1585438809,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  4  0  ~/.scripts/web_search.sh
-|4,39,4,0,1585438749,"~/.scripts/web_search.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  8  0  ~/.scripts/translate.sh
-|4,39,8,0,1585438578,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  14  0  ~/.scripts/translate.sh
-|4,39,14,0,1585438410,"~/.scripts/translate.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  6  0  ~/.scripts/web_search.sh
-|4,39,6,0,1585438401,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  10  0  ~/.scripts/web_search.sh
-|4,39,10,0,1585438386,"~/.scripts/web_search.sh"
--'  1  0  ~/.scripts/translate.sh
-|4,39,1,0,1585438293,"~/.scripts/translate.sh"
--'  1  0  ~/.scripts/translate.sh
-|4,39,1,0,1585438293,"~/.scripts/translate.sh"
--'  1  0  ~/.scripts/translate.sh
-|4,39,1,0,1585438293,"~/.scripts/translate.sh"
+-'  69  16  ~/.w3m/keymap
+|4,39,69,16,1585456495,"~/.w3m/keymap"
+-'  131  17  ~/.w3m/keymap
+|4,39,131,17,1585456278,"~/.w3m/keymap"
+-'  115  15  ~/.w3m/keymap
+|4,39,115,15,1585456274,"~/.w3m/keymap"
+-'  107  22  ~/.w3m/keymap
+|4,39,107,22,1585456272,"~/.w3m/keymap"
+-'  97  16  ~/.w3m/keymap
+|4,39,97,16,1585456266,"~/.w3m/keymap"
+-'  68  15  ~/.w3m/keymap
+|4,39,68,15,1585456263,"~/.w3m/keymap"
+-'  44  17  ~/.w3m/keymap
+|4,39,44,17,1585456261,"~/.w3m/keymap"
+-'  143  18  ~/.w3m/keymap
+|4,39,143,18,1585456260,"~/.w3m/keymap"
+-'  93  16  ~/.w3m/keymap
+|4,39,93,16,1585456226,"~/.w3m/keymap"
+-'  145  18  ~/.w3m/keymap
+|4,39,145,18,1585456223,"~/.w3m/keymap"
+-'  80  15  ~/.w3m/keymap
+|4,39,80,15,1585456212,"~/.w3m/keymap"
+-'  1  0  ~/.w3m/config
+|4,39,1,0,1585455843,"~/.w3m/config"
+-'  2  0  ~/.w3m/config
+|4,39,2,0,1585455772,"~/.w3m/config"
+-'  3  0  ~/.w3m/config
+|4,39,3,0,1585455772,"~/.w3m/config"
+-'  4  0  ~/.w3m/config
+|4,39,4,0,1585455772,"~/.w3m/config"
+-'  5  0  ~/.w3m/config
+|4,39,5,0,1585455772,"~/.w3m/config"
+-'  6  0  ~/.w3m/config
+|4,39,6,0,1585455772,"~/.w3m/config"
+-'  7  0  ~/.w3m/config
+|4,39,7,0,1585455772,"~/.w3m/config"
+-'  8  0  ~/.w3m/config
+|4,39,8,0,1585455772,"~/.w3m/config"
+-'  9  0  ~/.w3m/config
+|4,39,9,0,1585455772,"~/.w3m/config"
+-'  10  0  ~/.w3m/config
+|4,39,10,0,1585455771,"~/.w3m/config"
+-'  11  0  ~/.w3m/config
+|4,39,11,0,1585455771,"~/.w3m/config"
+-'  12  0  ~/.w3m/config
+|4,39,12,0,1585455770,"~/.w3m/config"
+-'  13  0  ~/.w3m/config
+|4,39,13,0,1585455770,"~/.w3m/config"
+-'  14  0  ~/.w3m/config
+|4,39,14,0,1585455770,"~/.w3m/config"
+-'  15  0  ~/.w3m/config
+|4,39,15,0,1585455770,"~/.w3m/config"
+-'  16  0  ~/.w3m/config
+|4,39,16,0,1585455770,"~/.w3m/config"
+-'  17  0  ~/.w3m/config
+|4,39,17,0,1585455770,"~/.w3m/config"
+-'  18  0  ~/.w3m/config
+|4,39,18,0,1585455770,"~/.w3m/config"
+-'  19  0  ~/.w3m/config
+|4,39,19,0,1585455769,"~/.w3m/config"
+-'  20  0  ~/.w3m/config
+|4,39,20,0,1585455769,"~/.w3m/config"
+-'  21  0  ~/.w3m/config
+|4,39,21,0,1585455769,"~/.w3m/config"
+-'  22  0  ~/.w3m/config
+|4,39,22,0,1585455768,"~/.w3m/config"
+-'  23  0  ~/.w3m/config
+|4,39,23,0,1585455768,"~/.w3m/config"
+-'  24  0  ~/.w3m/config
+|4,39,24,0,1585455765,"~/.w3m/config"
+-'  25  0  ~/.w3m/config
+|4,39,25,0,1585455765,"~/.w3m/config"
+-'  26  0  ~/.w3m/config
+|4,39,26,0,1585455764,"~/.w3m/config"
+-'  27  0  ~/.w3m/config
+|4,39,27,0,1585455762,"~/.w3m/config"
+-'  28  0  ~/.w3m/config
+|4,39,28,0,1585455762,"~/.w3m/config"
+-'  29  0  ~/.w3m/config
+|4,39,29,0,1585455761,"~/.w3m/config"
+-'  30  0  ~/.w3m/config
+|4,39,30,0,1585455760,"~/.w3m/config"
+-'  63  0  ~/.w3m/config
+|4,39,63,0,1585454312,"~/.w3m/config"
+-'  63  0  ~/.w3m/config
+|4,39,63,0,1585454312,"~/.w3m/config"
+-'  63  0  ~/.w3m/config
+|4,39,63,0,1585454312,"~/.w3m/config"
+-'  63  0  ~/.w3m/config
+|4,39,63,0,1585454312,"~/.w3m/config"
+-'  22  21  ~/.w3m/config
+|4,39,22,21,1585454295,"~/.w3m/config"
+-'  22  21  ~/.w3m/config
+|4,39,22,21,1585454295,"~/.w3m/config"
+-'  22  21  ~/.w3m/config
+|4,39,22,21,1585454295,"~/.w3m/config"
+-'  22  21  ~/.w3m/config
+|4,39,22,21,1585454295,"~/.w3m/config"
+-'  69  18  ~/.w3m/config
+|4,39,69,18,1585454292,"~/.w3m/config"
+-'  69  18  ~/.w3m/config
+|4,39,69,18,1585454292,"~/.w3m/config"
+-'  69  18  ~/.w3m/config
+|4,39,69,18,1585454292,"~/.w3m/config"
+-'  69  18  ~/.w3m/config
+|4,39,69,18,1585454292,"~/.w3m/config"
+-'  1  0  ~/.w3m/config
+|4,39,1,0,1585454073,"~/.w3m/config"
+-'  1  0  ~/.w3m/config
+|4,39,1,0,1585454073,"~/.w3m/config"
+-'  1  0  ~/.w3m/config
+|4,39,1,0,1585454073,"~/.w3m/config"
+-'  1  0  ~/.w3m/config
+|4,39,1,0,1585454073,"~/.w3m/config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  1  0  ~/.w3m/w3m-config
+|4,39,1,0,1585453887,"~/.w3m/w3m-config"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  76  26  ~/.w3m/keymap
+|4,39,76,26,1585450420,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
+-'  12  0  ~/.w3m/keymap
+|4,39,12,0,1585441967,"~/.w3m/keymap"
 
 # History of marks within files (newest to oldest):
 
+> ~/.w3m/keymap
+	*	1585456455	0
+	"	69	16
+	^	69	17
+	.	69	16
+	+	109	0
+	+	108	15
+	+	111	0
+	+	53	0
+	+	54	0
+	+	113	0
+	+	111	0
+	+	133	0
+	+	38	0
+	+	40	0
+	+	30	0
+	+	29	0
+	+	24	0
+	+	10	0
+	+	52	0
+	+	50	0
+	+	49	0
+	+	89	0
+	+	87	0
+	+	127	0
+	+	114	14
+	+	101	0
+	+	29	0
+	+	27	10
+	+	48	0
+	+	63	12
+	+	46	12
+	+	47	12
+	+	100	13
+	+	102	12
+	+	101	10
+	+	94	11
+	+	9	0
+	+	1	0
+	+	34	16
+	+	98	14
+	+	125	16
+	+	141	19
+	+	131	0
+	+	10	0
+	+	38	0
+	+	15	0
+	+	12	0
+	+	13	0
+	+	10	16
+	+	12	16
+	+	13	0
+	+	10	16
+	+	12	16
+	+	13	16
+	+	18	17
+	+	17	17
+	+	16	17
+	+	15	17
+	+	19	17
+	+	20	17
+	+	21	17
+	+	22	17
+	+	23	17
+	+	24	17
+	+	25	17
+	+	26	17
+	+	27	17
+	+	28	17
+	+	29	17
+	+	30	17
+	+	31	17
+	+	32	17
+	+	33	17
+	+	34	17
+	+	36	17
+	+	37	14
+	+	38	14
+	+	39	14
+	+	40	14
+	+	41	14
+	+	42	14
+	+	43	14
+	+	44	14
+	+	45	14
+	+	46	14
+	+	47	14
+	+	48	14
+	+	49	14
+	+	50	14
+	+	51	14
+	+	52	14
+	+	53	14
+	+	54	14
+	+	12	0
+	+	13	0
+	+	12	12
+	+	10	0
+	+	12	0
+	+	10	0
+	+	14	13
+	+	31	0
+	+	44	12
+	+	68	16
+	+	69	16
+	u	53	0
+
+> ~/.w3m/config
+	*	1585455818	0
+	"	1	0
+	.	1	0
+	+	30	0
+	+	30	16
+	+	30	12
+	+	30	9
+	+	30	5
+	+	30	19
+	+	30	0
+	+	30	20
+	+	30	10
+	+	30	11
+	+	30	12
+	+	30	16
+	+	30	9
+	+	30	7
+	+	30	8
+	+	30	11
+	+	30	7
+	+	30	9
+	+	30	10
+	+	30	5
+	+	30	10
+	+	30	11
+	+	30	6
+	+	30	9
+	+	30	6
+	+	30	21
+	+	30	12
+	+	30	0
+	+	40	13
+	+	41	17
+	+	42	16
+	+	43	11
+	+	45	14
+	+	45	13
+	+	45	9
+	+	45	0
+	+	30	0
+	+	1	0
+
+> ~/.w3m/w3m-config
+	*	1585453884	0
+	"	1	0
+	.	1	0
+	+	1	0
+
 > ~/.scripts/backup_dot_files.sh
-	*	1585440047	0
-	"	42	21
+	*	1585440948	0
+	"	44	0
 	^	42	22
 	.	42	21
 	+	14	0
@@ -766,103 +946,6 @@ $&
 	+	42	0
 	+	41	21
 	+	42	21
-
-> ~/.w3m/keymap
-	*	1585438888	0
-	"	15	0
-	^	96	12
-	.	12	0
-	+	50	12
-	+	105	0
-	+	133	21
-	+	134	0
-	+	98	0
-	+	100	26
-	+	105	0
-	+	106	22
-	+	111	0
-	+	106	21
-	+	115	13
-	+	112	0
-	+	95	25
-	+	97	11
-	+	95	0
-	+	96	11
-	+	95	11
-	+	112	0
-	+	107	0
-	+	111	0
-	+	111	12
-	+	112	12
-	+	113	0
-	+	115	34
-	+	113	0
-	+	115	41
-	+	113	0
-	+	30	0
-	+	113	0
-	+	115	41
-	+	115	13
-	+	128	31
-	+	113	0
-	+	16	0
-	+	113	0
-	+	17	0
-	+	113	14
-	+	100	26
-	+	113	0
-	+	101	0
-	+	105	0
-	+	129	0
-	+	115	13
-	+	115	22
-	+	115	13
-	+	100	15
-	+	101	0
-	+	115	13
-	+	115	0
-	+	128	31
-	+	133	0
-	+	40	0
-	+	115	0
-	+	128	31
-	+	128	30
-	+	107	25
-	+	107	21
-	+	108	0
-	+	111	0
-	+	110	15
-	+	113	0
-	+	55	0
-	+	56	0
-	+	115	0
-	+	113	0
-	+	135	0
-	+	40	0
-	+	42	0
-	+	31	0
-	+	30	0
-	+	25	0
-	+	13	0
-	+	54	0
-	+	52	0
-	+	51	0
-	+	91	0
-	+	89	0
-	+	129	0
-	+	116	14
-	+	103	0
-	+	30	0
-	+	28	10
-	+	50	0
-	+	65	12
-	+	48	12
-	+	49	12
-	+	102	13
-	+	104	12
-	+	103	10
-	+	96	11
-	+	12	0
 
 > ~/.scripts/web_search.sh
 	*	1585438808	0
@@ -1022,10 +1105,6 @@ $&
 	+	378	0
 	+	358	0
 	+	363	19
-
-> ~/.w3m/config
-	*	1585344092	0
-	"	17	0
 
 > ~/.config/i3/config
 	*	1585323556	0
