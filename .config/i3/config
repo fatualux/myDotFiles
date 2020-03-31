@@ -162,7 +162,7 @@ bindsym $mod+n exec --no-startup-id ~/.config/i3/emptyWorkspace.sh
 bindsym Shift+Control+Right move container to workspace next
 bindsym Shift+Control+Left move container to workspace prev
 
-# System Mode - Super+x 
+# System Mode - Super+x
 bindsym $mod+x mode "$mode_system"
 set $mode_SYSTEM  (l) LOCK, (e) LOGOUT, (s) SUSPEND, (h) HIBERNATE, (r) REBOOT, (Shift+s) SHUTDOWN
 mode "$mode_system" {
