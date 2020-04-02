@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<x\>
+~MSle0~/tele
 
 # Last Substitute Search Pattern:
 ~MSle0&20,70,90
@@ -20,16 +20,18 @@
 $&
 
 # Command Line History (newest to oldest):
+:e .config/i3/config
+|2,0,1585835147,,"e .config/i3/config"
+:w
+|2,0,1585661743,,"w"
+:e .conkyrc
+|2,0,1585661425,,"e .conkyrc"
 :q
 |2,0,1585662915,,"q"
-:w
-|2,0,1585662837,,"w"
 :wq
 |2,0,1585662167,,"wq"
 :e .vimrc
 |2,0,1585603264,,"e .vimrc"
-:e .config/i3/config
-|2,0,1585603207,,"e .config/i3/config"
 :e .w3m/keymap
 |2,0,1585486796,,"e .w3m/keymap"
 :e .scripts/backup_dot_files.sh
@@ -80,8 +82,6 @@ $&
 |2,0,1584892682,,"qa!"
 :q|
 |2,0,1584892676,,"q|"
-:e .conkyrc
-|2,0,1584555757,,"e .conkyrc"
 :e ciao.txr
 |2,0,1584049259,,"e ciao.txr"
 :e .xinitrc
@@ -122,6 +122,10 @@ $&
 |2,0,1577067855,,"e .config/mimeapps.list"
 
 # Search String History (newest to oldest):
+?/tele
+|2,1,1585835152,47,"tele"
+?/cpu
+|2,1,1585661490,47,"cpu"
 ? \<x\>
 |2,1,1585603221,,"\\<x\\>"
 ?/keymap    u
@@ -249,74 +253,107 @@ $&
 "0	CHAR	0
 		
 |3,0,0,0,1,0,1585662072,"	"
-""1	LINE	0
-	git add -f .git/
-|3,1,1,1,1,0,1585662834,"git add -f .git/"
-"2	LINE	0
+"1	LINE	0
 	
-|3,0,2,1,1,0,1585662672,""
+|3,0,1,1,1,0,1585835395,""
+"2	CHAR	0
+	for_window [window_role="task_dialog"] floating enable
+	for_window [window_role="Preferences"] floating enable
+	for_window [window_type="dialog"] floating enable
+	for_window [window_type="menu"] floating enable
+|3,0,2,0,4,0,1585835333,"for_window [window_role=\"task_dialog\"] floating enable","for_window [window_role=\"Preferences\"] floating enable","for_window [window_type=\"dialog\"] floating enable","for_window [window_type=\"menu\"] floating enable"
 "3	LINE	0
-	git add -f .config/compton/
-|3,0,3,1,1,0,1585662668,"git add -f .config/compton/"
+	for_window [window_role="task_dialog"] floating enable
+|3,0,3,1,1,0,1585835312,"for_window [window_role=\"task_dialog\"] floating enable"
 "4	LINE	0
-	#
-|3,0,4,1,1,0,1585661954,"#"
+	for_window [window_role="pop-up"] floating enable
+|3,0,4,1,1,0,1585835271,"for_window [window_role=\"pop-up\"] floating enable"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1585602395,""
+	for_window [window_role="bubble"] floating enable
+|3,0,5,1,1,0,1585835266,"for_window [window_role=\"bubble\"] floating enable"
 "6	LINE	0
-	endif
-|3,0,6,1,1,0,1585602394,"endif"
+	
+|3,0,6,1,1,0,1585835256,""
 "7	LINE	0
-	  finish
-|3,0,7,1,1,0,1585602394,"  finish"
+	for_window [class="VirtualBox"] floating enable
+|3,0,7,1,1,0,1585835254,"for_window [class=\"VirtualBox\"] floating enable"
 "8	LINE	0
-	if v:progname =~? "evim"
-|3,0,8,1,1,0,1585602393,"if v:progname =~? \"evim\""
+	for_window [class="Spotify"] move to workspace 15
+|3,0,8,1,1,0,1585835194,"for_window [class=\"Spotify\"] move to workspace 15"
 "9	LINE	0
-	" When started as "evim", evim.vim will already have done these settings.
-|3,0,9,1,1,0,1585602392,"\" When started as \"evim\", evim.vim will already have done these settings."
-"-	CHAR	0
-	git add -f .vim/
-|3,0,36,0,1,0,1585662743,"git add -f .vim/"
+	assign [class="Audacious"] → 14
+|3,0,9,1,1,0,1585835181,"assign [class=\"Audacious\"] → 14"
+""-	CHAR	0
+	.
+|3,1,36,0,1,0,1585835407,"."
 
 # File marks:
-'0  43  0  ~/.scripts/backup_dot_files.sh
-|4,48,43,0,1585662915,"~/.scripts/backup_dot_files.sh"
-'1  8  25  ~/.git/COMMIT_EDITMSG
-|4,49,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
-'2  1  47  ~/.git/COMMIT_EDITMSG
-|4,50,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
-'3  1  47  ~/.git/COMMIT_EDITMSG
-|4,51,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
-'4  1  106  ~/.git/COMMIT_EDITMSG
-|4,52,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
-'5  1  106  ~/.git/COMMIT_EDITMSG
-|4,53,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
-'6  8  1  ~/.git/COMMIT_EDITMSG
-|4,54,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
-'7  8  1  ~/.git/COMMIT_EDITMSG
-|4,55,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
+'0  257  40  ~/.config/i3/config
+|4,48,257,40,1585835446,"~/.config/i3/config"
+'1  119  74  ~/.conkyrc
+|4,49,119,74,1585663159,"~/.conkyrc"
+'2  43  0  ~/.scripts/backup_dot_files.sh
+|4,50,43,0,1585662915,"~/.scripts/backup_dot_files.sh"
+'3  8  25  ~/.git/COMMIT_EDITMSG
+|4,51,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
+'4  1  47  ~/.git/COMMIT_EDITMSG
+|4,52,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
+'5  1  47  ~/.git/COMMIT_EDITMSG
+|4,53,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
+'6  1  106  ~/.git/COMMIT_EDITMSG
+|4,54,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
+'7  1  106  ~/.git/COMMIT_EDITMSG
+|4,55,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
 '8  8  1  ~/.git/COMMIT_EDITMSG
 |4,56,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
 '9  8  1  ~/.git/COMMIT_EDITMSG
 |4,57,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  257  40  ~/.config/i3/config
+|4,39,257,40,1585835446,"~/.config/i3/config"
+-'  48  26  ~/.config/i3/config
+|4,39,48,26,1585835154,"~/.config/i3/config"
+-'  274  54  ~/.config/i3/config
+|4,39,274,54,1585835152,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1585835147,"~/.config/i3/config"
+-'  119  74  ~/.conkyrc
+|4,39,119,74,1585663159,"~/.conkyrc"
+-'  119  74  ~/.conkyrc
+|4,39,119,74,1585663159,"~/.conkyrc"
+-'  43  0  ~/.scripts/backup_dot_files.sh
+|4,39,43,0,1585662915,"~/.scripts/backup_dot_files.sh"
 -'  43  0  ~/.scripts/backup_dot_files.sh
 |4,39,43,0,1585662915,"~/.scripts/backup_dot_files.sh"
 -'  20  0  ~/.scripts/backup_dot_files.sh
 |4,39,20,0,1585662669,"~/.scripts/backup_dot_files.sh"
+-'  20  0  ~/.scripts/backup_dot_files.sh
+|4,39,20,0,1585662669,"~/.scripts/backup_dot_files.sh"
+-'  30  3  ~/.scripts/backup_dot_files.sh
+|4,39,30,3,1585662530,"~/.scripts/backup_dot_files.sh"
 -'  30  3  ~/.scripts/backup_dot_files.sh
 |4,39,30,3,1585662530,"~/.scripts/backup_dot_files.sh"
 -'  27  9  ~/.scripts/backup_dot_files.sh
 |4,39,27,9,1585662493,"~/.scripts/backup_dot_files.sh"
+-'  27  9  ~/.scripts/backup_dot_files.sh
+|4,39,27,9,1585662493,"~/.scripts/backup_dot_files.sh"
+-'  25  1  ~/.scripts/backup_dot_files.sh
+|4,39,25,1,1585662426,"~/.scripts/backup_dot_files.sh"
 -'  25  1  ~/.scripts/backup_dot_files.sh
 |4,39,25,1,1585662426,"~/.scripts/backup_dot_files.sh"
 -'  8  25  ~/.git/COMMIT_EDITMSG
 |4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
 -'  8  25  ~/.git/COMMIT_EDITMSG
 |4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
+-'  8  25  ~/.git/COMMIT_EDITMSG
+|4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
+-'  8  25  ~/.git/COMMIT_EDITMSG
+|4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1585662186,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1585662186,"~/.git/COMMIT_EDITMSG"
 -'  1  0  ~/.git/COMMIT_EDITMSG
 |4,39,1,0,1585662186,"~/.git/COMMIT_EDITMSG"
 -'  1  0  ~/.git/COMMIT_EDITMSG
@@ -325,6 +362,14 @@ $&
 |4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
 -'  1  47  ~/.git/COMMIT_EDITMSG
 |4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
+-'  1  47  ~/.git/COMMIT_EDITMSG
+|4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
+-'  1  47  ~/.git/COMMIT_EDITMSG
+|4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
+-'  1  106  ~/.git/COMMIT_EDITMSG
+|4,39,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
+-'  1  106  ~/.git/COMMIT_EDITMSG
+|4,39,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
 -'  1  106  ~/.git/COMMIT_EDITMSG
 |4,39,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
 -'  1  106  ~/.git/COMMIT_EDITMSG
@@ -353,6 +398,30 @@ $&
 |4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
 -'  9  1  ~/.git/COMMIT_EDITMSG
 |4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
 -'  11  0  ~/.git/COMMIT_EDITMSG
 |4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
 -'  11  0  ~/.git/COMMIT_EDITMSG
@@ -365,6 +434,30 @@ $&
 |4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
 -'  11  0  ~/.git/COMMIT_EDITMSG
 |4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
+-'  11  0  ~/.git/COMMIT_EDITMSG
+|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
+-'  11  0  ~/.git/COMMIT_EDITMSG
+|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
+-'  11  0  ~/.git/COMMIT_EDITMSG
+|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
+-'  11  0  ~/.git/COMMIT_EDITMSG
+|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
+-'  11  0  ~/.git/COMMIT_EDITMSG
+|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
+-'  11  0  ~/.git/COMMIT_EDITMSG
+|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
+-'  8  1  ~/.git/COMMIT_EDITMSG
+|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
+-'  8  1  ~/.git/COMMIT_EDITMSG
+|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
+-'  8  1  ~/.git/COMMIT_EDITMSG
+|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
+-'  8  1  ~/.git/COMMIT_EDITMSG
+|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
+-'  8  1  ~/.git/COMMIT_EDITMSG
+|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
+-'  8  1  ~/.git/COMMIT_EDITMSG
+|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
 -'  8  1  ~/.git/COMMIT_EDITMSG
 |4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
 -'  8  1  ~/.git/COMMIT_EDITMSG
@@ -385,6 +478,18 @@ $&
 |4,39,10,1,1585661976,"~/.git/COMMIT_EDITMSG"
 -'  9  1  ~/.git/COMMIT_EDITMSG
 |4,39,9,1,1585661976,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585661976,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585661976,"~/.git/COMMIT_EDITMSG"
+-'  10  1  ~/.git/COMMIT_EDITMSG
+|4,39,10,1,1585661976,"~/.git/COMMIT_EDITMSG"
+-'  9  1  ~/.git/COMMIT_EDITMSG
+|4,39,9,1,1585661976,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1585661935,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1585661935,"~/.git/COMMIT_EDITMSG"
 -'  1  0  ~/.git/COMMIT_EDITMSG
 |4,39,1,0,1585661935,"~/.git/COMMIT_EDITMSG"
 -'  1  0  ~/.git/COMMIT_EDITMSG
@@ -405,106 +510,68 @@ $&
 |4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
 -'  37  21  ~/.scripts/backup_dot_files.sh
 |4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  38  21  ~/.scripts/backup_dot_files.sh
-|4,39,38,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  32  21  ~/.scripts/backup_dot_files.sh
-|4,39,32,21,1585661867,"~/.scripts/backup_dot_files.sh"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
--'  136  10  ~/.vimrc
-|4,39,136,10,1585603372,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/i3/config
+	*	1585835411	0
+	"	257	40
+	.	257	41
+	+	164	0
+	+	231	63
+	+	164	0
+	+	232	0
+	+	233	0
+	+	55	0
+	+	55	36
+	+	55	0
+	+	53	0
+	+	55	0
+	+	55	59
+	+	54	0
+	+	54	50
+	+	54	19
+	+	165	23
+	+	250	30
+	+	251	0
+	+	250	0
+	+	262	0
+	+	261	0
+	+	241	0
+	+	261	0
+	+	241	1
+	+	244	47
+	+	245	0
+	+	241	0
+	+	261	0
+	+	257	41
+
+> ~/.conkyrc
+	*	1585663159	0
+	"	119	74
+	^	119	75
+	.	119	74
+	+	130	41
+	+	111	0
+	+	114	0
+	+	113	0
+	+	123	0
+	+	123	13
+	+	124	57
+	+	131	7
+	+	131	0
+	+	131	41
+	+	131	7
+	+	131	6
+	+	131	12
+	+	131	0
+	+	111	0
+	+	129	46
+	+	130	41
+	+	110	101
+	+	101	63
+	+	123	0
+	+	119	74
 
 > ~/.scripts/backup_dot_files.sh
 	*	1585662914	0
@@ -575,27 +642,6 @@ $&
 	+	68	42
 	+	69	42
 	+	73	0
-
-> ~/.config/i3/config
-	*	1585603252	0
-	"	281	54
-	^	165	23
-	.	165	23
-	+	164	0
-	+	231	63
-	+	164	0
-	+	232	0
-	+	233	0
-	+	55	0
-	+	55	36
-	+	55	0
-	+	53	0
-	+	55	0
-	+	55	59
-	+	54	0
-	+	54	50
-	+	54	19
-	+	165	23
 
 > ~/.w3m/keymap
 	*	1585517505	0
@@ -1145,30 +1191,6 @@ $&
 > ~/Builds/spotify/PKGBUILD
 	*	1584565745	0
 	"	96	0
-
-> ~/.conkyrc
-	*	1584556645	0
-	"	124	57
-	^	124	58
-	.	130	41
-	+	130	41
-	+	111	0
-	+	114	0
-	+	113	0
-	+	123	0
-	+	122	0
-	+	122	13
-	+	124	57
-	+	131	7
-	+	131	0
-	+	131	41
-	+	131	7
-	+	131	6
-	+	131	12
-	+	131	0
-	+	111	0
-	+	129	46
-	+	130	41
 
 > ~/.local/share/xorg/Xorg.0.log
 	*	1584304250	0

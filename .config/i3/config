@@ -239,32 +239,25 @@ exec --no-startup-id conky
 for_window [class="Pinentry"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
 for_window [class=".*"] border pixel 3
 
 for_window [instance="scratchpad"] floating enable
 for_window [instance="scratchpad"] move window to scratchpad
 for_window [class="Firefox"] border pixel 1
-for_window [class="Spotify"] move to workspace 15
-assign [class="Telegram"] → 13
-assign [class="Audacious"] → 14
+assign [class="Telegram"] → 0
 assign [class="cmst"] → 0
 assign [class="VeraCrypt"] → 0
 
 for_window [class="XTerm"] floating enable move right 660px, move down 300px
 for_window [class="Termite"] floating enable
 
-#custom app commands (?i) case insenitive..
+#custom app commands (?i) case insenitive
 for_window [class="(?i)feh"] floating enable
 for_window [class="(?i)viewnior"] floating enable
 for_window [class="(?i)pavucontrol"] floating enable
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="bubble"] floating enable
-for_window [window_role="task_dialog"] floating enable
-for_window [window_role="Preferences"] floating enable
-for_window [window_type="dialog"] floating enable
-for_window [window_type="menu"] floating enable
-
-for_window [class="VirtualBox"] floating enable
 
 #use "xmodmap -pke" to get list of special keys
 #custom special key fixes
