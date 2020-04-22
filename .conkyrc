@@ -121,13 +121,13 @@ ${offset 100}$color2 Load: $color9 ${cpubar cpu2 6,220} $color4${cpu cpu2}$color
 ${offset 100}$color4 ${cpugraph cpu2 15,255 262729 87CEFA}
 
 ${voffset --20}${offset 900}$color8 NETWORK${hr 2}$color
-${offset 980}$color2 essid : $color4${wireless_essid wlan1}$color2
-${offset 1000}$color2 IPv4 : $color4${addr wlan1}
-${offset 1020}$color2 MAC : $color4${wireless_ap wlan1}
-${offset 1050}$color2 Down : $color4 ${downspeed wlan1} $color2
-${offset 1030}$color4 ${downspeedgraph wlan1 15,250 262729 87CEFA}
-${offset 1075}$color2 Up : $color4 ${upspeed wlan1} $color2
-${offset 1030}$color4 ${upspeedgraph wlan1 15,250 262729 87CEFA}
+${offset 980}$color2 essid : $color4${wireless_essid wlan0}$color2
+${offset 1000}$color2 IPv4 : $color4${addr wlan0}
+${offset 1020}$color2 MAC : $color4${wireless_ap wlan0}
+${offset 1050}$color2 Down : $color4 ${downspeed wlan0} $color2
+${offset 1030}$color4 ${downspeedgraph wlan0 15,250 262729 87CEFA}
+${offset 1075}$color2 Up : $color4 ${upspeed wlan0} $color2
+${offset 1030}$color4 ${upspeedgraph wlan0 15,250 262729 87CEFA}
 
 ${voffset -20}${offset 500}$color8 ..: $color3 Power$color8 :..
 ${offset 500}$color2 BATTERY $color4  $battery

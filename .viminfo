@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/tele
+~MSle0~/wlan1
 
 # Last Substitute Search Pattern:
 ~MSle0&20,70,90
@@ -20,14 +20,22 @@
 $&
 
 # Command Line History (newest to oldest):
-:e .config/i3/config
-|2,0,1585835147,,"e .config/i3/config"
 :w
-|2,0,1585661743,,"w"
+|2,0,1587590222,,"w"
+:e .config/i3/config
+|2,0,1587590163,,"e .config/i3/config"
+:e .scripts/screencast1.sh
+|2,0,1587589435,,"e .scripts/screencast1.sh"
+:e .scripts/screencast.sh
+|2,0,1587588344,,"e .scripts/screencast.sh"
+:w InfiniteSaga
+|2,0,1587547610,,"w InfiniteSaga"
 :e .conkyrc
-|2,0,1585661425,,"e .conkyrc"
+|2,0,1587198505,,"e .conkyrc"
 :q
-|2,0,1585662915,,"q"
+|2,0,1586813602,,"q"
+:e Documents/pythonExercises/test.py
+|2,0,1586209554,,"e Documents/pythonExercises/test.py"
 :wq
 |2,0,1585662167,,"wq"
 :e .vimrc
@@ -108,8 +116,6 @@ $&
 |2,0,1583107875,,"w ~/Downloads/bot.py"
 :e! .config/i3/config
 |2,0,1580593732,,"e! .config/i3/config"
-:e .scripts/screencast.sh
-|2,0,1577801194,,"e .scripts/screencast.sh"
 :e .scripts/scree
 |2,0,1577800469,,"e .scripts/scree"
 :e! .scripts/appleWL.sh
@@ -122,6 +128,12 @@ $&
 |2,0,1577067855,,"e .config/mimeapps.list"
 
 # Search String History (newest to oldest):
+?/scree
+|2,1,1587587507,47,"scree"
+?/wlan1
+|2,1,1587198522,47,"wlan1"
+?/network
+|2,1,1586728626,47,"network"
 ?/tele
 |2,1,1585835152,47,"tele"
 ?/cpu
@@ -231,7 +243,7 @@ $&
 
 # Expression History (newest to oldest):
 =acp#onPopupPost()
-|2,2,1585410995,,"acp#onPopupPost()"
+|2,2,1587198653,,"acp#onPopupPost()"
 
 # Input Line History (newest to oldest):
 @y
@@ -250,273 +262,294 @@ $&
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-		
-|3,0,0,0,1,0,1585662072,"	"
+""0	CHAR	0
+	 
+|3,1,0,0,1,0,1587589309," "
 "1	LINE	0
+	RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\ )
+|3,0,1,1,1,0,1587588968,"RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\\ )"
+"2	LINE	0
 	
-|3,0,1,1,1,0,1585835395,""
-"2	CHAR	0
-	for_window [window_role="task_dialog"] floating enable
-	for_window [window_role="Preferences"] floating enable
-	for_window [window_type="dialog"] floating enable
-	for_window [window_type="menu"] floating enable
-|3,0,2,0,4,0,1585835333,"for_window [window_role=\"task_dialog\"] floating enable","for_window [window_role=\"Preferences\"] floating enable","for_window [window_type=\"dialog\"] floating enable","for_window [window_type=\"menu\"] floating enable"
+|3,0,2,1,1,0,1587588658,""
 "3	LINE	0
-	for_window [window_role="task_dialog"] floating enable
-|3,0,3,1,1,0,1585835312,"for_window [window_role=\"task_dialog\"] floating enable"
+	OUTPUT="$HOME/Videos/Screencasts/$(date +%F-%H-%M-%S)"
+|3,0,3,1,1,0,1587588657,"OUTPUT=\"$HOME/Videos/Screencasts/$(date +%F-%H-%M-%S)\""
 "4	LINE	0
-	for_window [window_role="pop-up"] floating enable
-|3,0,4,1,1,0,1585835271,"for_window [window_role=\"pop-up\"] floating enable"
+	TMPFILE="$(mktemp -t screencast-XXXXXXX).mkv"
+|3,0,4,1,1,0,1587588656,"TMPFILE=\"$(mktemp -t screencast-XXXXXXX).mkv\""
 "5	LINE	0
-	for_window [window_role="bubble"] floating enable
-|3,0,5,1,1,0,1585835266,"for_window [window_role=\"bubble\"] floating enable"
-"6	LINE	0
 	
-|3,0,6,1,1,0,1585835256,""
+|3,0,5,1,1,0,1587587847,""
+"6	LINE	0
+	#!/bin/bash
+	
+	DATE=$(date +'%Y-%m-%d--%H-%M-%S')
+	NAME="/home/fz/Videos/screencast/Screencast-${DATE}.mp4"
+	RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\ )
+	TMPP=/tmp/screencast.pid
+	function screencast_kill(){
+	    kill -2 $(cat $TMPP) 2> /dev/null
+	    rm $TMPP
+	}
+	
+	function screencast_start(){
+	    nohup ffmpeg -f x11grab -s $RESO -framerate 30 -i :0 -c:v libx264 -pix_fmt yuv420p "$NAME" > /dev/null 2>&1 &
+	    PID=$!
+	    echo -n $PID > $TMPP
+	}
+	
+	if [[ -f $TMPP ]];
+	then
+	    screencast_kill
+	else
+	    screencast_start
+	fi
+|3,0,6,1,23,0,1587587832,"#!/bin/bash","","DATE=$(date +'%Y-%m-%d--%H-%M-%S')","NAME=\"/home/fz/Videos/screencast/Screencast-${DATE}.mp4\"","RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\\ )","TMPP=/tmp/screencast.pid","function screencast_kill(){","    kill -2 $(cat $TMPP) 2> /dev/null","    rm $TMPP","}","","function screencast_start(){",>117
+|<"    nohup ffmpeg -f x11grab -s $RESO -framerate 30 -i :0 -c:v libx264 -pix_fmt yuv420p \"$NAME\" > /dev/null 2>&1 &","    PID=$!","    echo -n $PID > $TMPP","}","","if [[ -f $TMPP ]];","then","    screencast_kill","else","    screencast_start","fi"
 "7	LINE	0
-	for_window [class="VirtualBox"] floating enable
-|3,0,7,1,1,0,1585835254,"for_window [class=\"VirtualBox\"] floating enable"
+	    8 Collegamenti esterni
+|3,0,7,1,1,0,1587547577,"    8 Collegamenti esterni"
 "8	LINE	0
-	for_window [class="Spotify"] move to workspace 15
-|3,0,8,1,1,0,1585835194,"for_window [class=\"Spotify\"] move to workspace 15"
+	    7 Voci correlate
+|3,0,8,1,1,0,1587547576,"    7 Voci correlate"
 "9	LINE	0
-	assign [class="Audacious"] → 14
-|3,0,9,1,1,0,1585835181,"assign [class=\"Audacious\"] → 14"
-""-	CHAR	0
-	.
-|3,1,36,0,1,0,1585835407,"."
+	    6 Note
+|3,0,9,1,1,0,1587547576,"    6 Note"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1587589137," "
 
 # File marks:
-'0  257  40  ~/.config/i3/config
-|4,48,257,40,1585835446,"~/.config/i3/config"
-'1  119  74  ~/.conkyrc
-|4,49,119,74,1585663159,"~/.conkyrc"
-'2  43  0  ~/.scripts/backup_dot_files.sh
-|4,50,43,0,1585662915,"~/.scripts/backup_dot_files.sh"
-'3  8  25  ~/.git/COMMIT_EDITMSG
-|4,51,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
-'4  1  47  ~/.git/COMMIT_EDITMSG
-|4,52,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
-'5  1  47  ~/.git/COMMIT_EDITMSG
-|4,53,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
-'6  1  106  ~/.git/COMMIT_EDITMSG
-|4,54,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
-'7  1  106  ~/.git/COMMIT_EDITMSG
-|4,55,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
-'8  8  1  ~/.git/COMMIT_EDITMSG
-|4,56,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
-'9  8  1  ~/.git/COMMIT_EDITMSG
-|4,57,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
+'0  274  31  ~/.config/i3/config
+|4,48,274,31,1587590297,"~/.config/i3/config"
+'1  274  24  ~/.config/i3/config
+|4,49,274,24,1587590073,"~/.config/i3/config"
+'2  9  11  ~/.scripts/screencast1.sh
+|4,50,9,11,1587589368,"~/.scripts/screencast1.sh"
+'3  9  11  ~/.scripts/screencast1.sh
+|4,51,9,11,1587589368,"~/.scripts/screencast1.sh"
+'4  23  1  ~/.scripts/screencast.sh
+|4,52,23,1,1587589359,"~/.scripts/screencast.sh"
+'5  20  3  ~/.scripts/screencast1.sh
+|4,53,20,3,1587587989,"~/.scripts/screencast1.sh"
+'6  10  3  ~/.scripts/screencast1.sh
+|4,54,10,3,1587587989,"~/.scripts/screencast1.sh"
+'7  20  3  ~/.scripts/screencast1.sh
+|4,55,20,3,1587587989,"~/.scripts/screencast1.sh"
+'8  10  3  ~/.scripts/screencast1.sh
+|4,56,10,3,1587587989,"~/.scripts/screencast1.sh"
+'9  16  29  ~/InfiniteSaga.txt
+|4,57,16,29,1587549677,"~/InfiniteSaga.txt"
 
 # Jumplist (newest first):
--'  257  40  ~/.config/i3/config
-|4,39,257,40,1585835446,"~/.config/i3/config"
--'  48  26  ~/.config/i3/config
-|4,39,48,26,1585835154,"~/.config/i3/config"
--'  274  54  ~/.config/i3/config
-|4,39,274,54,1585835152,"~/.config/i3/config"
+-'  274  31  ~/.config/i3/config
+|4,39,274,31,1587590297,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1585835147,"~/.config/i3/config"
--'  119  74  ~/.conkyrc
-|4,39,119,74,1585663159,"~/.conkyrc"
--'  119  74  ~/.conkyrc
-|4,39,119,74,1585663159,"~/.conkyrc"
--'  43  0  ~/.scripts/backup_dot_files.sh
-|4,39,43,0,1585662915,"~/.scripts/backup_dot_files.sh"
--'  43  0  ~/.scripts/backup_dot_files.sh
-|4,39,43,0,1585662915,"~/.scripts/backup_dot_files.sh"
--'  20  0  ~/.scripts/backup_dot_files.sh
-|4,39,20,0,1585662669,"~/.scripts/backup_dot_files.sh"
--'  20  0  ~/.scripts/backup_dot_files.sh
-|4,39,20,0,1585662669,"~/.scripts/backup_dot_files.sh"
--'  30  3  ~/.scripts/backup_dot_files.sh
-|4,39,30,3,1585662530,"~/.scripts/backup_dot_files.sh"
--'  30  3  ~/.scripts/backup_dot_files.sh
-|4,39,30,3,1585662530,"~/.scripts/backup_dot_files.sh"
--'  27  9  ~/.scripts/backup_dot_files.sh
-|4,39,27,9,1585662493,"~/.scripts/backup_dot_files.sh"
--'  27  9  ~/.scripts/backup_dot_files.sh
-|4,39,27,9,1585662493,"~/.scripts/backup_dot_files.sh"
--'  25  1  ~/.scripts/backup_dot_files.sh
-|4,39,25,1,1585662426,"~/.scripts/backup_dot_files.sh"
--'  25  1  ~/.scripts/backup_dot_files.sh
-|4,39,25,1,1585662426,"~/.scripts/backup_dot_files.sh"
--'  8  25  ~/.git/COMMIT_EDITMSG
-|4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
--'  8  25  ~/.git/COMMIT_EDITMSG
-|4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
--'  8  25  ~/.git/COMMIT_EDITMSG
-|4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
--'  8  25  ~/.git/COMMIT_EDITMSG
-|4,39,8,25,1585662204,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585662186,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585662186,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585662186,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585662186,"~/.git/COMMIT_EDITMSG"
--'  1  47  ~/.git/COMMIT_EDITMSG
-|4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
--'  1  47  ~/.git/COMMIT_EDITMSG
-|4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
--'  1  47  ~/.git/COMMIT_EDITMSG
-|4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
--'  1  47  ~/.git/COMMIT_EDITMSG
-|4,39,1,47,1585662167,"~/.git/COMMIT_EDITMSG"
--'  1  106  ~/.git/COMMIT_EDITMSG
-|4,39,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
--'  1  106  ~/.git/COMMIT_EDITMSG
-|4,39,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
--'  1  106  ~/.git/COMMIT_EDITMSG
-|4,39,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
--'  1  106  ~/.git/COMMIT_EDITMSG
-|4,39,1,106,1585662083,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585662011,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  11  0  ~/.git/COMMIT_EDITMSG
-|4,39,11,0,1585662009,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  8  1  ~/.git/COMMIT_EDITMSG
-|4,39,8,1,1585661986,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  10  1  ~/.git/COMMIT_EDITMSG
-|4,39,10,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  9  1  ~/.git/COMMIT_EDITMSG
-|4,39,9,1,1585661976,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585661935,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585661935,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585661935,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1585661935,"~/.git/COMMIT_EDITMSG"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
--'  37  21  ~/.scripts/backup_dot_files.sh
-|4,39,37,21,1585661884,"~/.scripts/backup_dot_files.sh"
+|4,39,1,0,1587590163,"~/.config/i3/config"
+-'  274  24  ~/.config/i3/config
+|4,39,274,24,1587590073,"~/.config/i3/config"
+-'  274  24  ~/.config/i3/config
+|4,39,274,24,1587590073,"~/.config/i3/config"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
+-'  9  11  ~/.scripts/screencast1.sh
+|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  23  1  ~/.scripts/screencast.sh
+|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  21  67  ~/.scripts/screencast1.sh
+|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
+-'  24  26  ~/.scripts/screencast1.sh
+|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
+-'  22  9  ~/.scripts/screencast1.sh
+|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  26  5  ~/.scripts/screencast1.sh
+|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  28  15  ~/.scripts/screencast1.sh
+|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  20  13  ~/.scripts/screencast1.sh
+|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
+-'  274  0  ~/.config/i3/config
+|4,39,274,0,1587588344,"~/.config/i3/config"
+-'  274  0  ~/.config/i3/config
+|4,39,274,0,1587588344,"~/.config/i3/config"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  10  3  ~/.scripts/screencast1.sh
+|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
+-'  1  0  ~/.scripts/screencast1.sh
+|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
+-'  257  40  ~/.config/i3/config
+|4,39,257,40,1587587507,"~/.config/i3/config"
+-'  257  40  ~/.config/i3/config
+|4,39,257,40,1587587507,"~/.config/i3/config"
+-'  257  40  ~/.config/i3/config
+|4,39,257,40,1587587507,"~/.config/i3/config"
+-'  257  40  ~/.config/i3/config
+|4,39,257,40,1587587507,"~/.config/i3/config"
+-'  257  40  ~/.config/i3/config
+|4,39,257,40,1587587507,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587587500,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587587500,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587587500,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587587500,"~/.config/i3/config"
+-'  16  29  ~/InfiniteSaga.txt
+|4,39,16,29,1587549677,"~/InfiniteSaga.txt"
 
 # History of marks within files (newest to oldest):
 
 > ~/.config/i3/config
-	*	1585835411	0
-	"	257	40
-	.	257	41
+	*	1587590297	0
+	"	274	31
+	^	274	32
+	.	274	31
 	+	164	0
 	+	231	63
 	+	164	0
@@ -545,12 +578,103 @@ $&
 	+	241	0
 	+	261	0
 	+	257	41
+	+	269	28
+	+	271	11
+	+	274	57
+	+	275	0
+	+	274	55
+	+	275	23
+	+	275	0
+	+	274	31
+
+> ~/.scripts/screencast1.sh
+	*	1587589527	0
+	"	9	11
+	^	22	18
+	.	21	76
+	+	1	0
+	+	13	19
+	+	13	16
+	+	1	11
+	+	2	0
+	+	3	0
+	+	5	24
+	+	13	18
+	+	18	63
+	+	17	24
+	+	20	26
+	+	11	0
+	+	12	0
+	+	29	0
+	+	14	0
+	+	18	18
+	+	21	15
+	+	22	7
+	+	28	17
+	+	15	50
+	+	4	5
+	+	5	0
+	+	4	29
+	+	29	1
+	+	30	0
+	+	31	0
+	+	8	26
+	+	15	53
+	+	28	0
+	+	26	13
+	+	21	76
+
+> ~/.scripts/screencast.sh
+	*	1587589358	0
+	"	23	1
+
+> ~/InfiniteSaga.txt
+	*	1587549677	0
+	"	16	29
+	^	29	0
+	.	24	4
+	+	12	5
+	+	13	5
+	+	14	0
+	+	13	0
+	+	15	5
+	+	16	0
+	+	18	5
+	+	19	5
+	+	20	0
+	+	21	5
+	+	22	5
+	+	24	5
+	+	29	0
+	+	12	4
+	+	15	4
+	+	18	4
+	+	19	4
+	+	21	4
+	+	22	4
+	+	24	4
+
+> /run/media/fz/fzHDD/Movies/MARVEL/InfiniteSaga.txt
+	*	1587547854	0
+	"	12	4
+	^	20	56
+	.	9	4
+	+	20	0
+	+	4	0
+	+	5	4
+	+	6	4
+	+	7	4
+	+	9	4
+
+> /run/media/fz/TOSHIBA EXT/System Volume Information/tracking.log
+	*	1587503837	0
+	"	3	0
 
 > ~/.conkyrc
-	*	1585663159	0
-	"	119	74
-	^	119	75
-	.	119	74
+	*	1587202857	0
+	"	124	56
+	^	124	57
+	.	130	41
 	+	130	41
 	+	111	0
 	+	114	0
@@ -572,6 +696,57 @@ $&
 	+	101	63
 	+	123	0
 	+	119	74
+	+	124	0
+	+	124	36
+	+	125	0
+	+	124	0
+	+	123	50
+	+	131	0
+	+	123	0
+	+	123	56
+	+	123	47
+	+	123	4
+	+	131	0
+	+	123	0
+	+	131	0
+	+	131	4
+	+	130	0
+	+	123	0
+	+	131	0
+	+	123	0
+	+	131	0
+	+	132	0
+	+	124	0
+	+	131	0
+	+	124	1
+	+	124	0
+	+	131	0
+	+	130	42
+	+	130	41
+
+> ~/Builds/kiwix-desktop/PKGBUILD
+	*	1586813601	0
+	"	14	0
+
+> ~/Builds/PKGBUILD
+	*	1586813244	0
+	"	1	0
+
+> ~/Documents/covid19/COVID-19/aree/geojson/dpc-covid19-ita-aree.geojson
+	*	1586397982	0
+	"	1	0
+
+> ~/1
+	*	1586263023	0
+	"	14	84
+
+> ~/Documents/pythonExercises/test.py
+	*	1586209616	0
+	"	11	23
+	^	11	24
+	.	11	23
+	+	9	42
+	+	11	23
 
 > ~/.scripts/backup_dot_files.sh
 	*	1585662914	0
@@ -1178,10 +1353,6 @@ $&
 
 > ~/Builds/nvidia-bl/pk
 	*	1584799741	0
-	"	1	0
-
-> ~/.scripts/screencast.sh
-	*	1584746322	0
 	"	1	0
 
 > /tmp/trizen-fz/android-studio/PKGBUILD

@@ -266,9 +266,9 @@ bindsym $mod+Ctrl+Escape exec i3lock-wrapper -l
 
  # Screenshot keybinds
 bindsym $mod + P exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/Screen/' && dunstify -r 222 "SCREENSHOT AQUIRED."
-bindsym --release Control+P exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "Region captured."
+bindsym --release $mod+Shift+P exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "Region captured."
 bindsym Mod1+P exec scrot -u '%Y-%m-%d-%s_screenshot_$wx$h.jpg' && dunstify -r 222 "Window captured."
-bindsym Control+Shift+P exec scrot -w '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "SCREENSHOT TO CLIPBOARD."
+bindsym Mod1+Shift+P exec scrot -w '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && dunstify -r 222 "SCREENSHOT TO CLIPBOARD."
 
  # Screenrecord keybinds
-bindsym $mod+Control+r exec bash .scripts/screencast.sh
+bindsym $mod+Control+r exec peek
