@@ -7,5 +7,5 @@ echo "${DATETIME}"
 echo ""
 
 case $BLOCK_BUTTON in
-    1)termite -e "sh .config/i3-blocks/blocks/alarm";; # left click
+    1)termite -e "sh alarm &"; # left click
 esac

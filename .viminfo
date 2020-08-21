@@ -11,1412 +11,678 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/wlan1
-
-# Last Substitute Search Pattern:
-~MSle0&20,70,90
-
-# Last Substitute String:
-$&
+~MSle0~/rank
 
 # Command Line History (newest to oldest):
-:w
-|2,0,1587590222,,"w"
-:e .config/i3/config
-|2,0,1587590163,,"e .config/i3/config"
-:e .scripts/screencast1.sh
-|2,0,1587589435,,"e .scripts/screencast1.sh"
-:e .scripts/screencast.sh
-|2,0,1587588344,,"e .scripts/screencast.sh"
-:w InfiniteSaga
-|2,0,1587547610,,"w InfiniteSaga"
-:e .conkyrc
-|2,0,1587198505,,"e .conkyrc"
 :q
-|2,0,1586813602,,"q"
-:e Documents/pythonExercises/test.py
-|2,0,1586209554,,"e Documents/pythonExercises/test.py"
+|2,0,1597934648,,"q"
 :wq
-|2,0,1585662167,,"wq"
-:e .vimrc
-|2,0,1585603264,,"e .vimrc"
-:e .w3m/keymap
-|2,0,1585486796,,"e .w3m/keymap"
-:e .scripts/backup_dot_files.sh
-|2,0,1585490262,,"e .scripts/backup_dot_files.sh"
-:e .w3m/config
-|2,0,1585490243,,"e .w3m/config"
-:w .w3m/config
-|2,0,1585455226,,"w .w3m/config"
-:q!
-|2,0,1585453887,,"q!"
-:w .w3m/keymap.default
-|2,0,1585441663,,"w .w3m/keymap.default"
-:tabnew
-|2,0,1585441610,,"tabnew"
-:tab
-|2,0,1585441592,,"tab"
-:split
-|2,0,1585441569,,"split"
-:e .scripts/web_search.sh.bak
-|2,0,1585436274,,"e .scripts/web_search.sh.bak"
-:e .scripts/web_search.sh
-|2,0,1585438458,,"e .scripts/web_search.sh"
-:w!
-|2,0,1585411031,,"w!"
-:w .scripts/web_search.sh!
-|2,0,1585323555,,"w .scripts/web_search.sh!"
-:w .scripts/web_search.sh
-|2,0,1585323546,,"w .scripts/web_search.sh"
-:e .config/i3-blocks/blocks/packages
-|2,0,1585101147,,"e .config/i3-blocks/blocks/packages"
-:e .config/i3-blocks/blocks/datetime
-|2,0,1585101047,,"e .config/i3-blocks/blocks/datetime"
-:e .config/i3-blocks/blocks/poweroff
-|2,0,1585100810,,"e .config/i3-blocks/blocks/poweroff"
+|2,0,1597271370,,"wq"
+:w
+|2,0,1597271314,,"w"
+:e .config/i3-blocks/blocks/bandwidth
+|2,0,1597267390,,"e .config/i3-blocks/blocks/bandwidth"
+:tab split
+|2,0,1597267371,,"tab split"
 :e .config/i3-blocks/config
-|2,0,1585100723,,"e .config/i3-blocks/config"
-:wq!
-|2,0,1585102068,,"wq!"
+|2,0,1597265576,,"e .config/i3-blocks/config"
+::
+|2,0,1597266752,,":"
+:e .config/i3-blocks/blocks/datetime
+|2,0,1597263570,,"e .config/i3-blocks/blocks/datetime"
 :e .config/i3-blocks/blocks/alarm
-|2,0,1585065424,,"e .config/i3-blocks/blocks/alarm"
-:e .scripts/timer.sh
-|2,0,1585065415,,"e .scripts/timer.sh"
-:s
-|2,0,1585059544,,"s"
-:a
-|2,0,1585020083,,"a"
-:qa!
-|2,0,1584892682,,"qa!"
-:q|
-|2,0,1584892676,,"q|"
-:e ciao.txr
-|2,0,1584049259,,"e ciao.txr"
-:e .xinitrc
-|2,0,1583945151,,"e .xinitrc"
-:PlugInstall
-|2,0,1583792961,,"PlugInstall"
-:PlugClean
-|2,0,1583792936,,"PlugClean"
-:e /etc/locale.gen
-|2,0,1583700552,,"e /etc/locale.gen"
-:e /etc/vconsole.conf
-|2,0,1583700525,,"e /etc/vconsole.conf"
-:e /etc/locale.conf
-|2,0,1583700505,,"e /etc/locale.conf"
-:e .config/i3-blocks/blocks/battery
-|2,0,1583440964,,"e .config/i3-blocks/blocks/battery"
-:e ~/Downloads/bot2.py
-|2,0,1583184680,,"e ~/Downloads/bot2.py"
-:plugClean
-|2,0,1583180678,,"plugClean"
-: ~/Downloads/bot.pye
-|2,0,1583107914,," ~/Downloads/bot.pye"
-:w ~/Downloads/bot.py
-|2,0,1583107875,,"w ~/Downloads/bot.py"
-:e! .config/i3/config
-|2,0,1580593732,,"e! .config/i3/config"
-:e .scripts/scree
-|2,0,1577800469,,"e .scripts/scree"
-:e! .scripts/appleWL.sh
-|2,0,1577794462,,"e! .scripts/appleWL.sh"
-:WQ
-|2,0,1577287367,,"WQ"
+|2,0,1597263535,,"e .config/i3-blocks/blocks/alarm"
+:e .config/i3-blocks/blocks/ala
+|2,0,1597263529,,"e .config/i3-blocks/blocks/ala"
+:e .config/i3-bl
+|2,0,1597263992,,"e .config/i3-bl"
+:e .config/i3/config
+|2,0,1597263633,,"e .config/i3/config"
+:e .conkyrc
+|2,0,1592097998,,"e .conkyrc"
+::e .vimrc
+|2,0,1592089808,,":e .vimrc"
 :e .bashrc
-|2,0,1577155394,,"e .bashrc"
-:e .config/mimeapps.list
-|2,0,1577067855,,"e .config/mimeapps.list"
+|2,0,1592089824,,"e .bashrc"
+:e .gtkrc-2.0
+|2,0,1592089977,,"e .gtkrc-2.0"
+:split
+|2,0,1592089795,,"split"
+:NextColorScheme
+|2,0,1592089739,,"NextColorScheme"
+:PrevColorScheme
+|2,0,1592089721,,"PrevColorScheme"
 
 # Search String History (newest to oldest):
-?/scree
-|2,1,1587587507,47,"scree"
-?/wlan1
-|2,1,1587198522,47,"wlan1"
-?/network
-|2,1,1586728626,47,"network"
-?/tele
-|2,1,1585835152,47,"tele"
-?/cpu
-|2,1,1585661490,47,"cpu"
-? \<x\>
-|2,1,1585603221,,"\\<x\\>"
-?/keymap    u
-|2,1,1585492422,47,"keymap    u"
-?/keymap    n
-|2,1,1585492406,47,"keymap    n"
-?/keymap    /
-|2,1,1585492389,47,"keymap    /"
-?/keymap    h
-|2,1,1585492369,47,"keymap    h"
-?/keymap    p
-|2,1,1585492356,47,"keymap    p"
-?/keymap    C-t
-|2,1,1585492346,47,"keymap    C-t"
-?/keymap    o
-|2,1,1585492328,47,"keymap    o"
-?/keymap    SPC
-|2,1,1585492313,47,"keymap    SPC"
-?/keymap    t
-|2,1,1585492296,47,"keymap    t"
-?/keymap    q
-|2,1,1585492246,47,"keymap    q"
-?/keymap    TAB
-|2,1,1585492230,47,"keymap    TAB"
-?/keymap    A
-|2,1,1585492153,47,"keymap    A"
-?/keymap    I
-|2,1,1585492132,47,"keymap    I"
-? \<keymap\>
-|2,1,1585487369,,"\\<keymap\\>"
-?/C-l
-|2,1,1585487164,47,"C-l"
-?/options
-|2,1,1585487002,47,"options"
-?/GOTO
-|2,1,1585486970,47,"GOTO"
-?/o
-|2,1,1585486938,47,"o"
-?/U
-|2,1,1585486864,47,"U"
-?/NEXT_PA
-|2,1,1585486855,47,"NEXT_PA"
-?/NEXT
-|2,1,1585456260,47,"NEXT"
-?/save
-|2,1,1585456212,47,"save"
-?/downlo
-|2,1,1585456204,47,"downlo"
-?/aut
-|2,1,1585454308,47,"aut"
-?/inlin
-|2,1,1585454302,47,"inlin"
-?/image
-|2,1,1585454292,47,"image"
-? \<LINE_INFO\>
-|2,1,1585441769,,"\\<LINE_INFO\\>"
-? \<LINE_END\>
-|2,1,1585441725,,"\\<LINE_END\\>"
-?/mark
-|2,1,1585441504,47,"mark"
-?/keymap    C-g
-|2,1,1585435855,47,"keymap    C-g"
-?/keymap    b
-|2,1,1585435748,47,"keymap    b"
-?/keymap    B
-|2,1,1585435729,47,"keymap    B"
-?/keymap    m
-|2,1,1585435698,47,"keymap    m"
-?/keymap    v
-|2,1,1585435654,47,"keymap    v"
-?/v
-|2,1,1585435641,47,"v"
-?/edit
-|2,1,1585435093,47,"edit"
-?/TAB
-|2,1,1585433726,47,"TAB"
-?/y
-|2,1,1585432755,47,"y"
-?/next_li
-|2,1,1585414488,47,"next_li"
-?/prev
-|2,1,1585414216,47,"prev"
-?/PREV
-|2,1,1585413508,47,"PREV"
-?/)
-|2,1,1585413379,47,")"
-?/(
-|2,1,1585413358,47,"("
-?/search
-|2,1,1585411813,47,"search"
-?/NEXT LIN
-|2,1,1585354129,47,"NEXT LIN"
-?/line
-|2,1,1585353786,47,"line"
-? ###
-|2,1,1585353397,,"###"
-?/venerd
-|2,1,1585353265,47,"venerd"
-?/browser
-|2,1,1585353106,47,"browser"
-?/M
-|2,1,1585353086,47,"M"
+?/rank
+|2,1,1597864316,47,"rank"
+?/awk
+|2,1,1597271289,47,"awk"
+?/:
+|2,1,1597267097,47,":"
+?/interface
+|2,1,1597266904,47,"interface"
+?/i3ex
+|2,1,1597264878,47,"i3ex"
+?/exec
+|2,1,1597263693,47,"exec"
+?/alarm
+|2,1,1597263671,47,"alarm"
+?/netw
+|2,1,1592095123,47,"netw"
+?/color
+|2,1,1592089577,47,"color"
+?/map
+|2,1,1592089527,47,"map"
+?/switch
+|2,1,1592089509,47,"switch"
+?/cursor
+|2,1,1592088830,47,"cursor"
+?/rankmirr
+|2,1,1591953698,47,"rankmirr"
 
 # Expression History (newest to oldest):
-=acp#onPopupPost()
-|2,2,1587198653,,"acp#onPopupPost()"
 
 # Input Line History (newest to oldest):
-@y
-|2,3,1577065801,,"y"
-@/home/fz/.config/pulse/client.conf
-|2,3,1544993726,,"/home/fz/.config/pulse/client.conf"
-@/home/fz/.config/pulse/default.pa
-|2,3,1544993678,,"/home/fz/.config/pulse/default.pa"
-@/home/fz/.pulse
-|2,3,1544993399,,"/home/fz/.pulse"
-@/home/fz/.pulse/
-|2,3,1544993361,,"/home/fz/.pulse/"
-@/home/fz/pulse/
-|2,3,1544993305,,"/home/fz/pulse/"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	 
-|3,1,0,0,1,0,1587589309," "
+"0	CHAR	0
+	11499961
+|3,0,0,0,1,0,1597707655,"11499961"
 "1	LINE	0
-	RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\ )
-|3,0,1,1,1,0,1587588968,"RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\\ )"
+	allow-hotplug wlan0
+|3,0,1,1,1,0,1597457619,"allow-hotplug wlan0"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1587588658,""
+	timedatectl status
+|3,0,2,1,1,0,1597271297,"timedatectl status"
 "3	LINE	0
-	OUTPUT="$HOME/Videos/Screencasts/$(date +%F-%H-%M-%S)"
-|3,0,3,1,1,0,1587588657,"OUTPUT=\"$HOME/Videos/Screencasts/$(date +%F-%H-%M-%S)\""
+	sudo ntpdate time.ien.it
+|3,0,3,1,1,0,1597271297,"sudo ntpdate time.ien.it"
 "4	LINE	0
-	TMPFILE="$(mktemp -t screencast-XXXXXXX).mkv"
-|3,0,4,1,1,0,1587588656,"TMPFILE=\"$(mktemp -t screencast-XXXXXXX).mkv\""
+	sudo systemctl stop ntpd
+|3,0,4,1,1,0,1597271296,"sudo systemctl stop ntpd"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1587587847,""
+	reboot
+|3,0,5,1,1,0,1597271296,"reboot"
 "6	LINE	0
-	#!/bin/bash
-	
-	DATE=$(date +'%Y-%m-%d--%H-%M-%S')
-	NAME="/home/fz/Videos/screencast/Screencast-${DATE}.mp4"
-	RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\ )
-	TMPP=/tmp/screencast.pid
-	function screencast_kill(){
-	    kill -2 $(cat $TMPP) 2> /dev/null
-	    rm $TMPP
-	}
-	
-	function screencast_start(){
-	    nohup ffmpeg -f x11grab -s $RESO -framerate 30 -i :0 -c:v libx264 -pix_fmt yuv420p "$NAME" > /dev/null 2>&1 &
-	    PID=$!
-	    echo -n $PID > $TMPP
-	}
-	
-	if [[ -f $TMPP ]];
-	then
-	    screencast_kill
-	else
-	    screencast_start
-	fi
-|3,0,6,1,23,0,1587587832,"#!/bin/bash","","DATE=$(date +'%Y-%m-%d--%H-%M-%S')","NAME=\"/home/fz/Videos/screencast/Screencast-${DATE}.mp4\"","RESO=$(xrandr -q --current | grep '*' | awk '{print$1}' | cut -f1 -d\\ )","TMPP=/tmp/screencast.pid","function screencast_kill(){","    kill -2 $(cat $TMPP) 2> /dev/null","    rm $TMPP","}","","function screencast_start(){",>117
-|<"    nohup ffmpeg -f x11grab -s $RESO -framerate 30 -i :0 -c:v libx264 -pix_fmt yuv420p \"$NAME\" > /dev/null 2>&1 &","    PID=$!","    echo -n $PID > $TMPP","}","","if [[ -f $TMPP ]];","then","    screencast_kill","else","    screencast_start","fi"
+	sudo ntpd -qg
+|3,0,6,1,1,0,1597271296,"sudo ntpd -qg"
 "7	LINE	0
-	    8 Collegamenti esterni
-|3,0,7,1,1,0,1587547577,"    8 Collegamenti esterni"
+	sudo  timedatectl set-ntp 1
+|3,0,7,1,1,0,1597271296,"sudo  timedatectl set-ntp 1"
 "8	LINE	0
-	    7 Voci correlate
-|3,0,8,1,1,0,1587547576,"    7 Voci correlate"
+	sudo localectl set-locale LC_MEASUREMENT="it_IT.UTF-8"
+|3,0,8,1,1,0,1597271296,"sudo localectl set-locale LC_MEASUREMENT=\"it_IT.UTF-8\""
 "9	LINE	0
-	    6 Note
-|3,0,9,1,1,0,1587547576,"    6 Note"
-"-	CHAR	0
+	sudo localectl set-locale LC_MEASUREMENTS="it_IT.UTF-8"
+|3,0,9,1,1,0,1597271296,"sudo localectl set-locale LC_MEASUREMENTS=\"it_IT.UTF-8\""
+""-	CHAR	0
 	 
-|3,0,36,0,1,0,1587589137," "
+|3,1,36,0,1,0,1597864274," "
 
 # File marks:
-'0  274  31  ~/.config/i3/config
-|4,48,274,31,1587590297,"~/.config/i3/config"
-'1  274  24  ~/.config/i3/config
-|4,49,274,24,1587590073,"~/.config/i3/config"
-'2  9  11  ~/.scripts/screencast1.sh
-|4,50,9,11,1587589368,"~/.scripts/screencast1.sh"
-'3  9  11  ~/.scripts/screencast1.sh
-|4,51,9,11,1587589368,"~/.scripts/screencast1.sh"
-'4  23  1  ~/.scripts/screencast.sh
-|4,52,23,1,1587589359,"~/.scripts/screencast.sh"
-'5  20  3  ~/.scripts/screencast1.sh
-|4,53,20,3,1587587989,"~/.scripts/screencast1.sh"
-'6  10  3  ~/.scripts/screencast1.sh
-|4,54,10,3,1587587989,"~/.scripts/screencast1.sh"
-'7  20  3  ~/.scripts/screencast1.sh
-|4,55,20,3,1587587989,"~/.scripts/screencast1.sh"
-'8  10  3  ~/.scripts/screencast1.sh
-|4,56,10,3,1587587989,"~/.scripts/screencast1.sh"
-'9  16  29  ~/InfiniteSaga.txt
-|4,57,16,29,1587549677,"~/InfiniteSaga.txt"
+'0  1  0  ~/motion_notifier.py
+|4,48,1,0,1598017670,"~/motion_notifier.py"
+'1  1  0  ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
+|4,49,1,0,1597955516,"~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt"
+'2  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,50,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+'3  6  5  ~/.bash_history
+|4,51,6,5,1597864348,"~/.bash_history"
+'4  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,52,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+'5  1  0  ~/.scripts/clean.sh
+|4,53,1,0,1597581882,"~/.scripts/clean.sh"
+'6  141  5  ~/robot_activation.py
+|4,54,141,5,1597527939,"~/robot_activation.py"
+'7  17  0  /run/media/fz/rootfs/etc/network/interfaces
+|4,55,17,0,1597457712,"/run/media/fz/rootfs/etc/network/interfaces"
+'8  17  0  /run/media/fz/rootfs/etc/network/interfaces
+|4,56,17,0,1597457631,"/run/media/fz/rootfs/etc/network/interfaces"
+'9  38  15  ~/Downloads/Telegram Desktop/robot_test.py
+|4,57,38,15,1597361351,"~/Downloads/Telegram Desktop/robot_test.py"
 
 # Jumplist (newest first):
--'  274  31  ~/.config/i3/config
-|4,39,274,31,1587590297,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587590163,"~/.config/i3/config"
--'  274  24  ~/.config/i3/config
-|4,39,274,24,1587590073,"~/.config/i3/config"
--'  274  24  ~/.config/i3/config
-|4,39,274,24,1587590073,"~/.config/i3/config"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589606,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587589435,"~/.scripts/screencast1.sh"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
--'  9  11  ~/.scripts/screencast1.sh
-|4,39,9,11,1587589368,"~/.scripts/screencast1.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  23  1  ~/.scripts/screencast.sh
-|4,39,23,1,1587589359,"~/.scripts/screencast.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  21  67  ~/.scripts/screencast1.sh
-|4,39,21,67,1587589288,"~/.scripts/screencast1.sh"
--'  24  26  ~/.scripts/screencast1.sh
-|4,39,24,26,1587589288,"~/.scripts/screencast1.sh"
--'  22  9  ~/.scripts/screencast1.sh
-|4,39,22,9,1587589288,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  26  5  ~/.scripts/screencast1.sh
-|4,39,26,5,1587589278,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  28  15  ~/.scripts/screencast1.sh
-|4,39,28,15,1587589222,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  20  13  ~/.scripts/screencast1.sh
-|4,39,20,13,1587588754,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587588364,"~/.scripts/screencast1.sh"
--'  274  0  ~/.config/i3/config
-|4,39,274,0,1587588344,"~/.config/i3/config"
--'  274  0  ~/.config/i3/config
-|4,39,274,0,1587588344,"~/.config/i3/config"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  10  3  ~/.scripts/screencast1.sh
-|4,39,10,3,1587587989,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
--'  1  0  ~/.scripts/screencast1.sh
-|4,39,1,0,1587587829,"~/.scripts/screencast1.sh"
--'  257  40  ~/.config/i3/config
-|4,39,257,40,1587587507,"~/.config/i3/config"
--'  257  40  ~/.config/i3/config
-|4,39,257,40,1587587507,"~/.config/i3/config"
--'  257  40  ~/.config/i3/config
-|4,39,257,40,1587587507,"~/.config/i3/config"
--'  257  40  ~/.config/i3/config
-|4,39,257,40,1587587507,"~/.config/i3/config"
--'  257  40  ~/.config/i3/config
-|4,39,257,40,1587587507,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587587500,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587587500,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587587500,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587587500,"~/.config/i3/config"
--'  16  29  ~/InfiniteSaga.txt
-|4,39,16,29,1587549677,"~/InfiniteSaga.txt"
+-'  1  0  ~/motion_notifier.py
+|4,39,1,0,1598017670,"~/motion_notifier.py"
+-'  1  0  ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
+|4,39,1,0,1597955516,"~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt"
+-'  1  0  ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
+|4,39,1,0,1597955516,"~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt"
+-'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
+|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  6  5  ~/.bash_history
+|4,39,6,5,1597864348,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  310  2  ~/.bash_history
+|4,39,310,2,1597864316,"~/.bash_history"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  16  23  ~/Downloads/Telegram Desktop/bot.py
+|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/Downloads/Telegram Desktop/bot.py
+|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  1  0  ~/.scripts/clean.sh
+|4,39,1,0,1597581882,"~/.scripts/clean.sh"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  141  5  ~/robot_activation.py
+|4,39,141,5,1597527939,"~/robot_activation.py"
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/i3/config
-	*	1587590297	0
-	"	274	31
-	^	274	32
-	.	274	31
-	+	164	0
-	+	231	63
-	+	164	0
-	+	232	0
-	+	233	0
-	+	55	0
-	+	55	36
-	+	55	0
-	+	53	0
-	+	55	0
-	+	55	59
-	+	54	0
-	+	54	50
-	+	54	19
-	+	165	23
-	+	250	30
-	+	251	0
-	+	250	0
-	+	262	0
-	+	261	0
-	+	241	0
-	+	261	0
-	+	241	1
-	+	244	47
-	+	245	0
-	+	241	0
-	+	261	0
-	+	257	41
-	+	269	28
-	+	271	11
-	+	274	57
-	+	275	0
-	+	274	55
-	+	275	23
-	+	275	0
-	+	274	31
+> ~/motion_notifier.py
+	*	1598017668	0
+	"	1	0
+	^	1	0
 
-> ~/.scripts/screencast1.sh
-	*	1587589527	0
-	"	9	11
-	^	22	18
-	.	21	76
-	+	1	0
-	+	13	19
-	+	13	16
-	+	1	11
-	+	2	0
-	+	3	0
-	+	5	24
-	+	13	18
-	+	18	63
-	+	17	24
-	+	20	26
+> ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
+	*	1597955516	0
+	"	1	0
+
+> /tmp/trizen-fz/fx_cast/PKGBUILD
+	*	1597934646	0
+	"	4	14
+
+> ~/.bash_history
+	*	1597864347	0
+	"	6	5
+	^	6	5
+	.	134	3
+	+	10	7
 	+	11	0
-	+	12	0
-	+	29	0
-	+	14	0
-	+	18	18
-	+	21	15
-	+	22	7
-	+	28	17
-	+	15	50
-	+	4	5
-	+	5	0
-	+	4	29
-	+	29	1
-	+	30	0
-	+	31	0
-	+	8	26
-	+	15	53
-	+	28	0
-	+	26	13
-	+	21	76
-
-> ~/.scripts/screencast.sh
-	*	1587589358	0
-	"	23	1
-
-> ~/InfiniteSaga.txt
-	*	1587549677	0
-	"	16	29
-	^	29	0
-	.	24	4
-	+	12	5
-	+	13	5
-	+	14	0
-	+	13	0
-	+	15	5
-	+	16	0
-	+	18	5
-	+	19	5
-	+	20	0
-	+	21	5
-	+	22	5
-	+	24	5
-	+	29	0
-	+	12	4
-	+	15	4
-	+	18	4
-	+	19	4
-	+	21	4
-	+	22	4
-	+	24	4
-
-> /run/media/fz/fzHDD/Movies/MARVEL/InfiniteSaga.txt
-	*	1587547854	0
-	"	12	4
-	^	20	56
-	.	9	4
-	+	20	0
+	+	10	0
+	+	10	11
+	+	10	0
+	+	10	3
+	+	10	7
+	+	10	17
+	+	10	4
+	+	3	0
+	+	10	0
+	+	3	0
+	+	1	0
+	+	3	0
+	+	10	0
 	+	4	0
-	+	5	4
+	+	1	11
+	+	5	6
 	+	6	4
-	+	7	4
-	+	9	4
+	+	134	3
 
-> /run/media/fz/TOSHIBA EXT/System Volume Information/tracking.log
-	*	1587503837	0
-	"	3	0
+> ~/Downloads/Telegram Desktop/bot.py
+	*	1597707656	0
+	"	16	23
+
+> ~/.scripts/clean.sh
+	*	1597581872	0
+	"	1	0
+
+> ~/robot_activation.py
+	*	1597527937	0
+	"	141	5
+
+> /run/media/fz/rootfs/etc/network/interfaces
+	*	1597457712	0
+	"	17	0
+	.	17	0
+	+	17	0
+
+> ~/Downloads/Telegram Desktop/robot_test.py
+	*	1597360033	0
+	"	38	15
+	^	215	23
+	.	217	0
+	+	217	0
+
+> ~/Downloads/Telegram Desktop/robot_basics.py
+	*	1597360010	0
+	"	39	10
+
+> ~/.config/i3-blocks/config
+	*	1597267852	0
+	"	10	0
+	^	9	12
+	.	50	0
+	+	60	0
+	+	10	0
+	+	3	12
+	+	3	14
+	+	9	18
+	+	3	0
+	+	9	9
+	+	10	9
+	+	9	0
+	+	10	0
+	+	9	11
+	+	9	0
+	+	10	0
+	+	9	6
+	+	10	9
+	+	9	0
+	+	10	0
+	+	50	0
+
+> ~/.config/i3-blocks/blocks/bandwidth
+	*	1597267556	0
+	"	71	4
+	.	71	0
+	+	3	12
+	+	6	0
+	+	11	0
+	+	3	0
+	+	70	0
+	+	69	0
+	+	70	0
+	+	69	22
+	+	76	0
+	+	69	10
+	+	70	0
+	+	71	0
+	+	70	0
+	+	71	0
+
+> ~/.config/i3/config
+	*	1597264913	0
+	"	169	46
+	.	33	0
+	+	33	0
+
+> ~/.config/i3/i3exit
+	*	1597264837	0
+	"	30	5
+
+> ~/.config/i3-blocks/blocks/datetime
+	*	1597264343	0
+	"	11	0
+	^	10	28
+	.	11	0
+	+	10	0
+	+	10	27
+	+	11	0
+
+> ~/.config/i3-blocks/blocks/alarm
+	*	1597263553	0
+	"	78	0
+
+> ~/.config/i3-blocks/blocks/ala
+	*	1597263529	0
+	"	1	0
+
+> ~/.config/vbar/README.md
+	*	1597262024	0
+	"	39	0
 
 > ~/.conkyrc
-	*	1587202857	0
-	"	124	56
-	^	124	57
-	.	130	41
-	+	130	41
-	+	111	0
-	+	114	0
-	+	113	0
-	+	123	0
-	+	123	13
-	+	124	57
-	+	131	7
-	+	131	0
-	+	131	41
-	+	131	7
-	+	131	6
-	+	131	12
-	+	131	0
-	+	111	0
-	+	129	46
-	+	130	41
-	+	110	101
-	+	101	63
-	+	123	0
-	+	119	74
-	+	124	0
-	+	124	36
-	+	125	0
-	+	124	0
-	+	123	50
-	+	131	0
-	+	123	0
-	+	123	56
-	+	123	47
-	+	123	4
-	+	131	0
-	+	123	0
-	+	131	0
-	+	131	4
-	+	130	0
-	+	123	0
-	+	131	0
-	+	123	0
-	+	131	0
-	+	132	0
-	+	124	0
-	+	131	0
-	+	124	1
-	+	124	0
-	+	131	0
-	+	130	42
-	+	130	41
-
-> ~/Builds/kiwix-desktop/PKGBUILD
-	*	1586813601	0
-	"	14	0
-
-> ~/Builds/PKGBUILD
-	*	1586813244	0
-	"	1	0
-
-> ~/Documents/covid19/COVID-19/aree/geojson/dpc-covid19-ita-aree.geojson
-	*	1586397982	0
-	"	1	0
-
-> ~/1
-	*	1586263023	0
-	"	14	84
-
-> ~/Documents/pythonExercises/test.py
-	*	1586209616	0
-	"	11	23
-	^	11	24
-	.	11	23
-	+	9	42
-	+	11	23
-
-> ~/.scripts/backup_dot_files.sh
-	*	1585662914	0
-	"	43	0
-	^	37	0
-	.	33	0
-	+	14	0
-	+	38	15
-	+	38	23
-	+	38	21
-	+	38	44
-	+	38	23
-	+	20	0
-	+	38	23
-	+	34	76
-	+	38	26
-	+	39	3
-	+	38	21
-	+	27	34
-	+	30	3
-	+	27	10
-	+	25	28
-	+	27	36
-	+	26	23
-	+	27	10
-	+	28	0
-	+	27	10
-	+	26	21
-	+	27	35
-	+	30	3
-	+	28	27
-	+	29	26
-	+	30	3
-	+	29	24
-	+	32	18
-	+	31	18
-	+	32	17
-	+	33	16
-	+	33	1
-	+	33	0
-	+	19	0
-	+	34	17
-	+	35	19
-	+	36	19
-	+	37	0
-	+	33	0
-
-> ~/.git/COMMIT_EDITMSG
-	*	1585662204	0
-	"	8	25
-	^	1	48
-	.	1	47
-	+	99	0
-	+	98	1
-	+	4	0
-	+	7	0
-	+	1	85
-	+	1	257
-	+	1	47
-	u	7	0
-
-> ~/.vimrc
-	*	1585603301	0
-	"	136	10
-	^	73	49
-	.	73	0
-	+	15	0
-	+	68	42
-	+	69	42
-	+	73	0
-
-> ~/.w3m/keymap
-	*	1585517505	0
-	"	134	10
-	^	134	11
-	.	134	10
-	+	124	11
-	+	124	0
-	+	59	0
-	+	65	0
-	+	119	0
-	+	151	0
-	+	125	0
-	+	71	12
-	+	125	0
-	+	112	14
-	+	113	17
-	+	119	0
-	+	91	0
-	+	92	0
-	+	91	0
-	+	119	0
-	+	124	0
-	+	92	0
-	+	96	0
-	+	124	0
-	+	96	0
-	+	114	17
-	+	113	18
-	+	112	18
-	+	91	16
-	+	92	16
-	+	125	0
-	+	48	26
-	+	49	0
-	+	50	13
-	+	51	0
-	+	51	11
-	+	126	12
-	+	125	0
-	+	145	16
-	+	125	0
-	+	93	12
-	+	68	12
-	+	70	12
-	+	124	0
-	+	94	14
-	+	125	0
-	+	96	0
-	+	95	14
-	+	124	0
-	+	123	0
-	+	124	0
-	+	123	12
-	+	124	0
-	+	52	0
-	+	53	0
-	+	52	12
-	+	51	13
-	+	125	0
-	+	80	12
-	+	125	0
-	+	152	0
-	+	125	0
-	+	148	14
-	+	125	0
-	+	134	11
-	+	125	0
-	+	124	0
-	+	71	0
-	+	118	14
-	+	117	10
-	+	68	14
-	+	44	13
-	+	58	12
-	+	152	10
-	+	151	13
-	+	61	12
-	+	63	11
-	+	64	12
-	+	63	13
-	+	62	14
-	+	61	14
+	*	1597261263	0
+	"	14	8
+	^	67	9
+	.	67	9
+	+	49	9
+	+	51	10
+	+	53	9
 	+	57	11
-	+	58	11
-	+	121	11
-	+	122	12
-	+	123	15
-	+	71	10
-	+	140	12
-	+	134	10
-	+	131	11
-	+	95	0
-	+	61	0
-	+	71	10
-	+	121	10
-	+	122	12
-	+	123	10
-	+	121	11
-	+	122	12
-	+	44	11
-	+	57	11
-	+	58	11
-	+	131	11
-	+	134	10
-	u	77	0
-
-> ~/.w3m/config
-	*	1585490247	0
-	"	29	0
-	.	1	0
-	+	30	0
-	+	30	16
-	+	30	12
-	+	30	9
-	+	30	5
-	+	30	19
-	+	30	0
-	+	30	20
-	+	30	10
-	+	30	11
-	+	30	12
-	+	30	16
-	+	30	9
-	+	30	7
-	+	30	8
-	+	30	11
-	+	30	7
-	+	30	9
-	+	30	10
-	+	30	5
-	+	30	10
-	+	30	11
-	+	30	6
-	+	30	9
-	+	30	6
-	+	30	21
-	+	30	12
-	+	30	0
-	+	40	13
-	+	41	17
-	+	42	16
-	+	43	11
-	+	45	14
-	+	45	13
-	+	45	9
-	+	45	0
-	+	30	0
-	+	1	0
-
-> ~/.w3m/w3m-config
-	*	1585453884	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.scripts/web_search.sh
-	*	1585438808	0
-	"	14	12
-	^	16	86
-	.	16	86
-	+	20	64
-	+	20	75
-	+	20	64
-	+	20	81
-	+	20	64
-	+	20	85
-	+	20	64
-	+	20	92
-	+	20	0
-	+	20	10
-	+	20	3
-	+	4	7
-	+	20	0
-	+	4	38
-	+	20	0
-	+	20	30
-	+	19	0
-	+	20	30
-	+	20	3
-	+	4	0
-	+	20	7
-	+	20	0
-	+	20	31
-	+	20	6
-	+	20	0
-	+	20	86
-	+	20	0
-	+	20	3
-	+	20	0
-	+	20	63
-	+	20	0
-	+	20	71
-	+	20	26
-	+	20	0
-	+	20	21
-	+	20	10
-	+	20	100
-	+	20	10
-	+	20	100
-	+	20	0
-	+	20	104
-	+	20	0
-	+	19	0
-	+	4	37
-	+	15	3
-	+	4	35
-	+	15	13
-	+	5	0
-	+	14	0
-	+	15	0
-	+	14	10
-	+	5	0
-	+	10	25
-	+	10	30
-	+	10	32
-	+	11	6
-	+	14	0
-	+	12	6
-	+	11	0
-	+	12	7
-	+	14	0
-	+	15	0
-	+	19	0
-	+	15	4
-	+	19	0
-	+	16	5
-	+	16	93
-	+	18	4
-	+	16	105
-	+	16	15
-	+	16	106
-	+	14	8
-	+	16	80
-	+	18	5
-	+	16	77
-	+	10	0
-	+	5	0
+	+	60	16
+	+	3	12
+	+	3	21
 	+	5	16
-	+	5	17
-	+	5	30
-	+	10	0
+	+	9	22
+	+	11	23
+	+	13	22
+	+	19	19
+	+	24	11
+	+	32	16
+	+	44	10
+	+	51	10
+	+	55	61
+	+	57	11
+	+	60	0
+	+	3	12
+	+	3	21
+	+	11	23
+	+	19	19
+	+	24	11
+	+	55	61
+	+	57	11
+	+	3	12
+	+	3	21
+	+	11	23
+	+	24	11
+	+	55	61
+	+	57	11
+	+	3	21
+	+	11	23
+	+	24	11
+	+	57	0
+	+	56	0
+	+	54	0
+	+	3	0
 	+	5	0
-	+	10	0
-	+	5	0
-	+	7	39
-	+	6	15
-	+	10	19
-	+	7	32
-	+	10	0
-	+	11	0
-	+	7	32
-	+	10	0
-	+	7	32
-	+	8	14
-	+	10	32
-	+	16	86
-
-> ~/.scripts/translate.sh
-	*	1585438554	0
-	"	8	0
-	.	8	0
-	+	2	0
-	+	8	0
 	+	9	0
 	+	11	0
 	+	13	0
-	+	14	0
-	+	2	0
-	+	3	26
-	+	6	19
-	+	8	0
-
-> ~/.scripts/web_search.sh.bak
-	*	1585436280	0
-	"	1	0
-
-> ~/clip
-	*	1585432336	0
-	"	6	0
-
-> ~/.w3m/README
-	*	1585410231	0
-	"	244	0
-	.	1	0
-	+	1	0
-
-> /sys/module/nvidia/version
-	*	1585351669	0
-	"	1	6
-
-> /sys/module/nvidia/taint
-	*	1585351663	0
-	"	1	2
-
-> ~/.config/picom/picom.conf
-	*	1585351128	0
-	"	84	7
-	.	84	0
-	+	54	0
-	+	84	0
-
-> ~/.bash_history
-	*	1585344846	0
-	"	309	18
-	.	363	19
-	+	1	0
-	+	7	0
+	+	19	0
+	+	21	0
+	+	24	0
+	+	26	0
+	+	29	0
+	+	32	0
+	+	44	0
+	+	49	0
+	+	51	0
+	+	53	0
+	+	55	0
+	+	57	0
+	+	60	0
+	+	3	11
+	+	93	122
+	+	93	206
+	+	93	254
+	+	93	260
+	+	93	266
+	+	93	272
+	+	93	278
+	+	93	284
+	+	94	15
+	+	95	63
+	+	96	15
+	+	97	15
+	+	60	0
+	+	17	17
+	+	18	0
 	+	20	0
-	+	126	0
-	+	125	0
-	+	378	0
-	+	358	0
-	+	363	19
+	+	6	25
+	+	60	0
+	+	6	25
+	+	3	10
+	+	58	15
+	+	21	17
+	+	38	12
+	+	123	0
+	+	116	0
+	+	54	0
+	+	18	0
+	+	38	12
+	+	38	11
+	+	39	12
+	+	40	12
+	+	41	12
+	+	69	9
+	+	66	19
+	+	61	12
+	+	62	12
+	+	63	12
+	+	64	12
+	+	65	12
+	+	66	12
+	+	67	12
+	+	61	0
+	+	67	9
 
-> /run/media/fz/TOSHIBA EXT/home/fz/Documents/eMailAddresses
-	*	1585243471	0
+> /etc/pacman.d/mirrorlist
+	*	1596557240	0
+	"	3	25
+
+> ~/Downloads/netgear/NETGEAR_D6000.cfg
+	*	1593636993	0
 	"	1	0
 
-> ~/.git/MERGE_MSG
-	*	1585241846	0
+> /run/media/fz/fzHDD/Movies/MARVEL/InfiniteSaga.txt
+	*	1593505824	0
 	"	1	0
 
-> ~/.gitignore
-	*	1585241552	0
-	"	1	0
-	^	1	7
-	.	1	0
+> ~/Downloads/InfiniteSaga.txt
+	*	1593191073	0
+	"	9	28
+
+> ~/.icons/default/index.theme
+	*	1592097576	0
+	"	4	19
+	^	4	20
+	.	4	19
+	+	2	0
 	+	1	0
-	a	1	6
-	m	1	7
+	+	2	0
+	+	1	0
+	+	4	19
 
-> ~/.git/.gitignore
-	*	1585241425	0
+> ~/.vimrc
+	*	1592094968	0
+	"	107	10
+	^	347	16
+	.	347	15
+	+	347	15
+
+> ~/.gtkrc-2.0
+	*	1592094967	0
+	"	19	17
+
+> ~/.bashrc
+	*	1592094967	0
+	"	57	6
+
+> ~/.vim/colors/solarized-dark.vim
+	*	1592089407	0
+	"	277	0
+
+> ~/.themes/Default/gtk-2.0-key/gtkrc
+	*	1592088929	0
 	"	1	0
 
-> ~/.config/i3-blocks/blocks/packages
-	*	1585102141	0
-	"	32	0
-	^	1	69
-	.	1	68
-	+	1	68
+> ~/.config/gtkrc-2.0
+	*	1592088916	0
+	"	62	0
+	^	61	27
+	.	61	26
+	+	61	26
 
-> ~/.git/index
-	*	1585101996	0
+> ~/.config/gtkrc
+	*	1592088895	0
+	"	29	39
+
+> ~/.gtkrc
+	*	1592088851	0
+	"	9	22
+
+> ~/.themes/oomox-fz/gtk-2.0/gtkrc
+	*	1592088833	0
 	"	2	0
 
-> ~/.git/config
-	*	1585101955	0
+> /proc/168948/fd/63
+	*	1591788177	0
 	"	1	0
 
-> ~/.gitconfig
-	*	1585101894	0
+> /proc/166802/fd/63
+	*	1591788155	0
+	"	6	0
+
+> /proc/165941/fd/63
+	*	1591788133	0
 	"	1	0
 
 > ~/NERD_tree_1
-	*	1585101878	0
-	"	1	0
+	*	1591788074	0
+	"	40	17
 	.	1	0
 	+	1	0
 
-> ~/.config/i3-blocks/blocks/datetime
-	*	1585101142	0
-	"	10	66
-	^	10	66
-	.	10	0
-	+	10	0
-
-> ~/.config/i3-blocks/blocks/poweroff
-	*	1585100967	0
-	"	31	17
-
-> ~/.config/i3-blocks/config
-	*	1585100803	0
-	"	58	0
-	^	63	10
-	.	63	9
-	+	36	9
-	+	40	9
-	+	45	9
-	+	49	9
-	+	53	9
-	+	62	9
-	+	66	9
-	+	63	9
-
-> ~/.config/i3-blocks/blocks/alarm
-	*	1585065498	0
-	"	1	1
-	^	1	2
-	.	1	2
-	+	1	0
-	+	1	30
-	+	1	22
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	22
-	+	1	41
-	+	1	0
-	+	79	0
-	+	1	0
-	+	45	31
-	+	79	0
-	+	1	2
-
-> ~/.scripts/timer.sh
-	*	1585065419	0
+> /proc/67336/fd/63
+	*	1591785277	0
 	"	1	0
-	^	77	45
-	.	77	44
-	+	1	14
-	+	1	0
-	+	1	11
-	+	1	0
-	+	1	19
-	+	1	13
-	+	1	18
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	11
-	+	1	35
-	+	1	12
-	+	1	37
-	+	1	0
-	+	1	28
-	+	1	24
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	15
-	+	1	5
-	+	1	0
-	+	1	5
-	+	1	29
-	+	1	5
-	+	1	3
-	+	1	1
-	+	1	23
-	+	1	5
-	+	1	6
-	+	1	0
-	+	1	7
-	+	1	26
-	+	1	1
-	+	1	6
-	+	1	2
-	+	1	6
-	+	1	9
-	+	1	19
-	+	1	25
-	+	1	20
-	+	1	24
-	+	1	23
-	+	1	6
-	+	1	25
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	6
-	+	1	3
-	+	1	19
-	+	1	0
-	+	1	6
-	+	1	7
-	+	1	0
-	+	1	2
-	+	1	28
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	22
-	+	1	27
-	+	1	16
-	+	1	14
-	+	1	16
-	+	1	15
-	+	1	17
-	+	1	23
-	+	1	18
-	+	1	10
-	+	1	18
-	+	1	0
-	+	1	1
-	+	1	0
-	+	4	14
-	+	5	0
-	+	4	11
-	+	5	25
-	+	72	40
-	+	74	84
-	+	72	22
-	+	6	4
-	+	74	83
-	+	74	16
-	+	75	1
-	+	76	1
-	+	78	3
-	+	74	15
-	+	76	8
-	+	76	85
-	+	74	0
-	+	74	9
-	+	76	86
-	+	77	44
-
-> ~/web_search.sh
-	*	1584972351	0
-	"	1	0
-
-> ~/timer.sh
-	*	1584921995	0
-	"	1	0
-
-> ~/.gtkrc-2.0
-	*	1584892676	0
-	"	5	15
-	^	5	16
-	.	5	16
-	+	5	16
-
-> ~/Builds/nvidia-bl/PKGBUILD
-	*	1584799765	0
-	"	40	0
-
-> ~/Builds/nvidia-bl/pk
-	*	1584799741	0
-	"	1	0
-
-> /tmp/trizen-fz/android-studio/PKGBUILD
-	*	1584573995	0
-	"	21	37
-
-> ~/Builds/spotify/PKGBUILD
-	*	1584565745	0
-	"	96	0
-
-> ~/.local/share/xorg/Xorg.0.log
-	*	1584304250	0
-	"	132	0
-
-> /var/log/Xorg.0.log
-	*	1584290692	0
-	"	103	68
-
-> ~/ciao.txr
-	*	1584049962	0
-	"	1	0
-
-> ~/ciao.txt
-	*	1584049473	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> /proc/50000/fd/63
-	*	1583951987	0
-	"	4	0
-
-> ~/.xinitrc
-	*	1583945162	0
-	"	5	0
-
-> ~/Builds/netctl-gui/PKGBUILD
-	*	1583942387	0
-	"	84	0
-
-> /etc/modprobe.d/blacklist.conf
-	*	1583793454	0
-	"	1	0
-	.	3	0
-	+	1	0
-	+	2	0
-	+	3	0
-
-> ~/Builds/teamviewer/PKGBUILD
-	*	1583787379	0
-	"	12	0
-
-> ~/Builds/android-studio/PKGBUILD
-	*	1583787257	0
-	"	45	0
-
-> ~/Builds/android-sdk/PKGBUILD
-	*	1583787177	0
-	"	68	22
-
-> ~/Builds/android-emulator/PKGBUILD
-	*	1583786400	0
-	"	17	0
-
-> /proc/1064/fd/63
-	*	1583753395	0
-	"	185	0

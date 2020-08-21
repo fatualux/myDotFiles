@@ -225,13 +225,12 @@ bindsym $mod+m exec i3-msg bar mode toggle
 
  # Startup programs
 
-#exec --no-startup-id feh --bg-fill ~/.config/i3/background.jpg
+exec --no-startup-id feh --bg-fill ~/.config/i3/background.jpg
 exec --no-startup-id dunst &
 exec --no-startup-id compton &
 exec_always --no-startup-id pulseaudio -k && pulseaudio --start
 exec_always --no-startup-id nm-applet
-exec --no-startup-id conky
-#exec_always --no-startup-id ~/.config/vbar/launch
+exec_always --no-startup-id ~/.config/vbar/launch
 #exec --no-startup-id veracrypt &
 
 # Windows rules

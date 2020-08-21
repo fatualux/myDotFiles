@@ -44,15 +44,12 @@ vnoremap p "_dP
 
 call plug#begin('~/.vim/bundle')
 
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'ncm2/ncm2-pyclang'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'vim-scripts/AutoComplPop'
-Plug 'Rip-Rip/clang_complete'
 Plug 'sheerun/vim-polyglot'
-Plug 'vim-scripts/Pydiction'
 Plug 'junegunn/vim-easy-align'
 Plug 'vim-syntastic/syntastic'
 Plug 'lilydjwg/colorizer'
@@ -61,6 +58,19 @@ Plug 'luochen1990/rainbow'
 Plug 'jiangmiao/auto-pairs'
 
 let g:multi_cursor_use_default_mapping=0
+
+let &path.="src/include,/usr/include,/usr/include/AL,/usr/include/gtk-3.0/ "
+let pycm = expand('pwd') . "/.ycm_extra_conf.py"
+
+if filereadable(pycm)
+  let g:ycm_global_ycm_extra_conf = pycm
+else
+  let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+endif
+
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_auto_trigger = 1
+
 
 " Default mapping
 let g:multi_cursor_start_word_key      = '<C-n>'
@@ -73,11 +83,6 @@ let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 call plug#end()
-
-"settings for Pydiction
-
-let g:pydiction_location = '/home/fz/.vim/bundle/Pydiction/complete-dict'
-let g:pydiction_menu_height = 3
 
 "settings for NERDTree
 let g:NERDTreeDirArrowExpandable = '+'
@@ -138,7 +143,6 @@ highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
-map <C-s> :SyntasticToggleMode<CR>
 
 
 " THEMING
@@ -149,7 +153,8 @@ set t_Co=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 set background=dark
-colorscheme solarized
+:colorscheme jellybeans
+
 
 " Toggle background
 function! ToggleBG()
@@ -320,3 +325,23 @@ set shortmess=I "disable intro messages
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+let s:hidden_all = 0
+function! ToggleHiddenAll()
+    if s:hidden_all  == 0
+        let s:hidden_all = 1
+        set noshowmode
+        set noruler
+        set laststatus=0
+        set noshowcmd
+    else
+        let s:hidden_all = 0
+        set showmode
+        set ruler
+        set laststatus=2
+        set showcmd
+    endif
+endfunction
+
+nnoremap <S-h> :call ToggleHiddenAll()<CR>
+map <C-s> :split <CR>
+map <C-d> :NextColorScheme <CR>

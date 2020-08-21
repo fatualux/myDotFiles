@@ -1,102 +1,72 @@
 #Conky configuration file
-#
-#######################################################################
-# variables ###########################################################
 
-# fork to background ################################################
-background yes
+background=yes
 
-# font settings #######################################################
-use_xft yes
-xftfont Xolonium:size=8
-uppercase yes
+use_xft=yes
+xftfont="Xolonium:size=8"
+uppercase=yes
 
-# update every 1 secs #################################################
-update_interval 1
+update_interval=1
 
-# stay running forever ################################################
-total_run_times 0
+total_run_times=0
 
-# draw to root window #################################################
+own_window=yes
+own_window_type=override
+own_window_transparent=yes
+own_window_colour=000000
+own_window_hints=undecorated,sticky,skip_taskbar,skip_pager,below
 
-own_window yes
-own_window_type override
-own_window_transparent yes
-own_window_colour 000000
-own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+double_buffer=yes
 
-# avoid flickering ####################################################
-double_buffer yes
+minimum_size=750,1000
+maximum_width=1280
 
+alignment=top_left
 
-# size ################################################################
-minimum_size 750 1000
-maximum_width 1280
+gap_x=0
+gap_y=0
 
-# position ############################################################
-alignment top_left
-#alignment top_middle
-#alignment top_right
-#alignment bottom_left
-#alignment bottom_middle
-#alignment bottom_right
-#alignment middle_left
-#alignment middle_right
-gap_x 0
-gap_y 0
+default_color=white
+default_shade_color=white
+default_outline_color=black
 
-# colors ##############################################################
-default_color white
-default_shade_color white
-default_outline_color black
-# custom colors #######################################################
+color0=FFFFFF
+color1=F5F5F5
+color2=A2AEC6
+color3=669988
+color4=AAFF99
+color5=649595
+color6=879995
+color7=000000
+color8=339955
+color9=464749
 
-color0 FFFFFF
-color1 F5F5F5
-color2 A2AEC6
-color3 669988
-color4 AAFF99
-color5 6495ED
-color6 87FFFA
-color7 5F9EA0
-color8 33FF99
-color9 464749
+draw_borders=no
+draw_graph_borders=no
+stippled_borders=8
+border_width=1
 
+draw_shades=no
 
-# borders #############################################################
-draw_borders no
-draw_graph_borders no
-stippled_borders 8
-border_width 1
+draw_outline=no
 
-# shades ##############################################################
-draw_shades no
+use_spacer=none
 
-# outline #############################################################
-draw_outline no
+no_buffers=yes
 
-# spacer ##############################################################
-use_spacer none
-
-# buffers (Substract (file system) buffers from used memory?)##########
-no_buffers yes
-
-# sampling ############################################################
-cpu_avg_samples 2
-net_avg_samples 2
-
-# configuration #######################################################
+cpu_avg_samples=2
+net_avg_samples=2
 
 TEXT
-${voffset 50}${offset 10}$color8 SYSTEM ${hr 2}$color
-${offset 10}$color3 Kernel $color6 $sysname$color9 -$color2 $machine
-${offset 10}$color3 Version $color6 $kernel
-${offset 10}$color3 User $color2 fz on $color6 $nodename
-${offset 10}$color3 Date $color2 ${time %A %d/%m/%y}
-${offset 10}$color3 Time $color6 ${time %k-%M-%S}
-${offset 10}$color3 Uptime $color2 $uptime
+${offset=50} $color8 SYSTEM ${hr=2} $color
+${offset=10} $color3 Kernel $color6 $sysname$color9 -$color2 $machine
+${offset=10} $color3 Version $color6 $kernel
+${offset=10} $color3 User $color2 fz on $color6 $nodename
+${offset=10} $color3 Date $color2 ${time=%A %d/%m/%y}
+${offset=10} $color3 Time $color6 ${time=%k-%M-%S}
+${offset=10} $color3 Uptime $color2 $uptime
 
-${voffset -30}${offset 550}$color8 TOP MONITOR${hr 2}$color
+${voffset=-30}${offset 550}$color8 TOP MONITOR${hr 2}$color
 
 ${offset 700}$color3..:NAME:..${alignr}${alignr}..:MEMORY:..      .:PID:.${color}
 ${offset 700}$color2 1.$color4${top_mem name 1}${alignr}${color}${top_mem cpu 1} ${top_mem mem 1}        $color2 1. $color6${top_mem pid 1}
@@ -120,7 +90,8 @@ ${offset 100}$color2 Temperature :$color4 ${execi 30 sensors | grep "Core 1" | c
 ${offset 100}$color2 Load: $color9 ${cpubar cpu2 6,220} $color4${cpu cpu2}$color2 %
 ${offset 100}$color4 ${cpugraph cpu2 15,255 262729 87CEFA}
 
-${voffset --20}${offset 900}$color8 NETWORK${hr 2}$color
+${voffset -20}${offset 600}$color8 NETWORK${hr 2}$color
+${if_up wlan0}
 ${offset 980}$color2 essid : $color4${wireless_essid wlan0}$color2
 ${offset 1000}$color2 IPv4 : $color4${addr wlan0}
 ${offset 1020}$color2 MAC : $color4${wireless_ap wlan0}
@@ -128,11 +99,20 @@ ${offset 1050}$color2 Down : $color4 ${downspeed wlan0} $color2
 ${offset 1030}$color4 ${downspeedgraph wlan0 15,250 262729 87CEFA}
 ${offset 1075}$color2 Up : $color4 ${upspeed wlan0} $color2
 ${offset 1030}$color4 ${upspeedgraph wlan0 15,250 262729 87CEFA}
+${voffset -137}
+${endif}${if_up wlan1}
+${offset 680}$color2 essid : $color4${wireless_essid wlan1}$color2
+${offset 700}$color2 IPv4 : $color4${addr wlan1}
+${offset 720}$color2 MAC : $color4${wireless_ap wlan1}
+${offset 750}$color2 Down : $color4 ${downspeed wlan1} $color2
+${offset 730}$color4 ${downspeedgraph wlan1 15,250 262729 87CEFA}
+${offset 775}$color2 Up : $color4 ${upspeed wlan1} $color2
+${endif}
 
-${voffset -20}${offset 500}$color8 ..: $color3 Power$color8 :..
-${offset 500}$color2 BATTERY $color4  $battery
-${offset 500}$color2 Time Left :$color4  $battery_time
-${offset 500}$color9 ${battery_bar 6,160}
+${voffset -10}${offset 300}$color8 ..: $color3 Power$color8 :..
+${offset 300}$color2 BATTERY $color4  $battery
+${offset 300}$color2 Time Left :$color4  $battery_time
+${offset 300}$color9 ${battery_bar 6,160}
 
 ${voffset 40}${offset 320}$color8 MEMORY${hr 2}$color
 ${voffset 70}${offset 170}$color8 ..: $color3 Volumes$color8 :..
