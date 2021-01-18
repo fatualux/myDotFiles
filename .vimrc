@@ -1,13 +1,4 @@
-" The default vimrc file.
-"
-" This is loaded if no vimrc file was found.
-" Except when Vim is run with "-u NONE" or "-C".
-" Individual settings can be reverted with ":set option&".
-" Other commands can be reverted as mentioned below.
-
 " Use Vim settings, rather than Vi settings.
-" This must be first, because it changes other options as a side effect.
-" Avoid side effects when it was already reset.
 if &compatible
   set nocompatible
 endif
@@ -46,7 +37,6 @@ call plug#begin('~/.vim/bundle')
 
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
-Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
@@ -56,6 +46,23 @@ Plug 'lilydjwg/colorizer'
 Plug 'RRethy/vim-illuminate'
 Plug 'luochen1990/rainbow'
 Plug 'jiangmiao/auto-pairs'
+Plug 'davidhalter/jedi-vim'
+Plug 'klen/python-mode'
+Plug 'Yggdroot/indentLine'
+
+
+let g:indentLine_setColors = 0
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+
+" Override go-to.definition key shortcut to Ctrl-]
+let g:pymode_rope_goto_definition_bind = "<C-]>"
+
+" Override run current python file key shortcut to Ctrl-Shift-e
+let g:pymode_run_bind = "<C-S-e>"
+
+" Override view python doc key shortcut to Ctrl-Shift-d
+let g:pymode_doc_bind = "<C-S-d>"
 
 let g:multi_cursor_use_default_mapping=0
 
@@ -83,6 +90,17 @@ let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 call plug#end()
+
+"settings for jedi-vim
+"
+"let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_stubs_command = "<leader>s"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
 
 "settings for NERDTree
 let g:NERDTreeDirArrowExpandable = '+'
@@ -153,7 +171,7 @@ set t_Co=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 set background=dark
-:colorscheme jellybeans
+:colorscheme solarized
 
 
 " Toggle background

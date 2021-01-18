@@ -227,10 +227,10 @@ bindsym $mod+m exec i3-msg bar mode toggle
 
 exec --no-startup-id feh --bg-fill ~/.config/i3/background.jpg
 exec --no-startup-id dunst &
-exec --no-startup-id compton &
-exec_always --no-startup-id pulseaudio -k && pulseaudio --start
+exec --no-startup-id picom --config /home/fz/.config/compton/compton.conf &
 exec_always --no-startup-id nm-applet
-exec_always --no-startup-id ~/.config/vbar/launch
+exec_always --no-startup-id conky -c .conky1
+exec_always --no-startup-id systemctl suspend
 #exec --no-startup-id veracrypt &
 
 # Windows rules

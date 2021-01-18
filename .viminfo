@@ -11,75 +11,62 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/rank
+~MSle0~/rea
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1597934648,,"q"
 :wq
-|2,0,1597271370,,"wq"
+|2,0,1610993077,,"wq"
+:q
+|2,0,1610990856,,"q"
 :w
-|2,0,1597271314,,"w"
-:e .config/i3-blocks/blocks/bandwidth
-|2,0,1597267390,,"e .config/i3-blocks/blocks/bandwidth"
-:tab split
-|2,0,1597267371,,"tab split"
-:e .config/i3-blocks/config
-|2,0,1597265576,,"e .config/i3-blocks/config"
-::
-|2,0,1597266752,,":"
-:e .config/i3-blocks/blocks/datetime
-|2,0,1597263570,,"e .config/i3-blocks/blocks/datetime"
-:e .config/i3-blocks/blocks/alarm
-|2,0,1597263535,,"e .config/i3-blocks/blocks/alarm"
-:e .config/i3-blocks/blocks/ala
-|2,0,1597263529,,"e .config/i3-blocks/blocks/ala"
-:e .config/i3-bl
-|2,0,1597263992,,"e .config/i3-bl"
+|2,0,1610990853,,"w"
 :e .config/i3/config
-|2,0,1597263633,,"e .config/i3/config"
-:e .conkyrc
-|2,0,1592097998,,"e .conkyrc"
-::e .vimrc
-|2,0,1592089808,,":e .vimrc"
-:e .bashrc
-|2,0,1592089824,,"e .bashrc"
-:e .gtkrc-2.0
-|2,0,1592089977,,"e .gtkrc-2.0"
-:split
-|2,0,1592089795,,"split"
-:NextColorScheme
-|2,0,1592089739,,"NextColorScheme"
-:PrevColorScheme
-|2,0,1592089721,,"PrevColorScheme"
+|2,0,1610980214,,"e .config/i3/config"
+:qa!
+|2,0,1610959798,,"qa!"
+:wq!
+|2,0,1610959555,,"wq!"
+:e packages.x86_64
+|2,0,1610959495,,"e packages.x86_64"
+:e packages.both
+|2,0,1610907366,,"e packages.both"
+:w!
+|2,0,1610907236,,"w!"
+:w p
+|2,0,1610907040,,"w p"
+:help NERDTree
+|2,0,1609792887,,"help NERDTree"
+:help Ner
+|2,0,1609792874,,"help Ner"
+:e Documents/Notifier.py
+|2,0,1609792011,,"e Documents/Notifier.py"
+:e .config/i3-blocks/config
+|2,0,1608500951,,"e .config/i3-blocks/config"
+:tab split
+|2,0,1607792635,,"tab split"
 
 # Search String History (newest to oldest):
-?/rank
-|2,1,1597864316,47,"rank"
-?/awk
-|2,1,1597271289,47,"awk"
-?/:
-|2,1,1597267097,47,":"
-?/interface
-|2,1,1597266904,47,"interface"
-?/i3ex
-|2,1,1597264878,47,"i3ex"
-?/exec
-|2,1,1597263693,47,"exec"
-?/alarm
-|2,1,1597263671,47,"alarm"
-?/netw
-|2,1,1592095123,47,"netw"
-?/color
-|2,1,1592089577,47,"color"
-?/map
-|2,1,1592089527,47,"map"
-?/switch
-|2,1,1592089509,47,"switch"
-?/cursor
-|2,1,1592088830,47,"cursor"
-?/rankmirr
-|2,1,1591953698,47,"rankmirr"
+?/rea
+|2,1,1610993053,47,"rea"
+?/lib32
+|2,1,1610993029,47,"lib32"
+?/sys
+|2,1,1610960605,47,"sys"
+?/ucode
+|2,1,1610918549,47,"ucode"
+?/startup
+|2,1,1610911255,47,"startup"
+?/i3
+|2,1,1610904024,47,"i3"
+? \s\+$
+|2,1,1609793835,,"\\s\\+$"
+?/fire
+|2,1,1608501460,47,"fire"
+?/alignr
+|2,1,1607338262,47,"alignr"
 
 # Expression History (newest to oldest):
 
@@ -88,337 +75,525 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	11499961
-|3,0,0,0,1,0,1597707655,"11499961"
-"1	LINE	0
-	allow-hotplug wlan0
-|3,0,1,1,1,0,1597457619,"allow-hotplug wlan0"
+"0	LINE	0
+	acpi
+	acpid
+	alsa-firmware
+	alsa-plugins
+	alsa-utils
+	android-file-transfer
+	android-platform
+	arc-gtk-theme
+	arch
+	audacious
+	audacity
+	autoconf
+	automake
+	base
+	bash-completion
+	binutils
+	bison
+	blueberry
+	bluez-utils
+	calibre
+	clamav
+	clamtk
+	clang
+	cmake
+	code
+	conky
+	convmv
+	cpupower
+	cpupower-gui
+	cups
+	debtap
+	devtools
+	dialog
+	dmenu
+	dpkg
+	dunst
+	dvd+rw-tools
+	efibootmgr
+	espeak
+	exfat-utils
+	faba-icon-theme
+	fakeroot
+	feh
+	file
+	filezilla
+	findutils
+	firefox
+	flex
+	fontforge
+	gawk
+|3,0,0,1,50,0,1610990805,"acpi","acpid","alsa-firmware","alsa-plugins","alsa-utils","android-file-transfer","android-platform","arc-gtk-theme","arch","audacious","audacity","autoconf","automake","base","bash-completion","binutils","bison","blueberry","bluez-utils","calibre","clamav","clamtk","clang","cmake","code","conky","convmv","cpupower","cpupower-gui","cups","debtap","devtools","dialog","dmenu","dpkg","dunst","dvd+rw-tools","efibootmgr","espeak",>13
+|<"exfat-utils","faba-icon-theme","fakeroot","feh","file","filezilla","findutils","firefox","flex","fontforge","gawk"
+""1	LINE	0
+	xf86-input-mtrack
+|3,1,1,1,1,0,1610993071,"xf86-input-mtrack"
 "2	LINE	0
-	timedatectl status
-|3,0,2,1,1,0,1597271297,"timedatectl status"
+	vim-youcompleteme-git
+|3,0,2,1,1,0,1610993067,"vim-youcompleteme-git"
 "3	LINE	0
-	sudo ntpdate time.ien.it
-|3,0,3,1,1,0,1597271297,"sudo ntpdate time.ien.it"
+	trizen-git
+|3,0,3,1,1,0,1610993065,"trizen-git"
 "4	LINE	0
-	sudo systemctl stop ntpd
-|3,0,4,1,1,0,1597271296,"sudo systemctl stop ntpd"
+	scrcpy
+|3,0,4,1,1,0,1610993057,"scrcpy"
 "5	LINE	0
-	reboot
-|3,0,5,1,1,0,1597271296,"reboot"
+	realvnc-vnc-viewer
+|3,0,5,1,1,0,1610993054,"realvnc-vnc-viewer"
 "6	LINE	0
-	sudo ntpd -qg
-|3,0,6,1,1,0,1597271296,"sudo ntpd -qg"
+	libpdfium-nojs
+|3,0,6,1,1,0,1610993042,"libpdfium-nojs"
 "7	LINE	0
-	sudo  timedatectl set-ntp 1
-|3,0,7,1,1,0,1597271296,"sudo  timedatectl set-ntp 1"
+	lib32-freetype2
+|3,0,7,1,1,0,1610993031,"lib32-freetype2"
 "8	LINE	0
-	sudo localectl set-locale LC_MEASUREMENT="it_IT.UTF-8"
-|3,0,8,1,1,0,1597271296,"sudo localectl set-locale LC_MEASUREMENT=\"it_IT.UTF-8\""
+	faba-icon-theme
+|3,0,8,1,1,0,1610992540,"faba-icon-theme"
 "9	LINE	0
-	sudo localectl set-locale LC_MEASUREMENTS="it_IT.UTF-8"
-|3,0,9,1,1,0,1597271296,"sudo localectl set-locale LC_MEASUREMENTS=\"it_IT.UTF-8\""
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1597864274," "
+	debtap
+|3,0,9,1,1,0,1610992535,"debtap"
+"q	CHAR	0
+	709
+<:qa€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€klx€kd€kd€kua€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl:w€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kri€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb:w€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€ku€kri"€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr"€kb€kd€ku"€kr€kb€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr"€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr"€kr€kb:w
+|3,0,26,0,1,0,1609793183,>713
+|<":qa€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€klx€kd€kd€kua€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl:w€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kri€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb:w€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€ku€kri\"€kr€kb€kr€kr€k
+|<r€kr€kr€kr€kr€kr€kr€kr\"€kb€kd€ku\"€kr€kb€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr\"€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr\"€kr€kb:w"
+"-	CHAR	0
+	#
+|3,0,36,0,1,0,1610980217,"#"
 
 # File marks:
-'0  1  0  ~/motion_notifier.py
-|4,48,1,0,1598017670,"~/motion_notifier.py"
-'1  1  0  ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
-|4,49,1,0,1597955516,"~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt"
-'2  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,50,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
-'3  6  5  ~/.bash_history
-|4,51,6,5,1597864348,"~/.bash_history"
-'4  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,52,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
-'5  1  0  ~/.scripts/clean.sh
-|4,53,1,0,1597581882,"~/.scripts/clean.sh"
-'6  141  5  ~/robot_activation.py
-|4,54,141,5,1597527939,"~/robot_activation.py"
-'7  17  0  /run/media/fz/rootfs/etc/network/interfaces
-|4,55,17,0,1597457712,"/run/media/fz/rootfs/etc/network/interfaces"
-'8  17  0  /run/media/fz/rootfs/etc/network/interfaces
-|4,56,17,0,1597457631,"/run/media/fz/rootfs/etc/network/interfaces"
-'9  38  15  ~/Downloads/Telegram Desktop/robot_test.py
-|4,57,38,15,1597361351,"~/Downloads/Telegram Desktop/robot_test.py"
+'0  17  11  ~/.scripts/backup_dot_files.sh
+|4,48,17,11,1610999057,"~/.scripts/backup_dot_files.sh"
+'1  1  0  ~/.scripts/updatemirroes.sh
+|4,49,1,0,1610999006,"~/.scripts/updatemirroes.sh"
+'2  18  0  ~/.config/i3/configi3
+|4,50,18,0,1610998744,"~/.config/i3/configi3"
+'3  137  0  ~/Builds/livecd/packages.x86_64
+|4,51,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+'4  272  0  ~/Builds/livecd/packages.x86_64
+|4,52,272,0,1610990856,"~/Builds/livecd/packages.x86_64"
+'5  284  0  ~/Builds/livecd/packages.x86_64
+|4,53,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+'6  1  0  ~/Builds/packages.both
+|4,54,1,0,1610990807,"~/Builds/packages.both"
+'7  233  0  ~/.config/i3/config
+|4,55,233,0,1610980225,"~/.config/i3/config"
+'8  233  0  ~/.config/i3/config
+|4,56,233,0,1610974477,"~/.config/i3/config"
+'9  1  0  ~/Builds/packages.both
+|4,57,1,0,1610961901,"~/Builds/packages.both"
 
 # Jumplist (newest first):
--'  1  0  ~/motion_notifier.py
-|4,39,1,0,1598017670,"~/motion_notifier.py"
--'  1  0  ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
-|4,39,1,0,1597955516,"~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt"
--'  1  0  ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
-|4,39,1,0,1597955516,"~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt"
--'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  4  14  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,4,14,1597934648,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  1  0  /tmp/trizen-fz/fx_cast/PKGBUILD
-|4,39,1,0,1597934642,"/tmp/trizen-fz/fx_cast/PKGBUILD"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  6  5  ~/.bash_history
-|4,39,6,5,1597864348,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  310  2  ~/.bash_history
-|4,39,310,2,1597864316,"~/.bash_history"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  16  23  ~/Downloads/Telegram Desktop/bot.py
-|4,39,16,23,1597707656,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/Downloads/Telegram Desktop/bot.py
-|4,39,1,0,1597707634,"~/Downloads/Telegram Desktop/bot.py"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  1  0  ~/.scripts/clean.sh
-|4,39,1,0,1597581882,"~/.scripts/clean.sh"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
--'  141  5  ~/robot_activation.py
-|4,39,141,5,1597527939,"~/robot_activation.py"
+-'  17  11  ~/.scripts/backup_dot_files.sh
+|4,39,17,11,1610999057,"~/.scripts/backup_dot_files.sh"
+-'  1  0  ~/.scripts/updatemirroes.sh
+|4,39,1,0,1610999006,"~/.scripts/updatemirroes.sh"
+-'  1  0  ~/.scripts/updatemirroes.sh
+|4,39,1,0,1610999006,"~/.scripts/updatemirroes.sh"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  284  0  ~/Builds/livecd/packages.x86_64
+|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  332  0  ~/Builds/livecd/packages.x86_64
+|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  344  0  ~/Builds/livecd/packages.x86_64
+|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
+-'  1  0  ~/Builds/packages.both
+|4,39,1,0,1610990807,"~/Builds/packages.both"
 
 # History of marks within files (newest to oldest):
 
-> ~/motion_notifier.py
-	*	1598017668	0
-	"	1	0
+> ~/.config/i3/configi3
+	*	1610998742	0
+	"	18	0
+
+> ~/Builds/livecd/packages.x86_64
+	*	1610993075	0
+	"	137	0
 	^	1	0
+	.	137	0
+	+	1	0
+	+	272	0
+	+	1	0
+	+	272	0
+	+	7	0
+	+	8	0
+	+	27	0
+	+	28	0
+	+	37	0
+	+	69	0
+	+	71	0
+	+	111	0
+	+	112	0
+	+	128	0
+	+	131	0
+	+	137	0
 
-> ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
-	*	1597955516	0
+> ~/Builds/packages.both
+	*	1610990805	0
 	"	1	0
 
-> /tmp/trizen-fz/fx_cast/PKGBUILD
-	*	1597934646	0
-	"	4	14
+> ~/.config/i3/config
+	*	1610980222	0
+	"	233	0
+	^	233	1
+	.	233	0
+	+	33	0
+	+	230	72
+	+	234	0
+	+	231	0
+	+	235	0
+	+	232	43
+	+	249	0
+	+	248	0
+	+	232	44
+	+	233	0
 
-> ~/.bash_history
-	*	1597864347	0
-	"	6	5
-	^	6	5
-	.	134	3
-	+	10	7
-	+	11	0
-	+	10	0
-	+	10	11
-	+	10	0
-	+	10	3
-	+	10	7
-	+	10	17
-	+	10	4
-	+	3	0
-	+	10	0
-	+	3	0
+> ~/Builds/archlive/releng/packages.x86_64
+	*	1610960614	0
+	"	129	7
+	^	129	8
+	.	129	7
+	+	1	0
+	+	465	0
+	+	1	0
+	+	285	0
+	+	1	0
+	+	285	0
+	+	1	0
+	+	285	0
+	+	129	7
+
+> ~/Builds/archlive/releng/packages.both
+	*	1610960595	0
+	"	129	7
+	^	129	8
+	.	129	7
+	+	129	7
+
+> ~/Builds/livecd/build.sh
+	*	1610918853	0
+	"	126	0
+	^	125	4
+	.	126	0
+	+	125	0
+	+	127	0
+	+	124	0
+	+	125	0
+	+	124	0
+	+	125	3
+	+	125	86
+	+	126	0
+
+> ~/Builds/livecd/airootfs/root/install.txt
+	*	1610912970	0
+	"	1	0
+
+> ~/Builds/livecd/airootfs/root/customize_airootfs.sh
+	*	1610912952	0
+	"	2	0
+	^	2	0
+	.	5	17
+	+	5	17
+
+> ~/Builds/livecd/airootfs/home/fz/.config/mimeapps.list
+	*	1610909494	0
+	"	25	37
+	.	11	28
+	+	2	23
+	+	3	16
+	+	4	24
+	+	7	27
+	+	11	28
+
+> ~/Builds/livecd/packages.both
+	*	1610907377	0
+	"	1	0
+	.	1	0
+	+	284	0
+	+	1	0
+
+> ~/Builds/livecd/p
+	*	1610907361	0
+	"	1	0
+
+> /proc/210948/fd/63
+	*	1610907241	0
+	"	205	3
+	^	204	0
+	.	204	0
+	+	8	0
+	+	14	0
+	+	20	0
+	+	30	0
+	+	34	0
+	+	39	0
+	+	50	0
+	+	74	0
+	+	88	0
+	+	89	0
+	+	97	0
+	+	104	0
+	+	113	0
+	+	115	0
+	+	117	0
+	+	120	0
+	+	126	0
+	+	131	0
+	+	133	0
+	+	139	0
+	+	204	0
+	+	203	3
+	+	204	0
+	+	205	0
+	+	204	0
+
+> ~/Downloads/virtualbox-ext/virtualbox-ext-oracle.install
+	*	1610829857	0
+	"	15	0
+
+> ~/Documents/Notifier.py
+	*	1609974016	0
+	"	1	0
+	^	42	0
+	.	41	31
 	+	1	0
 	+	3	0
-	+	10	0
 	+	4	0
-	+	1	11
-	+	5	6
-	+	6	4
-	+	134	3
+	+	5	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	35	0
+	+	38	36
+	+	14	0
+	+	38	48
+	+	39	48
+	+	43	0
+	+	7	8
+	+	8	8
+	+	7	18
+	+	8	45
+	+	54	6
+	+	18	65
+	+	31	75
+	+	33	23
+	+	31	0
+	+	32	0
+	+	33	47
+	+	47	0
+	+	50	0
+	+	52	5
+	+	54	3
+	+	40	17
+	+	41	21
+	+	40	17
+	+	41	34
+	+	42	0
+	+	41	31
 
-> ~/Downloads/Telegram Desktop/bot.py
-	*	1597707656	0
-	"	16	23
+> ~/.vim/bundle/nerdtree/doc/NERDTree.txt
+	*	1609793015	0
+	"	398	62
 
-> ~/.scripts/clean.sh
-	*	1597581872	0
-	"	1	0
-
-> ~/robot_activation.py
-	*	1597527937	0
-	"	141	5
-
-> /run/media/fz/rootfs/etc/network/interfaces
-	*	1597457712	0
-	"	17	0
-	.	17	0
-	+	17	0
-
-> ~/Downloads/Telegram Desktop/robot_test.py
-	*	1597360033	0
-	"	38	15
-	^	215	23
-	.	217	0
-	+	217	0
-
-> ~/Downloads/Telegram Desktop/robot_basics.py
-	*	1597360010	0
-	"	39	10
+> ~/NERD_tree_1
+	*	1608501532	0
+	"	4	0
+	.	1	0
+	+	1	0
 
 > ~/.config/i3-blocks/config
-	*	1597267852	0
-	"	10	0
+	*	1608500961	0
+	"	10	9
 	^	9	12
 	.	50	0
 	+	60	0
@@ -440,62 +615,319 @@
 	+	10	0
 	+	50	0
 
-> ~/.config/i3-blocks/blocks/bandwidth
-	*	1597267556	0
-	"	71	4
-	.	71	0
-	+	3	12
+> /run/media/fz/B25B-A34B/time.txt
+	*	1607795461	0
+	"	1	20
+	^	1	16
+	.	1	15
+	+	1	15
+
+> ~/.conky1
+	*	1607362206	0
+	"	55	90
+	^	55	91
+	.	55	90
+	+	73	0
+	+	68	0
+	+	73	0
+	+	74	0
+	+	55	33
+	+	56	0
+	+	57	0
+	+	58	0
+	+	59	0
+	+	60	0
+	+	61	0
+	+	62	0
+	+	63	0
+	+	64	0
+	+	56	0
+	+	55	0
+	+	67	0
+	+	9	0
+	+	49	0
+	+	48	10
+	+	21	29
+	+	21	0
+	+	53	57
+	+	52	57
+	+	53	57
+	+	50	0
+	+	51	101
+	+	50	87
+	+	51	98
+	+	50	89
+	+	51	100
+	+	50	101
+	+	51	113
+	+	52	73
+	+	53	73
+	+	51	101
+	+	56	25
+	+	57	25
+	+	56	26
+	+	58	25
+	+	68	65
+	+	55	48
+	+	75	34
+	+	74	45
+	+	71	77
+	+	53	57
+	+	50	101
+	+	51	113
+	+	68	64
+	+	50	90
+	+	75	36
+	+	76	48
+	+	39	0
+	+	38	0
+	+	27	21
+	+	20	18
+	+	27	22
+	+	27	0
+	+	36	0
 	+	6	0
-	+	11	0
-	+	3	0
-	+	70	0
-	+	69	0
-	+	70	0
-	+	69	22
-	+	76	0
-	+	69	10
-	+	70	0
-	+	71	0
-	+	70	0
-	+	71	0
+	+	4	0
+	+	6	1
+	+	7	0
+	+	48	13
+	+	48	10
+	+	55	0
+	+	49	66
+	+	55	70
+	+	56	42
+	+	57	42
+	+	58	42
+	+	59	42
+	+	60	42
+	+	61	42
+	+	62	42
+	+	63	42
+	+	64	42
+	+	65	43
+	+	71	104
+	+	73	43
+	+	77	0
+	+	78	0
+	+	48	0
+	+	49	65
+	+	55	69
+	+	56	41
+	+	57	41
+	+	58	41
+	+	59	41
+	+	60	41
+	+	61	41
+	+	62	41
+	+	63	41
+	+	64	41
+	+	65	42
+	+	71	103
+	+	73	42
+	+	49	0
+	+	48	0
+	+	55	90
 
-> ~/.config/i3/config
-	*	1597264913	0
-	"	169	46
-	.	33	0
-	+	33	0
-
-> ~/.config/i3/i3exit
-	*	1597264837	0
-	"	30	5
-
-> ~/.config/i3-blocks/blocks/datetime
-	*	1597264343	0
-	"	11	0
-	^	10	28
-	.	11	0
-	+	10	0
-	+	10	27
-	+	11	0
-
-> ~/.config/i3-blocks/blocks/alarm
-	*	1597263553	0
-	"	78	0
-
-> ~/.config/i3-blocks/blocks/ala
-	*	1597263529	0
+> ~/Downloads/Telegram Desktop/DockMode.flo
+	*	1606297562	0
 	"	1	0
 
-> ~/.config/vbar/README.md
-	*	1597262024	0
-	"	39	0
+> ~/.bash_history
+	*	1604573312	0
+	"	491	0
+	^	6	5
+	.	491	0
+	+	10	7
+	+	11	0
+	+	10	0
+	+	10	11
+	+	10	0
+	+	10	3
+	+	10	7
+	+	10	17
+	+	10	4
+	+	3	0
+	+	10	0
+	+	3	0
+	+	1	0
+	+	3	0
+	+	10	0
+	+	4	0
+	+	1	11
+	+	5	6
+	+	6	4
+	+	132	3
+	+	12	8
+	+	18	0
+	+	27	0
+	+	272	0
+	+	270	0
+	+	272	0
+	+	274	0
+	+	273	0
+	+	270	0
+	+	492	0
+	+	491	0
+
+> ~/Documents/pythonExercises/pyBowling/bowling.py
+	*	1604221118	0
+	"	57	22
+	^	58	22
+	.	57	22
+	+	141	0
+	+	138	29
+	+	98	0
+	+	99	0
+	+	151	13
+	+	151	0
+	+	44	0
+	+	83	0
+	+	43	0
+	+	112	55
+	+	119	33
+	+	118	27
+	+	118	0
+	+	120	0
+	+	119	0
+	+	103	0
+	+	104	0
+	+	105	0
+	+	119	0
+	+	118	0
+	+	117	0
+	+	119	50
+	+	5	10
+	+	126	32
+	+	126	43
+	+	119	0
+	+	51	26
+	+	112	0
+	+	51	0
+	+	126	0
+	+	51	0
+	+	51	25
+	+	81	0
+	+	80	0
+	+	42	0
+	+	51	0
+	+	51	19
+	+	51	0
+	+	51	42
+	+	51	0
+	+	53	0
+	+	54	0
+	+	52	0
+	+	53	0
+	+	42	0
+	+	103	0
+	+	112	36
+	+	59	26
+	+	59	0
+	+	60	42
+	+	60	0
+	+	64	0
+	+	60	0
+	+	51	0
+	+	52	19
+	+	51	0
+	+	51	23
+	+	60	22
+	+	60	0
+	+	61	12
+	+	61	0
+	+	62	0
+	+	64	0
+	+	68	0
+	+	64	13
+	+	64	0
+	+	68	0
+	+	42	0
+	+	52	0
+	+	46	15
+	+	46	22
+	+	46	0
+	+	45	0
+	+	46	0
+	+	47	0
+	+	66	13
+	+	66	0
+	+	52	23
+	+	60	0
+	+	52	0
+	+	50	40
+	+	51	0
+	+	56	50
+	+	57	27
+	+	58	22
+	+	57	22
+
+> /tmp/trizen-fz/libpdfium-nojs/PKGBUILD
+	*	1603447340	0
+	"	25	0
+
+> ~/.dispad
+	*	1603444997	0
+	"	2	10
+	^	2	11
+	.	2	10
+	+	2	10
+
+> /tmp/trizen-fz/dispad-git/PKGBUILD
+	*	1603444852	0
+	"	15	26
+
+> /tmp/trizen-fz/insync-nautilus/PKGBUILD
+	*	1603395816	0
+	"	21	10
+
+> ~/Downloads/nautilus-megasync-x86_64.pkg/.PKGINFO
+	*	1603388685	0
+	"	19	29
+
+> ~/Downloads/nautilus-megasync-x86_64.pkg/.INSTALL
+	*	1603388626	0
+	"	9	54
+
+> ~/Documents/pythonExercises/bowling.py
+	*	1603325972	0
+	"	11	12
+
+> ~/.conky2
+	*	1603321166	0
+	"	42	0
+	.	48	0
+	+	9	0
+	+	42	0
+	+	26	0
+	+	42	0
+	+	48	0
+
+> ~/.conky2!
+	*	1603315368	0
+	"	1	0
+
+> ~/.conkyrc.bak
+	*	1603315359	0
+	"	12	0
+	.	68	0
+	+	6	25
+	+	7	0
+	+	70	0
+	+	69	0
+	+	68	0
+
+> ~/.conkyrc2
+	*	1603312227	0
+	"	70	1
+	^	70	2
+	.	70	1
+	+	70	1
 
 > ~/.conkyrc
-	*	1597261263	0
-	"	14	8
-	^	67	9
-	.	67	9
-	+	49	9
+	*	1603312182	0
+	"	77	1
+	^	77	2
+	.	77	1
 	+	51	10
 	+	53	9
 	+	57	11
@@ -595,10 +1027,409 @@
 	+	67	12
 	+	61	0
 	+	67	9
+	+	77	1
+
+> ~/.config/vbar/themes/vbextreme/config.c
+	*	1603311972	0
+	"	251	2
+
+> ~/Documents/pythonExercises/pyBowling/bowling1.py
+	*	1603235515	0
+	"	23	14
+	^	25	15
+	.	25	15
+	+	72	0
+	+	72	39
+	+	73	16
+	+	72	48
+	+	72	19
+	+	72	0
+	+	7	0
+	+	72	15
+	+	70	0
+	+	72	52
+	+	73	24
+	+	72	0
+	+	73	22
+	+	72	0
+	+	73	20
+	+	72	0
+	+	73	19
+	+	72	0
+	+	73	39
+	+	72	0
+	+	73	40
+	+	73	13
+	+	73	0
+	+	61	11
+	+	73	0
+	+	73	27
+	+	72	0
+	+	73	0
+	+	72	0
+	+	73	0
+	+	72	20
+	+	69	0
+	+	70	0
+	+	73	0
+	+	72	0
+	+	74	0
+	+	72	15
+	+	5	0
+	+	6	0
+	+	5	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	7	11
+	+	5	0
+	+	6	0
+	+	122	10
+	+	122	11
+	+	7	11
+	+	73	0
+	+	73	37
+	+	72	0
+	+	73	0
+	+	72	0
+	+	73	0
+	+	72	21
+	+	70	0
+	+	72	0
+	+	72	38
+	+	72	0
+	+	72	14
+	+	72	0
+	+	72	33
+	+	72	0
+	+	120	0
+	+	119	0
+	+	73	0
+	+	72	0
+	+	73	15
+	+	72	0
+	+	73	19
+	+	72	0
+	+	73	0
+	+	124	0
+	+	123	0
+	+	116	28
+	+	117	0
+	+	122	0
+	+	123	0
+	+	71	0
+	+	70	0
+	+	25	15
+
+> ~/Documents/pythonExercises/bot.py
+	*	1603234724	0
+	"	12	0
+
+> ~/Documents/pythonExercises/pyBowling/func.py
+	*	1602983508	0
+	"	20	12
+	^	23	25
+	.	23	24
+	+	1	17
+	+	3	0
+	+	5	11
+	+	6	0
+	+	3	1
+	+	3	0
+	+	3	11
+	+	3	10
+	+	3	0
+	+	6	21
+	+	5	18
+	+	4	27
+	+	7	0
+	+	5	4
+	+	9	0
+	+	7	0
+	+	9	0
+	+	17	0
+	+	23	0
+	+	50	27
+	+	60	17
+	+	62	0
+	+	63	0
+	+	85	18
+	+	87	0
+	+	90	7
+	+	91	0
+	+	92	0
+	+	95	7
+	+	95	0
+	+	3	0
+	+	2	0
+	+	11	32
+	+	12	49
+	+	12	0
+	+	10	9
+	+	12	25
+	+	12	10
+	+	14	17
+	+	17	31
+	+	16	14
+	+	19	38
+	+	18	10
+	+	4	8
+	+	9	4
+	+	68	8
+	+	56	8
+	+	23	24
+
+> ~/Documents/pythonExercises/results.txt
+	*	1602977852	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/pythonExercises/frames.txt
+	*	1602976075	0
+	"	1	0
+
+> ~/frames.txt
+	*	1602947765	0
+	"	10	0
+
+> ~/__run__
+	*	1602886083	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/python-mode/doc/pymode.txt
+	*	1602882032	0
+	"	15	69
+
+> ~/Builds/ScrappyBot/kbd_control.py
+	*	1602512017	0
+	"	109	12
+
+> ~/.vimrc
+	*	1602361628	0
+	"	55	53
+	^	55	0
+	.	55	0
+	+	365	15
+	+	175	23
+	+	175	22
+	+	168	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	40	0
+	+	48	27
+	+	49	4
+	+	92	15
+	+	93	0
+	+	94	22
+	+	95	1
+	+	96	1
+	+	50	23
+	+	57	0
+	+	58	0
+	+	51	26
+	+	52	0
+	+	53	0
+	+	54	30
+	+	55	0
+
+> ~/Documents/pythonExercises/bowling1.py
+	*	1602361621	0
+	"	38	3
+	^	11	0
+	.	11	0
+	+	1	4
+	+	4	0
+	+	53	14
+	+	11	0
+
+> ~/Documents/pythonExercises/test.py
+	*	1602360854	0
+	"	9	35
+
+> ~/.scripts/backup_dot_files.sh
+	*	1602279607	0
+	"	17	11
+
+> ~/raspi/boot.bak/config.txt
+	*	1601855771	0
+	"	68	0
+	.	68	0
+	+	68	0
+
+> ~/raspi/boot.bak/issue.txt
+	*	1601855729	0
+	"	2	33
+
+> ~/.config/i3/i3exit
+	*	1601735696	0
+	"	14	7
+	^	14	8
+	.	14	8
+	+	17	8
+	+	14	8
+
+> /run/media/fz/rootfs/home/pi/Downloads/1.txt
+	*	1601581111	0
+	"	10	0
+
+> ~/.config/gtkrc-2.0
+	*	1601327252	0
+	"	38	0
+	^	61	27
+	.	61	26
+	+	61	26
+
+> ~/.config/gtk-3.0/gtk.css
+	*	1601327185	0
+	"	54	41
+
+> ~/.config/gtk-2.0/gtkfilechooser.ini
+	*	1601327155	0
+	"	2	20
+
+> ~/.gtkrc-2.0
+	*	1601326671	0
+	"	19	17
 
 > /etc/pacman.d/mirrorlist
-	*	1596557240	0
-	"	3	25
+	*	1600937494	0
+	"	115	0
+
+> ~/Downloads/Telegram Desktop/robot_kbd.py
+	*	1599596275	0
+	"	215	0
+	^	215	0
+	.	215	0
+	+	213	16
+	+	213	24
+	+	214	0
+	+	213	16
+	+	215	0
+
+> ~/Downloads/Telegram Desktop/robot_test.py
+	*	1599595914	0
+	"	38	15
+	^	215	23
+	.	217	0
+	+	217	0
+
+> ~/Downloads/Telegram Desktop/Schede di ConfrontabilitÃ _Gas_NeNPBIO42.pdf
+	*	1599595912	0
+	"	1	0
+
+> ~/times.log
+	*	1599185763	0
+	"	135	0
+
+> ~/Downloads/NETGEAR_D6000.cfg
+	*	1599178895	0
+	"	1	25
+
+> ~/.config/compton/compton.conf
+	*	1598715249	0
+	"	11	32
+	^	9	18
+	.	9	17
+	+	9	17
+
+> ~/.vim/colors/solarized-dark.vim
+	*	1598690554	0
+	"	1	0
+	^	331	0
+	.	330	165
+	+	1	15
+	+	330	165
+
+> .vim/colors/solarized.vim
+	*	1598690533	0
+	"	1	0
+
+> ~/.vim/colors/solarized.vim
+	*	1598689868	0
+	"	15	4
+
+> /etc/locale.gen
+	*	1598457908	0
+	"	152	0
+
+> ~/.scripts/clean.sh
+	*	1598354889	0
+	"	1	0
+
+> ~/motion_notifier.py
+	*	1598017668	0
+	"	1	0
+	^	1	0
+
+> ~/Downloads/net.downloadhelper.coapp-1.5.0-1_amd64/net.downloadhelper.coapp-1.5.0/README.txt
+	*	1597955516	0
+	"	1	0
+
+> /tmp/trizen-fz/fx_cast/PKGBUILD
+	*	1597934646	0
+	"	4	14
+
+> ~/Downloads/Telegram Desktop/bot.py
+	*	1597707656	0
+	"	16	23
+
+> ~/robot_activation.py
+	*	1597527937	0
+	"	141	5
+
+> /run/media/fz/rootfs/etc/network/interfaces
+	*	1597457712	0
+	"	17	0
+	.	17	0
+	+	17	0
+
+> ~/Downloads/Telegram Desktop/robot_basics.py
+	*	1597360010	0
+	"	39	10
+
+> ~/.config/i3-blocks/blocks/bandwidth
+	*	1597267556	0
+	"	71	4
+	.	71	0
+	+	3	12
+	+	6	0
+	+	11	0
+	+	3	0
+	+	70	0
+	+	69	0
+	+	70	0
+	+	69	22
+	+	76	0
+	+	69	10
+	+	70	0
+	+	71	0
+	+	70	0
+	+	71	0
+
+> ~/.config/i3-blocks/blocks/datetime
+	*	1597264343	0
+	"	11	0
+	^	10	28
+	.	11	0
+	+	10	0
+	+	10	27
+	+	11	0
+
+> ~/.config/i3-blocks/blocks/alarm
+	*	1597263553	0
+	"	78	0
+
+> ~/.config/i3-blocks/blocks/ala
+	*	1597263529	0
+	"	1	0
+
+> ~/.config/vbar/README.md
+	*	1597262024	0
+	"	39	0
 
 > ~/Downloads/netgear/NETGEAR_D6000.cfg
 	*	1593636993	0
@@ -623,35 +1454,13 @@
 	+	1	0
 	+	4	19
 
-> ~/.vimrc
-	*	1592094968	0
-	"	107	10
-	^	347	16
-	.	347	15
-	+	347	15
-
-> ~/.gtkrc-2.0
-	*	1592094967	0
-	"	19	17
-
 > ~/.bashrc
 	*	1592094967	0
 	"	57	6
 
-> ~/.vim/colors/solarized-dark.vim
-	*	1592089407	0
-	"	277	0
-
 > ~/.themes/Default/gtk-2.0-key/gtkrc
 	*	1592088929	0
 	"	1	0
-
-> ~/.config/gtkrc-2.0
-	*	1592088916	0
-	"	62	0
-	^	61	27
-	.	61	26
-	+	61	26
 
 > ~/.config/gtkrc
 	*	1592088895	0
@@ -677,12 +1486,12 @@
 	*	1591788133	0
 	"	1	0
 
-> ~/NERD_tree_1
-	*	1591788074	0
-	"	40	17
-	.	1	0
-	+	1	0
-
 > /proc/67336/fd/63
 	*	1591785277	0
+	"	1	0
+
+> ~/.scripts/updatemirroes.sh
+	"	1	0
+
+> ~/Downloads/WR1300-R10-1.3.6-20201009-073451-flash.bin
 	"	1	0
