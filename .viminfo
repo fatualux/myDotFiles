@@ -18,7 +18,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1610993077,,"wq"
+|2,0,1610999514,,"wq"
 :q
 |2,0,1610990856,,"q"
 :w
@@ -76,124 +76,90 @@ $
 
 # Registers:
 "0	LINE	0
-	acpi
-	acpid
-	alsa-firmware
-	alsa-plugins
-	alsa-utils
-	android-file-transfer
-	android-platform
-	arc-gtk-theme
-	arch
-	audacious
-	audacity
-	autoconf
-	automake
-	base
-	bash-completion
-	binutils
-	bison
-	blueberry
-	bluez-utils
-	calibre
-	clamav
-	clamtk
-	clang
-	cmake
-	code
-	conky
-	convmv
-	cpupower
-	cpupower-gui
-	cups
-	debtap
-	devtools
-	dialog
-	dmenu
-	dpkg
-	dunst
-	dvd+rw-tools
-	efibootmgr
-	espeak
-	exfat-utils
-	faba-icon-theme
-	fakeroot
-	feh
-	file
-	filezilla
-	findutils
-	firefox
-	flex
-	fontforge
-	gawk
-|3,0,0,1,50,0,1610990805,"acpi","acpid","alsa-firmware","alsa-plugins","alsa-utils","android-file-transfer","android-platform","arc-gtk-theme","arch","audacious","audacity","autoconf","automake","base","bash-completion","binutils","bison","blueberry","bluez-utils","calibre","clamav","clamtk","clang","cmake","code","conky","convmv","cpupower","cpupower-gui","cups","debtap","devtools","dialog","dmenu","dpkg","dunst","dvd+rw-tools","efibootmgr","espeak",>13
-|<"exfat-utils","faba-icon-theme","fakeroot","feh","file","filezilla","findutils","firefox","flex","fontforge","gawk"
-""1	LINE	0
-	xf86-input-mtrack
-|3,1,1,1,1,0,1610993071,"xf86-input-mtrack"
+	git add -f .config/termite/
+|3,0,0,1,1,0,1610999483,"git add -f .config/termite/"
+"1	LINE	0
+	
+|3,0,1,1,1,0,1610999493,""
 "2	LINE	0
-	vim-youcompleteme-git
-|3,0,2,1,1,0,1610993067,"vim-youcompleteme-git"
+	xf86-input-mtrack
+|3,0,2,1,1,0,1610993071,"xf86-input-mtrack"
 "3	LINE	0
-	trizen-git
-|3,0,3,1,1,0,1610993065,"trizen-git"
+	vim-youcompleteme-git
+|3,0,3,1,1,0,1610993067,"vim-youcompleteme-git"
 "4	LINE	0
-	scrcpy
-|3,0,4,1,1,0,1610993057,"scrcpy"
+	trizen-git
+|3,0,4,1,1,0,1610993065,"trizen-git"
 "5	LINE	0
-	realvnc-vnc-viewer
-|3,0,5,1,1,0,1610993054,"realvnc-vnc-viewer"
+	scrcpy
+|3,0,5,1,1,0,1610993057,"scrcpy"
 "6	LINE	0
-	libpdfium-nojs
-|3,0,6,1,1,0,1610993042,"libpdfium-nojs"
+	realvnc-vnc-viewer
+|3,0,6,1,1,0,1610993054,"realvnc-vnc-viewer"
 "7	LINE	0
-	lib32-freetype2
-|3,0,7,1,1,0,1610993031,"lib32-freetype2"
+	libpdfium-nojs
+|3,0,7,1,1,0,1610993042,"libpdfium-nojs"
 "8	LINE	0
-	faba-icon-theme
-|3,0,8,1,1,0,1610992540,"faba-icon-theme"
+	lib32-freetype2
+|3,0,8,1,1,0,1610993031,"lib32-freetype2"
 "9	LINE	0
-	debtap
-|3,0,9,1,1,0,1610992535,"debtap"
+	faba-icon-theme
+|3,0,9,1,1,0,1610992540,"faba-icon-theme"
 "q	CHAR	0
 	709
 <:qa€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€klx€kd€kd€kua€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl:w€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kri€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb:w€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€ku€kri"€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr"€kb€kd€ku"€kr€kb€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr"€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr"€kr€kb:w
 |3,0,26,0,1,0,1609793183,>713
 |<":qa€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€klx€kd€kd€kua€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbp€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl:w€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kri€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb:w€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€ku€kd€kd€kd€ku€ku€ku€ku€ku€kd€kd€kd€kd€kd€kd€kd€ku€kri\"€kr€kb€kr€kr€k
 |<r€kr€kr€kr€kr€kr€kr€kr\"€kb€kd€ku\"€kr€kb€kd€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr\"€kr€kb€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr\"€kr€kb:w"
-"-	CHAR	0
-	#
-|3,0,36,0,1,0,1610980217,"#"
+""-	CHAR	0
+	termite
+|3,1,36,0,1,0,1610999502,"termite"
 
 # File marks:
-'0  17  11  ~/.scripts/backup_dot_files.sh
-|4,48,17,11,1610999057,"~/.scripts/backup_dot_files.sh"
-'1  1  0  ~/.scripts/updatemirroes.sh
-|4,49,1,0,1610999006,"~/.scripts/updatemirroes.sh"
-'2  18  0  ~/.config/i3/configi3
-|4,50,18,0,1610998744,"~/.config/i3/configi3"
-'3  137  0  ~/Builds/livecd/packages.x86_64
-|4,51,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
-'4  272  0  ~/Builds/livecd/packages.x86_64
-|4,52,272,0,1610990856,"~/Builds/livecd/packages.x86_64"
-'5  284  0  ~/Builds/livecd/packages.x86_64
-|4,53,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
-'6  1  0  ~/Builds/packages.both
-|4,54,1,0,1610990807,"~/Builds/packages.both"
-'7  233  0  ~/.config/i3/config
-|4,55,233,0,1610980225,"~/.config/i3/config"
-'8  233  0  ~/.config/i3/config
-|4,56,233,0,1610974477,"~/.config/i3/config"
-'9  1  0  ~/Builds/packages.both
-|4,57,1,0,1610961901,"~/Builds/packages.both"
+'0  31  23  ~/.scripts/backup_dot_files.sh
+|4,48,31,23,1610999535,"~/.scripts/backup_dot_files.sh"
+'1  17  11  ~/.scripts/backup_dot_files.sh
+|4,49,17,11,1610999057,"~/.scripts/backup_dot_files.sh"
+'2  17  11  ~/.scripts/backup_dot_files.sh
+|4,50,17,11,1610999057,"~/.scripts/backup_dot_files.sh"
+'3  1  0  ~/.scripts/updatemirroes.sh
+|4,51,1,0,1610999006,"~/.scripts/updatemirroes.sh"
+'4  18  0  ~/.config/i3/configi3
+|4,52,18,0,1610998744,"~/.config/i3/configi3"
+'5  137  0  ~/Builds/livecd/packages.x86_64
+|4,53,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+'6  272  0  ~/Builds/livecd/packages.x86_64
+|4,54,272,0,1610990856,"~/Builds/livecd/packages.x86_64"
+'7  284  0  ~/Builds/livecd/packages.x86_64
+|4,55,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
+'8  1  0  ~/Builds/packages.both
+|4,56,1,0,1610990807,"~/Builds/packages.both"
+'9  233  0  ~/.config/i3/config
+|4,57,233,0,1610980225,"~/.config/i3/config"
 
 # Jumplist (newest first):
+-'  31  23  ~/.scripts/backup_dot_files.sh
+|4,39,31,23,1610999535,"~/.scripts/backup_dot_files.sh"
+-'  17  11  ~/.scripts/backup_dot_files.sh
+|4,39,17,11,1610999325,"~/.scripts/backup_dot_files.sh"
 -'  17  11  ~/.scripts/backup_dot_files.sh
 |4,39,17,11,1610999057,"~/.scripts/backup_dot_files.sh"
 -'  1  0  ~/.scripts/updatemirroes.sh
 |4,39,1,0,1610999006,"~/.scripts/updatemirroes.sh"
 -'  1  0  ~/.scripts/updatemirroes.sh
 |4,39,1,0,1610999006,"~/.scripts/updatemirroes.sh"
+-'  1  0  ~/.scripts/updatemirroes.sh
+|4,39,1,0,1610999006,"~/.scripts/updatemirroes.sh"
+-'  1  0  ~/.scripts/updatemirroes.sh
+|4,39,1,0,1610999006,"~/.scripts/updatemirroes.sh"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
+-'  18  0  ~/.config/i3/configi3
+|4,39,18,0,1610998744,"~/.config/i3/configi3"
 -'  18  0  ~/.config/i3/configi3
 |4,39,18,0,1610998744,"~/.config/i3/configi3"
 -'  18  0  ~/.config/i3/configi3
@@ -218,6 +184,38 @@ $
 |4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
 -'  137  0  ~/Builds/livecd/packages.x86_64
 |4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  137  0  ~/Builds/livecd/packages.x86_64
+|4,39,137,0,1610993078,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
+-'  73  0  ~/Builds/livecd/packages.x86_64
+|4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
 -'  73  0  ~/Builds/livecd/packages.x86_64
 |4,39,73,0,1610993053,"~/Builds/livecd/packages.x86_64"
 -'  73  0  ~/Builds/livecd/packages.x86_64
@@ -250,6 +248,38 @@ $
 |4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
 -'  57  0  ~/Builds/livecd/packages.x86_64
 |4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  57  0  ~/Builds/livecd/packages.x86_64
+|4,39,57,0,1610993029,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
+-'  160  0  ~/Builds/livecd/packages.x86_64
+|4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
 -'  160  0  ~/Builds/livecd/packages.x86_64
 |4,39,160,0,1610992500,"~/Builds/livecd/packages.x86_64"
 -'  160  0  ~/Builds/livecd/packages.x86_64
@@ -282,6 +312,22 @@ $
 |4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
 -'  272  0  ~/Builds/livecd/packages.x86_64
 |4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
+-'  272  0  ~/Builds/livecd/packages.x86_64
+|4,39,272,0,1610992491,"~/Builds/livecd/packages.x86_64"
 -'  284  0  ~/Builds/livecd/packages.x86_64
 |4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
 -'  284  0  ~/Builds/livecd/packages.x86_64
@@ -292,104 +338,16 @@ $
 |4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
 -'  284  0  ~/Builds/livecd/packages.x86_64
 |4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
--'  284  0  ~/Builds/livecd/packages.x86_64
-|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
--'  284  0  ~/Builds/livecd/packages.x86_64
-|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
--'  284  0  ~/Builds/livecd/packages.x86_64
-|4,39,284,0,1610990856,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  332  0  ~/Builds/livecd/packages.x86_64
-|4,39,332,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  344  0  ~/Builds/livecd/packages.x86_64
-|4,39,344,0,1610990819,"~/Builds/livecd/packages.x86_64"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
--'  1  0  ~/Builds/packages.both
-|4,39,1,0,1610990807,"~/Builds/packages.both"
 
 # History of marks within files (newest to oldest):
+
+> ~/.scripts/backup_dot_files.sh
+	*	1610999511	0
+	"	31	23
+	^	31	24
+	.	31	23
+	+	30	27
+	+	31	23
 
 > ~/.config/i3/configi3
 	*	1610998742	0
@@ -1249,10 +1207,6 @@ $
 > ~/Documents/pythonExercises/test.py
 	*	1602360854	0
 	"	9	35
-
-> ~/.scripts/backup_dot_files.sh
-	*	1602279607	0
-	"	17	11
 
 > ~/raspi/boot.bak/config.txt
 	*	1601855771	0

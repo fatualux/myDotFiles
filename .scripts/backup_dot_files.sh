@@ -28,6 +28,7 @@ git add -f .config/i3-blocks/blocks/
 git add -f .config/i3status/
 git add -f .config/oomox/
 git add -f .config/termite/
+git add -f .config/picom/
 git add -f .gconf/
 git add -f .fonts/
 git add -f .gkrellm2/
